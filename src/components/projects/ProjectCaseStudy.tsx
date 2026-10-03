@@ -96,7 +96,7 @@ export function ProjectCaseStudy({ project }: { project: Project }) {
 
       {/* Highlights & Architecture Breakdown */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {project.keyHighlights && (
+        {project.keyHighlights && project.keyHighlights.length > 0 && (
           <PixelCard className="space-y-4">
             <h2 className="font-mono text-xs uppercase font-bold text-[var(--color-primary)] tracking-wider flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4" />
@@ -113,7 +113,7 @@ export function ProjectCaseStudy({ project }: { project: Project }) {
           </PixelCard>
         )}
 
-        {project.architectureNotes && (
+        {project.architectureNotes && project.architectureNotes.length > 0 && (
           <PixelCard className="space-y-4">
             <h2 className="font-mono text-xs uppercase font-bold text-[var(--color-blue)] tracking-wider flex items-center gap-2">
               <Layers className="w-4 h-4" />

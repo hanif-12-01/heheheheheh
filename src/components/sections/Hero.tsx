@@ -110,7 +110,7 @@ export function Hero() {
           {/* Concise Positioning Statement (Section 3) */}
           <p className="text-sm sm:text-base text-[var(--color-muted)] font-sans max-w-2xl leading-relaxed">
             Undergraduate Informatics student at{" "}
-            <span className="text-[var(--color-text)] font-medium">Telkom University Purwokerto</span>.
+            <span className="text-[var(--color-text)] font-medium">{PROFILE_DATA.university}</span>.
             Actively building practical decision-support software, researching intelligent algorithms,
             and competing in national technology innovation challenges.
           </p>
@@ -295,8 +295,8 @@ export function Hero() {
 
               {/* Viewfinder Bottom Tag */}
               <div className="w-full pt-2 border-t border-[var(--color-border)]/50 text-[10px] font-mono text-[var(--color-muted)] flex items-center justify-between">
-                <span>TELKOM UNIV</span>
-                <span className="text-[var(--color-achievement)] font-bold">GPA: 3.66</span>
+                <span>{PROFILE_DATA.university.toUpperCase()}</span>
+                <span className="text-[var(--color-achievement)] font-bold">GPA: {PROFILE_DATA.gpa.split(" ")[0]}</span>
               </div>
             </div>
 
@@ -304,7 +304,7 @@ export function Hero() {
             <div className="w-full mt-3 pt-2.5 border-t border-[var(--color-border)] flex items-center justify-between text-[10px] sm:text-[11px] font-mono text-[var(--color-muted)]">
               <span className="truncate">PURWOKERTO // ID</span>
               <span className="text-[var(--color-primary)] font-bold shrink-0">
-                CLASS OF 2027
+                CLASS OF {PROFILE_DATA.expectedGraduation}
               </span>
             </div>
 

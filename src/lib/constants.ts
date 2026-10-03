@@ -1,14 +1,16 @@
+import { PROFILE_DATA } from "@/data/profile";
+
 export const SITE_CONFIG = {
-  name: "M. Hanif Al Faiz",
-  title: "M. Hanif Al Faiz — Informatics Student & Technology Builder",
+  name: PROFILE_DATA.name,
+  title: `${PROFILE_DATA.name} — Informatics Student & Technology Builder`,
   description:
-    "Portfolio of M. Hanif Al Faiz, an Informatics student exploring artificial intelligence, smart city technology, software engineering, research, competitions, and startup development.",
-  tagline: "Code. Lead. Build. Explore.",
-  identity: "HANIF.EXE",
-  university: "Telkom University Purwokerto",
-  degree: "Bachelor of Informatics",
-  expectedGraduation: 2027,
-  gpa: "3.66 / 4.00",
+    `Portfolio of ${PROFILE_DATA.name}, an Informatics student exploring artificial intelligence, smart city technology, software engineering, research, competitions, and startup development.`,
+  tagline: PROFILE_DATA.tagline,
+  identity: PROFILE_DATA.handle,
+  university: PROFILE_DATA.university,
+  degree: PROFILE_DATA.degree,
+  expectedGraduation: PROFILE_DATA.expectedGraduation,
+  gpa: PROFILE_DATA.gpa,
   emailPlaceholder: "mailto:contact@example.com",
   github: "https://github.com/hanif-12-01",
 } as const;

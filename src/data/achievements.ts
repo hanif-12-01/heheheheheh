@@ -21,7 +21,7 @@ export const ACHIEVEMENTS_DATA: Achievement[] = [
     result: "Top 10 Finalist",
     year: 2026,
     description:
-      "Selected as one of the top 10 national startups in the PLN Innovation & Clean Energy (ICE) competition with WattWise AI, focused on intelligent energy decision support.",
+      "Selected as a top 10 national finalist in the PLN Innovation & Clean Energy (ICE) 2026 Startup Competition with WattWise AI, focused on electricity-cost decision support and forecasting for Indonesian small businesses and property operators.",
     relatedProject: "wattwise-ai",
     featured: true,
     category: "startup",
