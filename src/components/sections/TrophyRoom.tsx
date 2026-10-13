@@ -8,6 +8,7 @@ import { Achievement } from "@/types/achievement";
 import { achievementAssets, uiAssets } from "@/data/worldAssets";
 import { PixelSectionTitle } from "@/components/pixel/PixelSectionTitle";
 import { PixelBadge } from "@/components/pixel/PixelBadge";
+import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 import { cn } from "@/lib/utils";
 import {
   Trophy,
@@ -57,6 +58,7 @@ function getCategoryMeta(category?: string) {
 }
 
 export function TrophyRoom() {
+  const { mode } = usePortfolioMode();
   // Default selected: First/featured achievement (Smart City Competition UNITY UNY 2026, 3rd Place podium)
   const [selectedId, setSelectedId] = useState<string>(ACHIEVEMENTS_DATA[0].id);
 
@@ -68,26 +70,30 @@ export function TrophyRoom() {
   const isSelectedPodium = selectedAchievement.id === "smart-city-uny-2026";
   const isSelectedGrant = selectedAchievement.category === "grant";
 
+  const isRecruiter = mode === "recruiter";
+
   return (
     <section
       id="trophies"
-      aria-label="Trophy Room"
+      aria-label={isRecruiter ? "Achievements and Honors" : "Trophy Room"}
       className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)] relative"
     >
-      {/* Decorative ambient sparkle accent (sparing, top-right) */}
-      <div
-        className="hidden md:block absolute top-16 right-8 opacity-25 pointer-events-none select-none"
-        aria-hidden="true"
-      >
-        <Image
-          src={achievementAssets.sparkle.src}
-          alt=""
-          width={100}
-          height={90}
-          className="object-contain"
-          style={{ imageRendering: "pixelated" }}
-        />
-      </div>
+      {/* Decorative ambient sparkle accent (sparing, top-right, Pixel mode only) */}
+      {!isRecruiter && (
+        <div
+          className="hidden md:block absolute top-16 right-8 opacity-25 pointer-events-none select-none"
+          aria-hidden="true"
+        >
+          <Image
+            src={achievementAssets.sparkle.src}
+            alt=""
+            width={100}
+            height={90}
+            className="object-contain"
+            style={{ imageRendering: "pixelated" }}
+          />
+        </div>
+      )}
 
       {/* Section Header */}
       <PixelSectionTitle
@@ -95,6 +101,9 @@ export function TrophyRoom() {
         title="TROPHY ROOM // ACHIEVEMENTS"
         subtitle="Documented competition podiums, startup acceleration milestones, and verified project grant funding."
         badge="HONORS"
+        recruiterTitle="ACHIEVEMENTS & AWARDS"
+        recruiterSubtitle="Documented competition placements, national startup finalist honors, and verified project grant funding."
+        recruiterBadge="HONORS"
       />
 
       {/* ========================================================================= */}
@@ -106,16 +115,16 @@ export function TrophyRoom() {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-[var(--color-achievement)]" />
             <span className="font-mono text-xs font-bold text-[var(--color-text)] tracking-wider">
-              ACHIEVEMENT SHELF
+              {isRecruiter ? "VERIFIED HONORS" : "ACHIEVEMENT SHELF"}
             </span>
             <span className="text-[var(--color-muted)] font-mono text-xs">{"//"}</span>
             <span className="font-mono text-[11px] text-[var(--color-muted)]">
-              04 DOCUMENTED MILESTONES
+              {isRecruiter ? "04 VERIFIED RECORDS" : "04 DOCUMENTED MILESTONES"}
             </span>
           </div>
 
           <span className="text-[11px] font-mono text-[var(--color-primary)] hidden sm:inline-block">
-            [CLICK SHELF ITEM TO INSPECT DOSSIER]
+            {isRecruiter ? "[SELECT RECORD TO VIEW DETAILS]" : "[CLICK SHELF ITEM TO INSPECT DOSSIER]"}
           </span>
         </div>
 

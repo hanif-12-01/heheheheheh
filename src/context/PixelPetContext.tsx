@@ -81,6 +81,22 @@ export function PixelPetProvider({ children }: { children: React.ReactNode }) {
     return () => clearTimeout(timer);
   }, [dialogue]);
 
+  // Clear dialogue immediately if portfolio switches to recruiter mode
+  useEffect(() => {
+    const handleModeChange = () => {
+      try {
+        const mode = localStorage.getItem("hanif_portfolio_mode");
+        if (mode === "recruiter") {
+          setDialogue(null);
+        }
+      } catch {
+        // ignore
+      }
+    };
+    window.addEventListener("hanif_mode_change", handleModeChange);
+    return () => window.removeEventListener("hanif_mode_change", handleModeChange);
+  }, []);
+
   return (
     <PixelPetContext.Provider
       value={{

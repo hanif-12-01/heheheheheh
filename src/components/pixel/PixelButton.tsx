@@ -11,7 +11,7 @@ export interface PixelButtonProps
 }
 
 export const PixelButton = React.forwardRef<HTMLButtonElement, PixelButtonProps>(
-  ({ className, variant = "primary", size = "md", children, ...props }, ref) => {
+  ({ className, variant = "primary", size = "md", asChild = false, children, ...props }, ref) => {
     const variants = {
       primary:
         "bg-[var(--color-primary)] text-[#0B1020] hover:brightness-110 border-2 border-[var(--color-primary)] shadow-[3px_3px_0px_0px_#0B1020]",
@@ -31,18 +31,28 @@ export const PixelButton = React.forwardRef<HTMLButtonElement, PixelButtonProps>
       lg: "px-6 py-3 text-base font-mono tracking-wider",
     };
 
+    const combinedClassName = cn(
+      "inline-flex items-center justify-center gap-2 font-semibold uppercase transition-all duration-75 select-none",
+      "active:translate-x-[2px] active:translate-y-[2px] active:shadow-none",
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-background)]",
+      "disabled:opacity-50 disabled:pointer-events-none",
+      variants[variant],
+      sizes[size],
+      className
+    );
+
+    if (asChild && React.isValidElement(children)) {
+      const child = children as React.ReactElement<{ className?: string }>;
+      return React.cloneElement(child, {
+        className: cn(combinedClassName, child.props.className),
+        ...props,
+      });
+    }
+
     return (
       <button
         ref={ref}
-        className={cn(
-          "inline-flex items-center justify-center gap-2 font-semibold uppercase transition-all duration-75 select-none",
-          "active:translate-x-[2px] active:translate-y-[2px] active:shadow-none",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-background)]",
-          "disabled:opacity-50 disabled:pointer-events-none",
-          variants[variant],
-          sizes[size],
-          className
-        )}
+        className={combinedClassName}
         {...props}
       >
         {children}

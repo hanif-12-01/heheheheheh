@@ -26,7 +26,7 @@ export function PixelHanifPet() {
   return (
     <aside
       aria-label="Pixel Hanif Companion"
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2 pointer-events-auto select-none"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2 pointer-events-none select-none"
     >
       {/* Speech Bubble */}
       {dialogue && (
@@ -40,7 +40,7 @@ export function PixelHanifPet() {
         aria-label={`Pixel Hanif companion, current action: ${state}. Click for dialogue.`}
         title={`Pixel Hanif (${state}) - Click me! (${clickCount} clicks)`}
         className={cn(
-          "group relative flex items-end justify-center cursor-pointer",
+          "pointer-events-auto group relative flex items-end justify-center cursor-pointer",
           "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32",
           "bg-[var(--color-surface)]/80 backdrop-blur-xs border-2 border-[var(--color-primary)]",
           "shadow-[4px_4px_0px_0px_#0B1020]",
@@ -53,7 +53,8 @@ export function PixelHanifPet() {
           <Image
             key={state}
             src={assetSrc}
-            alt={`Pixel Hanif in ${state} pose`}
+            alt=""
+            aria-hidden="true"
             width={1600}
             height={1600}
             priority={isInitialState}

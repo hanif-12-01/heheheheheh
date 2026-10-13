@@ -19,6 +19,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   image?: string;
+  screenshot?: string;
   featured: boolean;
   year?: number;
   achievement?: string;

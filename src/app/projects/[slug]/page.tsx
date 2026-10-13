@@ -43,7 +43,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen py-8">
+    <main id="main-content" tabIndex={-1} className="min-h-screen py-8 outline-none">
       <ProjectCaseStudy project={project} />
     </main>
   );

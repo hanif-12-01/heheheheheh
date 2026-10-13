@@ -42,14 +42,17 @@ export function PlayerProfile() {
   return (
     <section
       id="profile"
-      aria-label="Player Profile"
-      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)] select-none"
+      aria-label={mode === "recruiter" ? "Candidate Profile" : "Player Profile"}
+      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
     >
       <PixelSectionTitle
         number="02"
         title="PLAYER PROFILE & ATTRIBUTES"
         subtitle="Qualitative status indicators and academic milestones — verified by active contributions."
         badge="CHARACTER SHEET"
+        recruiterTitle="PROFILE & ACADEMIC STANDING"
+        recruiterSubtitle="Academic status, degree progress, and verified capability areas."
+        recruiterBadge="CANDIDATE PROFILE"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -58,15 +61,15 @@ export function PlayerProfile() {
         {/* ========================================================================= */}
         <div className="lg:col-span-5 w-full">
           <PixelWindow
-            title="CHARACTER_SHEET.TXT"
-            statusBadge="● ACTIVE"
+            title={mode === "recruiter" ? "ACADEMIC_RECORD.TXT" : "CHARACTER_SHEET.TXT"}
+            statusBadge={mode === "recruiter" ? "● ENROLLED" : "● ACTIVE"}
             className="w-full"
           >
             <div className="space-y-4 font-mono text-xs">
               {/* Identity Header Box */}
               <div className="p-3.5 bg-[var(--color-background)] border-2 border-[var(--color-border)] space-y-1.5 relative overflow-hidden">
                 <div className="flex items-center justify-between text-[10px] text-[var(--color-muted)] uppercase tracking-wider">
-                  <span>IDENTITY // ID#01</span>
+                  <span>{mode === "recruiter" ? "STUDENT IDENTITY // 2024" : "IDENTITY // ID#01"}</span>
                   <span className="flex items-center gap-1 text-[var(--color-primary)]">
                     <span className="w-1.5 h-1.5 bg-[var(--color-primary)] inline-block animate-pulse" />
                     ONLINE
@@ -76,7 +79,7 @@ export function PlayerProfile() {
                   {PROFILE_DATA.name}
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-[var(--color-primary)]">
-                  <span>HANDLE:</span>
+                  <span>{mode === "recruiter" ? "GITHUB ID:" : "HANDLE:"}</span>
                   <span className="px-1.5 py-0.5 bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/40 text-[var(--color-primary)]">
                     {PROFILE_DATA.handle}
                   </span>
@@ -144,7 +147,7 @@ export function PlayerProfile() {
                       aria-hidden="true"
                       unoptimized
                     />
-                    CURRENT QUEST
+                    {mode === "recruiter" ? "CURRENT STATUS" : "CURRENT QUEST"}
                   </span>
                   <span className="text-[var(--color-primary)] font-bold">
                     SEMESTER {currentSemester} {"//"} IN PROGRESS
@@ -215,7 +218,9 @@ export function PlayerProfile() {
               <div className="p-2.5 bg-[var(--color-surface-secondary)]/50 border border-dashed border-[var(--color-border)] text-[10px] text-[var(--color-muted)] flex items-start gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[var(--color-primary)] shrink-0 mt-0.5" />
                 <span>
-                  Academic standing verified at Level 05 (Semester 5 In Progress). Specializing in intelligent software, spatial analytics, and competition-driven innovation.
+                  {mode === "recruiter"
+                    ? "Academic standing verified: Semester 5 In Progress at Telkom University Purwokerto (GPA 3.66 / 4.00). Specializing in intelligent systems, geospatial applications, and competitive innovation."
+                    : "Academic standing verified at Level 05 (Semester 5 In Progress). Specializing in intelligent software, spatial analytics, and competition-driven innovation."}
                 </span>
               </div>
             </div>

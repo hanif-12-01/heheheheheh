@@ -1,13 +1,20 @@
+"use client";
+
 import React from "react";
 import { cn } from "@/lib/utils";
+import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 
 export interface PixelSectionTitleProps {
   number: string; // e.g. "01", "02"
   title: string;
   subtitle?: string;
   badge?: string;
+  recruiterTitle?: string;
+  recruiterSubtitle?: string;
+  recruiterBadge?: string;
   align?: "left" | "center";
   className?: string;
+  as?: "h1" | "h2";
 }
 
 export function PixelSectionTitle({
@@ -15,9 +22,17 @@ export function PixelSectionTitle({
   title,
   subtitle,
   badge,
+  recruiterTitle,
+  recruiterSubtitle,
+  recruiterBadge,
   align = "left",
   className,
+  as: HeadingTag = "h2",
 }: PixelSectionTitleProps) {
+  const { mode } = usePortfolioMode();
+  const displayTitle = mode === "recruiter" && recruiterTitle ? recruiterTitle : title;
+  const displaySubtitle = mode === "recruiter" && recruiterSubtitle ? recruiterSubtitle : subtitle;
+  const displayBadge = mode === "recruiter" && recruiterBadge ? recruiterBadge : badge;
   return (
     <div
       className={cn(
@@ -36,20 +51,20 @@ export function PixelSectionTitle({
           SEC {number}
         </span>
         <span className="text-[var(--color-muted)]">{"//"}</span>
-        {badge && (
+        {displayBadge && (
           <span className="text-[var(--color-achievement)] font-semibold">
-            [{badge}]
+            [{displayBadge}]
           </span>
         )}
       </div>
 
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono tracking-tight text-[var(--color-text)]">
-        {title}
-      </h2>
+      <HeadingTag className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono tracking-tight text-[var(--color-text)]">
+        {displayTitle}
+      </HeadingTag>
 
-      {subtitle && (
+      {displaySubtitle && (
         <p className="text-sm sm:text-base text-[var(--color-muted)] max-w-2xl font-sans">
-          {subtitle}
+          {displaySubtitle}
         </p>
       )}
 

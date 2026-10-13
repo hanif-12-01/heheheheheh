@@ -54,14 +54,17 @@ export function About() {
   return (
     <section
       id="about"
-      aria-label="About Hanif"
-      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)] select-none"
+      aria-label={mode === "recruiter" ? "About & Background" : "About Hanif"}
+      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
     >
       <PixelSectionTitle
         number="03"
         title="ABOUT HANIF // ORIGIN & MINDSET"
         subtitle="Bridging academic informatics, civic engineering, and real-world system development."
         badge="THE LORE"
+        recruiterTitle="ABOUT // BACKGROUND & MINDSET"
+        recruiterSubtitle="Academic background in informatics, research initiatives, and software engineering practice."
+        recruiterBadge="PROFESSIONAL BACKGROUND"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -76,11 +79,11 @@ export function About() {
               <div className="flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[var(--color-primary)]" />
                 <span className="font-mono text-xs uppercase tracking-wider text-[var(--color-primary)] font-bold">
-                  BIOGRAPHY // ORIGIN STORY
+                  {mode === "recruiter" ? "BIOGRAPHY // PROFESSIONAL BACKGROUND" : "BIOGRAPHY // ORIGIN STORY"}
                 </span>
               </div>
               <PixelBadge variant="outline" size="sm">
-                READING MODE
+                {mode === "recruiter" ? "PROFILE BRIEF" : "READING MODE"}
               </PixelBadge>
             </div>
 

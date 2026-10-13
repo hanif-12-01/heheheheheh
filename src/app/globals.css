@@ -41,8 +41,18 @@
   --color-muted: #94A3B8;
 }
 
+/* Recruiter Mode: Soften excessive gaming decorations (Phase 4B Section 33) */
+[data-mode="recruiter"] .pixel-scanlines {
+  display: none !important;
+}
+
+[data-mode="recruiter"] .pixel-grid-pattern {
+  background-image: none !important;
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
   color-scheme: dark;
 }
 

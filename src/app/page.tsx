@@ -14,7 +14,7 @@ import { SectionTracker } from "@/components/layout/SectionTracker";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col w-full relative">
+    <main id="main-content" tabIndex={-1} className="flex flex-col w-full relative outline-none">
       {/* Client Section Observer for reactive companion pet */}
       <SectionTracker />
 

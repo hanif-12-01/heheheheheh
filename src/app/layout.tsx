@@ -74,6 +74,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${pressStart2P.variable} ${inter.variable}`}>
       <body className="antialiased min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text)] selection:bg-[var(--color-primary)] selection:text-[#0B1020]">
+        {/* Skip Navigation Link for Keyboard Accessibility (WCAG 2.2 AA 2.4.1) */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-surface)] focus:text-[var(--color-primary)] focus:border-2 focus:border-[var(--color-primary)] focus:font-mono focus:text-xs focus:font-bold focus:shadow-[3px_3px_0px_0px_#0B1020] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        >
+          Skip to main content
+        </a>
+
         <PortfolioModeProvider>
           <PixelPetProvider>
             <Navbar />

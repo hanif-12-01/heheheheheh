@@ -13,14 +13,22 @@ export const metadata: Metadata = {
 
 export default function StandaloneJourneyPage() {
   return (
-    <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8 outline-none"
+    >
+      <h1 className="sr-only">
+        The Journey — Academic &amp; Leadership Progression | M. Hanif Al Faiz
+      </h1>
+
       <div>
-        <Link href="/">
-          <PixelButton variant="secondary" size="sm">
+        <PixelButton asChild variant="secondary" size="sm">
+          <Link href="/" aria-label="Return to Overview homepage">
             <ArrowLeft className="w-4 h-4" />
-            <span>Return to Spawn Point</span>
-          </PixelButton>
-        </Link>
+            <span>Return to Overview</span>
+          </Link>
+        </PixelButton>
       </div>
 
       <Journey />

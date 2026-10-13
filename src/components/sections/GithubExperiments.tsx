@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { GITHUB_EXPERIMENTS } from "@/data/projects";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -5,13 +7,17 @@ import { PixelSectionTitle } from "@/components/pixel/PixelSectionTitle";
 import { PixelCard } from "@/components/pixel/PixelCard";
 import { PixelBadge } from "@/components/pixel/PixelBadge";
 import { PixelButton } from "@/components/pixel/PixelButton";
+import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 import { GitBranch, ExternalLink, Terminal } from "lucide-react";
 
 export function GithubExperiments() {
+  const { mode } = usePortfolioMode();
+  const isRecruiter = mode === "recruiter";
+
   return (
     <section
       id="experiments"
-      aria-label="GitHub Experiments"
+      aria-label={isRecruiter ? "Additional Repositories & Experiments" : "GitHub Experiments"}
       className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
@@ -20,21 +26,24 @@ export function GithubExperiments() {
           title="MORE GITHUB EXPERIMENTS"
           subtitle="Coursework explorations, algorithmic testbeds, and academic laboratory prototypes."
           badge="LAB BENCH"
+          recruiterTitle="ADDITIONAL REPOSITORIES & EXPERIMENTS"
+          recruiterSubtitle="Supplementary coursework explorations, algorithmic testbeds, and academic laboratory prototypes."
+          recruiterBadge="SUPPLEMENTARY CODE"
           className="mb-0"
         />
 
-        <a
-          href={SITE_CONFIG.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="self-start md:self-end"
-        >
-          <PixelButton variant="secondary" size="sm">
-            <GitBranch className="w-4 h-4" />
+        <PixelButton asChild variant="secondary" size="sm" className="self-start md:self-end">
+          <a
+            href={SITE_CONFIG.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open M. Hanif Al Faiz GitHub profile (opens in new tab)"
+          >
+            <GitBranch className="w-4 h-4" aria-hidden="true" />
             <span>Open GitHub Profile</span>
-            <ExternalLink className="w-3.5 h-3.5" />
-          </PixelButton>
-        </a>
+            <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+          </a>
+        </PixelButton>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

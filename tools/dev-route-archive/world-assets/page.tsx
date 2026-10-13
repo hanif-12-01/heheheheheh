@@ -31,17 +31,17 @@ export default function WorldAssetsDevPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[var(--color-border)]">
         <div className="space-y-1">
           <div className="flex items-center gap-3">
-            <Link href="/">
-              <PixelButton variant="secondary" size="sm">
+            <PixelButton asChild variant="secondary" size="sm">
+              <Link href="/">
                 <ArrowLeft className="w-4 h-4" />
                 <span>Portfolio</span>
-              </PixelButton>
-            </Link>
-            <Link href="/dev/pixel-assets">
-              <PixelButton variant="ghost" size="sm">
+              </Link>
+            </PixelButton>
+            <PixelButton asChild variant="ghost" size="sm">
+              <Link href="/dev/pixel-assets">
                 <span>Pixel Hanif QA</span>
-              </PixelButton>
-            </Link>
+              </Link>
+            </PixelButton>
           </div>
           <h1 className="text-xl sm:text-2xl font-bold text-[var(--color-text)] pt-2">
             WORLD ASSET INSPECTOR // DEV PREVIEW

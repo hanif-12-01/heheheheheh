@@ -7,6 +7,7 @@ import { journeyAssets, uiAssets } from "@/data/worldAssets";
 import { PixelSectionTitle } from "@/components/pixel/PixelSectionTitle";
 import { PixelBadge } from "@/components/pixel/PixelBadge";
 import { PixelButton } from "@/components/pixel/PixelButton";
+import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 import { cn } from "@/lib/utils";
 import {
   Check,
@@ -177,6 +178,7 @@ function JourneyLandmark({ semester }: { semester: number }) {
 }
 
 export function Journey() {
+  const { mode } = usePortfolioMode();
   // Default selected milestone: Semester 5 (current level)
   const [selectedSemester, setSelectedSemester] = useState<number>(5);
 
@@ -184,10 +186,12 @@ export function Journey() {
     setSelectedSemester(sem);
   };
 
+  const isRecruiter = mode === "recruiter";
+
   return (
     <section
       id="journey"
-      aria-label="The Journey"
+      aria-label={isRecruiter ? "Education and Experience Timeline" : "The Journey"}
       className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
     >
       {/* Section Header */}
@@ -196,6 +200,9 @@ export function Journey() {
         title="THE JOURNEY // ADVENTURE MAP"
         subtitle="Five semesters of exploration, leadership, research, competition, and building."
         badge="ACADEMIC PROGRESSION"
+        recruiterTitle="EDUCATION & EXPERIENCE TIMELINE"
+        recruiterSubtitle="Chronological progression across coursework, organizational leadership, faculty research, and national competitions."
+        recruiterBadge="CHRONOLOGICAL TIMELINE"
       />
 
       {/* ADVENTURE MAP WAYPOINT BAR (Quick Jump Ribbon) */}
@@ -207,11 +214,11 @@ export function Journey() {
           <div className="flex items-center gap-2">
             <Compass className="w-4 h-4 text-[var(--color-primary)]" />
             <span className="font-mono text-xs font-bold text-[var(--color-text)] tracking-wider">
-              MAP WAYPOINTS
+              {isRecruiter ? "SEMESTER MILESTONES" : "MAP WAYPOINTS"}
             </span>
             <span className="text-[var(--color-muted)] font-mono text-xs">{"//"}</span>
             <span className="text-[11px] font-mono text-[var(--color-muted)]">
-              SELECT CHECKPOINT TO INSPECT
+              {isRecruiter ? "SELECT SEMESTER TO INSPECT" : "SELECT CHECKPOINT TO INSPECT"}
             </span>
           </div>
 
@@ -369,7 +376,7 @@ export function Journey() {
 
                       <div>
                         <span className="font-mono text-xs font-black text-[var(--color-primary)] tracking-wider">
-                          LEVEL 0{level.semester}
+                          {isRecruiter ? `SEMESTER 0${level.semester}` : `LEVEL 0${level.semester}`}
                         </span>
                         <span className="text-[var(--color-muted)] font-mono text-xs mx-1.5">
                           {"//"}
@@ -385,7 +392,7 @@ export function Journey() {
                       {isCurrent ? (
                         <PixelBadge variant="achievement" size="sm">
                           <span className="w-1.5 h-1.5 bg-[var(--color-achievement)] animate-pulse rounded-full" />
-                          CURRENT LEVEL // IN PROGRESS
+                          {isRecruiter ? "CURRENT // IN PROGRESS" : "CURRENT LEVEL // IN PROGRESS"}
                         </PixelBadge>
                       ) : (
                         <PixelBadge variant="primary" size="sm">
@@ -397,7 +404,7 @@ export function Journey() {
                       {isLevel4 && (
                         <PixelBadge variant="achievement" size="sm" className="hidden sm:inline-flex">
                           <Award className="w-3 h-3 inline mr-1" />
-                          KEY COMPETITION ARC
+                          {isRecruiter ? "KEY COMPETITIONS" : "KEY COMPETITION ARC"}
                         </PixelBadge>
                       )}
                     </div>

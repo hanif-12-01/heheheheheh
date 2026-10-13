@@ -38,12 +38,12 @@ export default function PixelAssetsDevPage() {
       {/* Header & Back link */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[var(--color-border)]">
         <div className="space-y-1">
-          <Link href="/">
-            <PixelButton variant="secondary" size="sm">
+          <PixelButton asChild variant="secondary" size="sm">
+            <Link href="/">
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Portfolio</span>
-            </PixelButton>
-          </Link>
+            </Link>
+          </PixelButton>
           <h1 className="text-xl sm:text-2xl font-bold text-[var(--color-text)] pt-2">
             PIXEL HANIF ASSET INSPECTOR // DEV PREVIEW
           </h1>

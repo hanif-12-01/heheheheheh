@@ -33,14 +33,17 @@ export function Interests() {
   return (
     <section
       id="interests"
-      aria-label="Tech Interests"
-      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)] select-none"
+      aria-label={mode === "recruiter" ? "Technical Interests" : "Tech Interests"}
+      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
     >
       <PixelSectionTitle
         number="04"
         title="PRIMARY TECH INTERESTS // DOMAIN MAP"
         subtitle="Core focus domains spanning data intelligence, geospatial systems, and software engineering."
         badge="TECH DOMAINS"
+        recruiterTitle="TECHNICAL INTERESTS & SPECIALIZATIONS"
+        recruiterSubtitle="Core engineering domains across intelligent systems, geospatial platforms, and software architecture."
+        recruiterBadge="CORE DOMAINS"
       />
 
       <div className="space-y-6">
