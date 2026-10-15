@@ -7,6 +7,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PixelHanifPet } from "@/components/pet/PixelHanifPet";
 import { SITE_CONFIG } from "@/lib/constants";
+import { LocaleProvider } from "@/i18n/LocaleProvider";
+import { Localize } from "@/i18n/Localize";
+import { LocaleDocument } from "@/components/i18n/LocaleDocument";
 
 const pressStart2P = Press_Start_2P({
   weight: "400",
@@ -28,7 +31,6 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hanif-portfolio.vercel.app"),
   title: {
     default: SITE_CONFIG.title,
     template: `%s | ${SITE_CONFIG.name}`,
@@ -43,6 +45,7 @@ export const metadata: Metadata = {
     "Software Developer",
     "Pixel Portfolio",
     "WattWise AI",
+    "CIVICTWIN Semarang",
     "Purwokerto Intelligence Layer",
   ],
   authors: [{ name: SITE_CONFIG.name }],
@@ -50,7 +53,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hanif-portfolio.vercel.app",
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
     siteName: SITE_CONFIG.identity,
@@ -74,6 +76,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${pressStart2P.variable} ${inter.variable}`}>
       <body className="antialiased min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text)] selection:bg-[var(--color-primary)] selection:text-[#0B1020]">
+        <LocaleProvider>
+        <LocaleDocument />
+        <Localize>
         {/* Skip Navigation Link for Keyboard Accessibility (WCAG 2.2 AA 2.4.1) */}
         <a
           href="#main-content"
@@ -81,6 +86,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        </Localize>
 
         <PortfolioModeProvider>
           <PixelPetProvider>
@@ -90,6 +96,7 @@ export default function RootLayout({
             <Footer />
           </PixelPetProvider>
         </PortfolioModeProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

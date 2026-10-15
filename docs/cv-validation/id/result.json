@@ -1,0 +1,31 @@
+{
+  "locale": "id",
+  "pdf": "public\\cv\\M-Hanif-Al-Faiz-CV-ID.pdf",
+  "bytes": 120828,
+  "pages": [
+    {
+      "page": 1,
+      "textCharacters": 4469,
+      "inkPixelFraction": 0.0998,
+      "renderedImage": "docs\\cv-validation\\id\\page-1.png"
+    },
+    {
+      "page": 2,
+      "textCharacters": 1420,
+      "inkPixelFraction": 0.03388,
+      "renderedImage": "docs\\cv-validation\\id\\page-2.png"
+    }
+  ],
+  "headings": [
+    "Ringkasan Profil",
+    "Pendidikan",
+    "Keahlian Teknis",
+    "Proyek Rekayasa Pilihan",
+    "Prestasi & Hasil Kompetisi",
+    "Riset Akademik & Presentasi",
+    "Pengalaman Kepemimpinan & Organisasi"
+  ],
+  "parse": "PASS (strict)",
+  "text": "PASS",
+  "independentRender": "PASS"
+}

@@ -1,3 +1,4 @@
+import { Localize, LocaleText } from "@/i18n/Localize";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
+    <Localize>
     <main
       id="main-content"
       tabIndex={-1}
@@ -49,9 +51,9 @@ export default function ProjectsPage() {
       <div className="space-y-6">
         <h2 className="font-mono text-sm uppercase tracking-wider text-[var(--color-primary)] font-bold flex items-center gap-2">
           <FolderGit2 className="w-4 h-4" aria-hidden="true" />
-          <span>FEATURED PRODUCTIONS &amp; PODIUMS</span>
+          <span><LocaleText text="FEATURED PRODUCTIONS & PODIUMS" /></span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="project-directory-list">
           {FEATURED_PROJECTS.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
@@ -61,14 +63,15 @@ export default function ProjectsPage() {
       {/* Laboratory Coursework & Experiments Grid */}
       <div className="space-y-6 pt-8 border-t border-[var(--color-border)]">
         <h2 className="font-mono text-sm uppercase tracking-wider text-[var(--color-muted)] font-bold">
-          LABORATORY EXPERIMENTS &amp; COURSEWORK
+          <LocaleText text="LABORATORY EXPERIMENTS & COURSEWORK" />
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="project-directory-list">
           {GITHUB_EXPERIMENTS.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </div>
     </main>
+    </Localize>
   );
 }

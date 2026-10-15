@@ -1,0 +1,53 @@
+/* Scene-specific staging: HTML carries all information; art is decorative. */
+[data-mode="pixel"] .semester-trail { position: relative; isolation: isolate; padding: 3rem 1.5rem 1.5rem; }
+[data-mode="pixel"] .semester-trail .world-scene { opacity: 1; }
+[data-mode="pixel"] .semester-trail .world-landscape { object-position: center bottom; }
+[data-mode="pixel"] .semester-trail__waypoints { min-height: 460px; align-items: start; }
+[data-mode="pixel"] .semester-trail__waypoints::before { display: none; }
+[data-mode="pixel"] .semester-trail__stop:nth-child(1) { margin-top: 55px; }
+[data-mode="pixel"] .semester-trail__stop:nth-child(2) { margin-top: 145px; }
+[data-mode="pixel"] .semester-trail__stop:nth-child(3) { margin-top: 100px; }
+[data-mode="pixel"] .semester-trail__stop:nth-child(4) { margin-top: 35px; }
+[data-mode="pixel"] .semester-trail__stop:nth-child(5) { margin-top: 0; }
+[data-mode="pixel"] .semester-trail__button { padding: 0.5rem; background: transparent; }
+[data-mode="pixel"] :is(.semester-trail__label,.semester-trail__name,.semester-trail__status) { background: #0b1020ed; width: 100%; padding-inline: 0.35rem; }
+[data-mode="pixel"] .semester-trail__label { padding-top: 0.5rem; }
+[data-mode="pixel"] .semester-trail__status { padding-bottom: 0.5rem; }
+[data-mode="pixel"] .semester-trail__name { min-height: 3.8rem; }
+[data-mode="pixel"] .honors-shelf { position: relative; isolation: isolate; padding: 5rem 2rem 2rem; gap: 2rem; }
+[data-mode="pixel"] .honors-shelf .world-scene { opacity: 0.8; }
+[data-mode="pixel"] .honors-shelf .world-landscape { object-position: center; }
+[data-mode="pixel"] .honors-shelf__object { background: transparent; padding: 0.5rem 0.75rem 1rem; }
+[data-mode="pixel"] :is(.honors-shelf__result,.honors-shelf__name,.honors-shelf__year,.honors-shelf__selection) { background: #0b1020ed; width: 100%; padding: 0.25rem; margin-block: 0; }
+[data-mode="pixel"] .honors-shelf__art { border-bottom-color: #514635; box-shadow: 0 4px 0 #26324d; }
+[data-mode="pixel"] .honors-dossier { padding: 2rem; background: var(--color-surface); border-left: 3px solid var(--color-achievement); }
+[data-mode="pixel"] .project-lab > .world-scene { inset: 0 0 auto; height: 410px; opacity: 0.9; }
+[data-mode="pixel"] .project-lab > .world-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,#0b1020f5, #0b102088 50%,transparent),linear-gradient(0deg,#0b1020,transparent 45%); }
+[data-mode="pixel"] .project-lab__heading { position: relative; min-height: 270px; align-items: start; }
+[data-mode="pixel"] .project-lab__heading > div { max-width: 620px; }
+[data-mode="pixel"] .study-corner { border-top: 2px solid var(--color-blue); padding-top: 2rem; }
+[data-mode="pixel"] .workshop-interior { position: relative; }
+[data-mode="pixel"] .workshop-interior::after { content: ""; position: absolute; inset: auto 15% 15% 15%; height: 12%; background: #ffd1660c; pointer-events: none; }
+@media (max-width: 1023px) {
+  [data-mode="pixel"] .semester-trail { padding-inline: 0.75rem; }
+  [data-mode="pixel"] .semester-trail__waypoints { gap: 0.5rem; }
+  [data-mode="pixel"] .honors-shelf { padding: 4rem 1rem 1rem; gap: 1rem; }
+}
+@media (max-width: 767px) {
+  [data-mode="pixel"] .semester-trail { padding: 1rem 0.5rem; }
+  [data-mode="pixel"] .semester-trail__stop:nth-child(n) { margin-top: 0; }
+  [data-mode="pixel"] .semester-trail__waypoints { gap: 1rem; min-height: 0; }
+  [data-mode="pixel"] .semester-trail__button { padding: 0.75rem; }
+  [data-mode="pixel"] .semester-trail__button { background: #0b1020dd; }
+  [data-mode="pixel"] .semester-trail__name { min-height: 0; font-size: 0.85rem; }
+  [data-mode="pixel"] .semester-trail .world-landscape { object-position: 70% center; }
+  [data-mode="pixel"] .honors-shelf { padding: 2rem 0.5rem 1rem; }
+  [data-mode="pixel"] .honors-dossier { padding: 1.25rem; }
+  [data-mode="pixel"] .project-lab__heading { padding-bottom: 220px; }
+  [data-mode="pixel"] .project-lab > .world-scene { height: 480px; }
+  [data-mode="pixel"] .project-lab > .world-scene .world-landscape { object-position: 85% bottom; }
+  [data-mode="pixel"] .project-lab > .world-scene::after { background: linear-gradient(180deg,#0b1020 8%,#0b1020e8 40%, transparent 70%,#0b1020); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .world-scene *, .world-workshop-art * { animation: none !important; transition: none !important; }
+}

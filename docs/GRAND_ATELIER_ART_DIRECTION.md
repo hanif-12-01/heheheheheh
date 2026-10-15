@@ -1,0 +1,15 @@
+# Pixel Grand Atelier — design checkpoint
+
+15 October 2026. Keep the warm woodland Pixel Mode. Professional Mode becomes a secular midnight architectural exhibition: stepped stone arches, slender navy pillars, teal edge light, sparse gold inlay and a quiet portrait alcove. No religious iconography or fabricated credentials.
+
+Hero composition: a centered display name above the central portrait stage; short introduction and actions in the two architectural wings; a slim academic colophon below. On mobile the order is identity, portrait, short summary and actions. This replaces the conventional two-column photo split. Checkpoint screenshots were captured before extending the design to the remaining rooms.
+
+Typography: locally available Georgia for expressive editorial display, existing Inter/system sans-serif for body/navigation, existing pixel face retained for Pixel Mode. No new font requests or dependencies. Gold denotes academic/honors accents; teal denotes actions and technical identity. Original brand tokens remain authoritative.
+
+Profile uses one academic record and asymmetric capability notes. About pairs a short biography with a larger pull quote sourced from the same verified biography. Interests form an open two-column index with one leading discipline. Journey is a selectable five-semester editorial timeline. Honors use exact outcome typography and one selected supporting artifact. Projects retain editorial rows, now with larger featured exhibits and restrained domain illustrations. Research uses a quiet architectural margin and contribution-first records. Skills use compact category lists; contact closes in a restrained reception scene.
+
+Portrait source: `public/profile/hanif-portrait.jpeg`, visually inspected alongside `public/Foto Profil hanif.jpeg`; SHA256 confirms both contain the same photograph. Built-in image_gen identity-preserving edit retains wavy black hair, facial proportions, turned gaze, teal polo, phone and selfie posture. Background is replaced with navy; no suit or new identity. Generated source is archived at `assets-source/Grand Atelier/portrait-original.png`. Production candidate `public/profile/hanif-portrait-pixel.webp` is 256×320, 48 colors, nearest-neighbor sampled, lossless WebP (45,566 bytes). The generated face was compared against the authentic source; likeness remains subject to owner approval, explicitly marked in the preview.
+
+Original gallery generation: `assets-source/Grand Atelier/grand-gallery-original.png`; production `public/pixel/environment/grand-atelier.webp`, 960×540, 64 colors, 301,102 bytes. The two production files total 346,668 bytes. All original photographs and previous archived artwork remain untouched. Exact generation prompts are retained in `docs/phase-4d3/art-prompts.json`; `scripts/prepare-atelier.cjs` reproduces production optimization from archived outputs.
+
+Review gates: Hero desktop/mobile checkpoint, editorial layout screenshots, then final production regression and owner likeness/visual review. No automated deployment or final likeness approval.

@@ -12,12 +12,12 @@ export interface ResearchCompetitionItem {
 export const RESEARCH_COMPETITIONS_DATA: ResearchCompetitionItem[] = [
   {
     id: "rc-1",
-    title: "Smart City Urban Infrastructure Analytics",
+    title: "CIVICTWIN Semarang — Smart City Prototype",
     category: "Smart City",
     role: "Developer & Presenter",
     event: "UNITY UNY National Competition",
     year: 2026,
-    highlight: "3rd Place Nationally. Focused on spatial civic intelligence for public service delivery.",
+    highlight: "3rd Place nationally with CIVICTWIN Semarang, a simulated-data civic intelligence proof of concept.",
     status: "Podium",
   },
   {
@@ -67,7 +67,7 @@ export const RESEARCH_COMPETITIONS_DATA: ResearchCompetitionItem[] = [
     role: "Proposal Contributor & Developer",
     event: "Program Kreativitas Mahasiswa (Faculty-Sponsored)",
     year: 2025,
-    highlight: "Co-authored two formal scientific project proposals for national review.",
+    highlight: "Contributed to two faculty-supported PKM initiatives through proposal development and technical prototyping.",
     status: "Completed",
   },
   {

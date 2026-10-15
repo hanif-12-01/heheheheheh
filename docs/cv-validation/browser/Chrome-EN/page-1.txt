@@ -1,0 +1,57 @@
+M. HANIF AL FAIZ
+Informatics Undergraduate • Software & Intelligent Systems Prototyping
+Telkom University Purwokerto • GitHub: github.com/hanif-12-01
+PROFESSIONAL SUMMARY
+Undergraduate Informatics student at Telkom University Purwokerto focusing on software engineering, intelligent systems, and civic
+technology. Experience includes building verifiable decision-support prototypes, client-side machine learning inference pipelines, and
+full-stack web applications. Recognized as a national competition finalist and podium recipient with active contributions to faculty
+research, student creativity initiatives, and university student governance.
+EDUCATION
+Telkom University Purwokerto Purwokerto, Indonesia
+Bachelor of Informatics (S1 Candidate) Expected: 2027
+Academic Status: Current Cumulative GPA: 3.66 / 4.00 | Current Status: Semester 5 (In Progress).
+Relevant Coursework: Data Structures & Algorithms, Artificial Intelligence, Software Engineering, Database Systems, Computer
+Networks, Discrete Mathematics, Object-Oriented Programming.
+TECHNICAL CAPABILITIES
+Programming Languages: C, C++, Python, Java, Golang
+Software Development: Software Engineering Fundamentals, Application Development, Requirement Analysis, Software Testing
+& Validation
+Developer Tools & Platforms: Visual Studio Code, Git, GitHub, MySQL, Docker, Figma, XAMPP, Android Studio, Visual Studio
+Foundations & Logic: Algorithmic Thinking, Programming Logic, Problem Solving, Basic Data Structures, Debugging & Code
+Tracing
+Communication & Leadership: Technical Communication, Public Speaking, Conference / Event Presentation, Team Leadership, Team
+Coordination, Project Coordination, Collaborative Problem Solving
+KEY ENGINEERING PROJECTS
+WattWise AI — Electricity-Cost Decision-Support Platform 2026
+Next.js 16, React 19, TypeScript, PostgreSQL, Drizzle ORM, ONNX Runtime Web, Tesseract.js | Working MVP
+Developed a working MVP decision-support platform tailored for Indonesian small property operators (kos, boarding houses) and
+energy-intensive SMEs to optimize utility expenses.
+Implemented client-side N-BEATS load forecasting executing directly in the browser via ONNX Runtime Web, eliminating remote GPU
+server dependency.
+Built privacy-preserving in-browser optical character recognition using Tesseract.js for physical meter photo scanning and tariff tier
+calculation.
+Recognized as a Top 10 Finalist in the PLN Innovation & Clean Energy (ICE) 2026 Startup Competition.
+CIVICTWIN Semarang — Civic Intelligence Proof of Concept 2026
+React 18, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Competition Proof of Concept (Demo Data)
+Developed a civic intelligence proof of concept for Semarang linking district-priority mapping, citizen feedback, simulated OPD follow-up,
+and policy-scenario exploration.
+Implemented a browser-based demo using localStorage, mock reports, prototype district markers, and rule-based CivicSense guidance.
+Awarded 3rd Place at the UNITY UNY 2026 Smart City Competition.
+Purwokerto Intelligence Layer — Smart City Decision-Support Prototype 2026
+React 19, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Experimental Material (Simulated Data)
+Developed an interactive Smart City decision-support prototype covering Purwokerto's four subdistricts to model civic indicators and
+spatial urban analytics using simulated urban indicator datasets.
+Implemented a Multi-Criteria Decision Making (MCDM) weighted formula enabling dynamic policy weighting across public service,
+economic, and infrastructure indicators.
+Engineered geospatial GIS visualization with Leaflet and GeoJSON subdistrict boundaries, citizen feedback logging, and policy brief
+drafting modules.
+Fuzzy Rain Risk Index — AI Coursework Prototype 2026
+Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, Fuzzy Logic | AI Coursework Project
+Implemented both Fuzzy Mamdani (centroid defuzzification) and Fuzzy Sugeno (weighted average) inference models entirely from
+scratch in Python without external fuzzy libraries.
+Formulated custom linguistic variables and membership functions applied to Indonesian hourly meteorological records to estimate 6-
+hour outdoor rain risk.
+HONORS & COMPETITION OUTCOMES
+3rd Place — Smart City Competition, UNITY UNY (CIVICTWIN Semarang) 2026
+Top 10 Finalist — PLN Innovation & Clean Energy (ICE) Startup Competition, PT PLN (Persero) 2026
+Top 5 Finalist — GenBI Business Plan Competition, Generasi Baru Indonesia 2026

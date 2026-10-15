@@ -1,0 +1,2372 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-15T09:11:34.519Z",
+  "baselineOnly": false,
+  "checks": [
+    {
+      "name": "Clean session defaults to English Pixel Mode",
+      "passed": true
+    },
+    {
+      "name": "Language changes preserve current anchor and scroll",
+      "passed": true
+    },
+    {
+      "name": "Mode and locale persist independently through refresh",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: architectural rooms are mode-specific decorative artwork",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: five semester controls, four trophies, four research filters",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: every CV entry point resolves correct locale and download bytes",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: navigation targets, Hero CTA and verified contacts",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: six repositories and case-study links, no project screenshot previews",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: architectural rooms are mode-specific decorative artwork",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: five semester controls, four trophies, four research filters",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: every CV entry point resolves correct locale and download bytes",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: navigation targets, Hero CTA and verified contacts",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: six repositories and case-study links, no project screenshot previews",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: architectural rooms are mode-specific decorative artwork",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: five semester controls, four trophies, four research filters",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: every CV entry point resolves correct locale and download bytes",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: navigation targets, Hero CTA and verified contacts",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: six repositories and case-study links, no project screenshot previews",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: architectural rooms are mode-specific decorative artwork",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: five semester controls, four trophies, four research filters",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: every CV entry point resolves correct locale and download bytes",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: navigation targets, Hero CTA and verified contacts",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: six repositories and case-study links, no project screenshot previews",
+      "passed": true
+    },
+    {
+      "name": "All 32 mode/locale/viewport combinations fit and load assets",
+      "passed": true
+    },
+    {
+      "name": "Architectural art resolves responsive native picture sources at every width",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu closes on Escape and link selection",
+      "passed": true
+    },
+    {
+      "name": "Companion dialogue locale, Escape and visibility persist",
+      "passed": true
+    },
+    {
+      "name": "Skip link keyboard focus and target",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion stops animated scenery and smooth scrolling",
+      "passed": true
+    },
+    {
+      "name": "Case wattwise-ai/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case wattwise-ai/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case purwokerto-intelligence-layer/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case purwokerto-intelligence-layer/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case simobs-bengkel/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case simobs-bengkel/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case lapor-mangan/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case lapor-mangan/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case bernas-mbg/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case bernas-mbg/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case ai-course-project/pixel: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "Case ai-course-project/recruiter: URL, repository and localized content",
+      "passed": true
+    },
+    {
+      "name": "/projects: bilingual route renders",
+      "passed": true
+    },
+    {
+      "name": "/journey: bilingual route renders",
+      "passed": true
+    },
+    {
+      "name": "History back/forward retains language",
+      "passed": true
+    },
+    {
+      "name": "No development-only or nonexistent project routes",
+      "passed": true
+    },
+    {
+      "name": "Unavailable localStorage still permits mode/language/companion",
+      "passed": true
+    },
+    {
+      "name": "Protected canonical facts, Hero, portraits, Pixel CSS/assets and CV bytes unchanged",
+      "passed": true
+    },
+    {
+      "name": "No critical console, runtime, network or asset HTTP errors",
+      "passed": true
+    }
+  ],
+  "viewports": [
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "scenes": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 672,
+          "height": 540.15625,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 571.4375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1216,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 516.796875,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 630,
+          "height": 490,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 533.34375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 482.796875,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 495.59375,
+          "height": 514.9375,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 411.4375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 374,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 377.984375,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 323.8125,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 275.1875,
+          "height": 450,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 672,
+          "height": 534.5625,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 571.4375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1216,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 516.796875,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1280,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 630,
+          "height": 490,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 533.34375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 482.796875,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 1200,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 495.59375,
+          "height": 509.34375,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 411.4375,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 374,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 944,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 377.984375,
+          "height": 530,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 323.8125,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 420,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 455,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 330,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 275.1875,
+          "height": 450,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 270,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 640,
+          "width": 720,
+          "height": 290,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 398,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 358,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 343,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "scenes": [
+        {
+          "section": "profile",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 260,
+          "visible": true
+        },
+        {
+          "section": "about",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 240,
+          "visible": true
+        },
+        {
+          "section": "journey",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 290,
+          "visible": true
+        },
+        {
+          "section": "trophies",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 360,
+          "visible": true
+        },
+        {
+          "section": "projects",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-gallery-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 230,
+          "visible": true
+        },
+        {
+          "section": "research",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 280,
+          "visible": true
+        },
+        {
+          "section": "skills",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-observatory-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 200,
+          "visible": true
+        },
+        {
+          "section": "contact",
+          "currentSrc": "http://localhost:3012/pixel/environment/atelier-arcade-compact.webp",
+          "complete": true,
+          "naturalWidth": 480,
+          "naturalHeight": 320,
+          "width": 288,
+          "height": 210,
+          "visible": true
+        }
+      ],
+      "clipped": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/projects/wattwise-ai",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/wattwise-ai",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/simobs-bengkel",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/simobs-bengkel",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects",
+      "status": 200
+    },
+    {
+      "path": "/journey",
+      "status": 200
+    },
+    {
+      "path": "/dev",
+      "status": 404
+    },
+    {
+      "path": "/pet-test",
+      "status": 404
+    },
+    {
+      "path": "/asset-test",
+      "status": 404
+    },
+    {
+      "path": "/projects/nonexistent",
+      "status": 404
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "httpErrors": [],
+  "performance": [
+    {
+      "mode": "pixel",
+      "width": 1440,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 340,
+      "cls": 0.003666848533012903,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 52
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 8.900000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 11.900000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 14.899999999441206
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 19
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 21.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 20.90000000037253
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 24.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 25.799999999813735
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 1440,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 288,
+      "cls": 0.004923162883659122,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 32.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 6.2000000001862645
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 11.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 14.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 15.400000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 17
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 17.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 18.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 19.5
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 390,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 288,
+      "cls": 0.019096043051598604,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 38
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 5.099999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 6.900000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 7.2000000001862645
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 8.200000000186265
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 390,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 332,
+      "cls": 0.03890805674264008,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 38.10000000055879
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 7.400000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 8.399999999441206
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 8.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 10.099999999627471
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 1440,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 532,
+      "cls": 0.003946213710455246,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 34.90000000037253
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 8.899999999441206
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 13.600000000558794
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 18.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 21.59999999962747
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 24.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 25.90000000037253
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 26.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 26.799999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 10.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/profile/hanif-portrait-pixel.webp",
+          "transferSize": 45866,
+          "duration": 7.7000000001862645
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-ai-chip.webp",
+          "transferSize": 16912,
+          "duration": 5.8999999994412065
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-code-editor.webp",
+          "transferSize": 15532,
+          "duration": 17.899999999441206
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "transferSize": 450182,
+          "duration": 15.900000000372529
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 1440,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 608,
+      "cls": 0.003371050045814043,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 55.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 14.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 16.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 19.100000000558794
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 20.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 31.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 27.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 34.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 34.799999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 7.8999999994412065
+        },
+        {
+          "url": "http://localhost:3012/profile/hanif-portrait-pixel.webp",
+          "transferSize": 45866,
+          "duration": 5.800000000745058
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-ai-chip.webp",
+          "transferSize": 16912,
+          "duration": 8.099999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/atelier-library.webp",
+          "transferSize": 450182,
+          "duration": 11.899999999441206
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 390,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 468,
+      "cls": 0,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 31.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 5.7999999998137355
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 7.900000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 8.699999999254942
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 9.400000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 8.799999999813735
+        },
+        {
+          "url": "http://localhost:3012/profile/hanif-portrait-pixel.webp",
+          "transferSize": 45866,
+          "duration": 6.3999999994412065
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "transferSize": 129672,
+          "duration": 12.899999999441206
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 390,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 628,
+      "cls": 0,
+      "resources": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 44.90000000037253
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 7.7999999998137355
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 7.7999999998137355
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 9.400000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 10.100000000558794
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 9.600000000558794
+        },
+        {
+          "url": "http://localhost:3012/profile/hanif-portrait-pixel.webp",
+          "transferSize": 45866,
+          "duration": 4.199999999254942
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/atelier-library-compact.webp",
+          "transferSize": 129672,
+          "duration": 3.900000000372529
+        }
+      ]
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "scrollPreservation": {
+    "before": {
+      "url": "http://localhost:3012/#journey",
+      "y": 700
+    },
+    "after": {
+      "url": "http://localhost:3012/#journey",
+      "y": 700
+    }
+  },
+  "newArchitectureAssets": [
+    {
+      "file": "public/pixel/environment/atelier-library.webp",
+      "bytes": 449882,
+      "sha256": "29e1c4539b8b6d0a4e129ee930cf78181fd6f8061fd0697f67996df17c59b826"
+    },
+    {
+      "file": "public/pixel/environment/atelier-library-compact.webp",
+      "bytes": 129372,
+      "sha256": "9d622e9209385fce297dc9bbc3025754c0b252e351836368dd1e79bc4fffea61"
+    },
+    {
+      "file": "public/pixel/environment/atelier-arcade.webp",
+      "bytes": 378156,
+      "sha256": "def1cc194e01f5411bf708e95f499d579ba6f9342beb882211057ddcf79fd787"
+    },
+    {
+      "file": "public/pixel/environment/atelier-arcade-compact.webp",
+      "bytes": 112408,
+      "sha256": "5b782a51fc02173f85e2c6c5b7731703ceae0107757f5c61bb1742656d45d61c"
+    },
+    {
+      "file": "public/pixel/environment/atelier-gallery.webp",
+      "bytes": 402046,
+      "sha256": "484fc15b391cef3ecbcadbba98d811dbbeb99632882ecba5fe3e875546b0f540"
+    },
+    {
+      "file": "public/pixel/environment/atelier-gallery-compact.webp",
+      "bytes": 117540,
+      "sha256": "75a93de40094479adb0bba3e0470e79eb0b24a8869dedb7dd47bd8b90e2abbeb"
+    },
+    {
+      "file": "public/pixel/environment/atelier-observatory.webp",
+      "bytes": 427902,
+      "sha256": "c00540cb78e0c6e25824c1f06878b508bd51dfa21946e965a71cabf0d1dd88de"
+    },
+    {
+      "file": "public/pixel/environment/atelier-observatory-compact.webp",
+      "bytes": 121902,
+      "sha256": "69440698db9acdeaf8aff8ca45091f9cd6d79f37f6b2ce363892c223ab456559"
+    }
+  ]
+}

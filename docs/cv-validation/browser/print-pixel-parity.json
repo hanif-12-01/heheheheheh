@@ -1,0 +1,74 @@
+[
+  {
+    "browser": "Chromium",
+    "locale": "en",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chromium",
+    "locale": "en",
+    "page": 2,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chromium",
+    "locale": "id",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chromium",
+    "locale": "id",
+    "page": 2,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chrome",
+    "locale": "en",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chrome",
+    "locale": "en",
+    "page": 2,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chrome",
+    "locale": "id",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Chrome",
+    "locale": "id",
+    "page": 2,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Edge",
+    "locale": "en",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Edge",
+    "locale": "en",
+    "page": 2,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Edge",
+    "locale": "id",
+    "page": 1,
+    "pixels_identical": true
+  },
+  {
+    "browser": "Edge",
+    "locale": "id",
+    "page": 2,
+    "pixels_identical": true
+  }
+]

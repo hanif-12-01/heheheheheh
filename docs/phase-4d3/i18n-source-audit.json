@@ -1,0 +1,134 @@
+{
+  "dictionaryKeys": 911,
+  "files": [
+    {
+      "file": "src/data/profile.ts",
+      "descriptiveStrings": 10
+    },
+    {
+      "file": "src/data/interests.ts",
+      "descriptiveStrings": 5
+    },
+    {
+      "file": "src/data/journey.ts",
+      "descriptiveStrings": 40
+    },
+    {
+      "file": "src/data/achievements.ts",
+      "descriptiveStrings": 8
+    },
+    {
+      "file": "src/data/researchCompetitions.ts",
+      "descriptiveStrings": 16
+    },
+    {
+      "file": "src/data/skills.ts",
+      "descriptiveStrings": 6
+    },
+    {
+      "file": "src/data/projects.ts",
+      "descriptiveStrings": 61
+    },
+    {
+      "file": "src/data/socials.ts",
+      "descriptiveStrings": 3
+    },
+    {
+      "file": "src/data/worldAssets.ts",
+      "descriptiveStrings": 62
+    }
+  ],
+  "missing": [],
+  "palette": [
+    {
+      "foreground": "#F1F5F9",
+      "background": "#0B1020",
+      "contrast": 17.28
+    },
+    {
+      "foreground": "#F1F5F9",
+      "background": "#151B2E",
+      "contrast": 15.61
+    },
+    {
+      "foreground": "#F1F5F9",
+      "background": "#1D263D",
+      "contrast": 13.72
+    },
+    {
+      "foreground": "#94A3B8",
+      "background": "#0B1020",
+      "contrast": 7.38
+    },
+    {
+      "foreground": "#94A3B8",
+      "background": "#151B2E",
+      "contrast": 6.67
+    },
+    {
+      "foreground": "#94A3B8",
+      "background": "#1D263D",
+      "contrast": 5.86
+    },
+    {
+      "foreground": "#5DE4C7",
+      "background": "#0B1020",
+      "contrast": 12.07
+    },
+    {
+      "foreground": "#5DE4C7",
+      "background": "#151B2E",
+      "contrast": 10.9
+    },
+    {
+      "foreground": "#5DE4C7",
+      "background": "#1D263D",
+      "contrast": 9.58
+    },
+    {
+      "foreground": "#5AA9FF",
+      "background": "#0B1020",
+      "contrast": 7.71
+    },
+    {
+      "foreground": "#5AA9FF",
+      "background": "#151B2E",
+      "contrast": 6.97
+    },
+    {
+      "foreground": "#5AA9FF",
+      "background": "#1D263D",
+      "contrast": 6.12
+    },
+    {
+      "foreground": "#A78BFA",
+      "background": "#0B1020",
+      "contrast": 6.96
+    },
+    {
+      "foreground": "#A78BFA",
+      "background": "#151B2E",
+      "contrast": 6.28
+    },
+    {
+      "foreground": "#A78BFA",
+      "background": "#1D263D",
+      "contrast": 5.52
+    },
+    {
+      "foreground": "#FFD166",
+      "background": "#0B1020",
+      "contrast": 13.13
+    },
+    {
+      "foreground": "#FFD166",
+      "background": "#151B2E",
+      "contrast": 11.86
+    },
+    {
+      "foreground": "#FFD166",
+      "background": "#1D263D",
+      "contrast": 10.43
+    }
+  ]
+}

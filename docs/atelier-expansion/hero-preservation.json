@@ -1,0 +1,49 @@
+[
+  {
+    "width": 1440,
+    "locale": "en",
+    "changedPixels": 105,
+    "heroChangedPixels": 0,
+    "changedBounds": {
+      "left": 1188,
+      "top": 28,
+      "right": 1202,
+      "bottom": 35
+    },
+    "note": "Hero pixel comparison excludes the 65px navigation; hover/focus may differ between screenshots."
+  },
+  {
+    "width": 1440,
+    "locale": "id",
+    "changedPixels": 1086,
+    "heroChangedPixels": 0,
+    "changedBounds": {
+      "left": 112,
+      "top": 16,
+      "right": 243,
+      "bottom": 49
+    },
+    "note": "Hero pixel comparison excludes the 65px navigation; hover/focus may differ between screenshots."
+  },
+  {
+    "width": 390,
+    "locale": "en",
+    "changedPixels": 0,
+    "heroChangedPixels": 0,
+    "changedBounds": null,
+    "note": "Hero pixel comparison excludes the 65px navigation; hover/focus may differ between screenshots."
+  },
+  {
+    "width": 390,
+    "locale": "id",
+    "changedPixels": 78,
+    "heroChangedPixels": 0,
+    "changedBounds": {
+      "left": 233,
+      "top": 28,
+      "right": 243,
+      "bottom": 35
+    },
+    "note": "Hero pixel comparison excludes the 65px navigation; hover/focus may differ between screenshots."
+  }
+]

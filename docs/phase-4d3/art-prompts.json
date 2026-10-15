@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "portrait": {
+    "prompt": "Use case: identity-preserve. Edit target: authentic owner photograph supplied as input. Transform ONLY the person into a carefully handcrafted pixel-art portrait of THE SAME young adult man. Preserve recognizable facial proportions, warm medium skin tone, wavy black hair silhouette, eyebrows, eyes, nose, mouth, slight turned gaze and teal short-sleeve polo exactly; preserve his mirror selfie posture and smartphone held in his hand. Do not invent a suit, muscles, credentials, different face or new accessories. Crop to head and upper torso with the entire hair and shoulders visible. Remove the bathroom, mirror frame and room, replacing background with a quiet solid midnight navy #0B1020. Genuine intentional pixel clusters, readable likeness at a logical 256x320 grid, controlled 32-48 color palette, pixel-consistent shading, crisp edges, no photorealistic texture, no blur, no random dithering. A restrained blue/teal rim highlight can integrate the silhouette into a navy gallery. No lettering, branding or frame. Portrait 4:5 composition, ready for an architectural alcove. Keep expression and clothing identity faithful. This is a candidate artwork for owner likeness review.",
+    "source": "public/profile/hanif-portrait.jpeg",
+    "output": "public/profile/hanif-portrait-pixel.webp",
+    "status": "Owner likeness approval pending"
+  },
+  "architecture": {
+    "prompt": "Use case: stylized-concept. Asset type: original full-width pixel-art architectural environment for a luxury developer portfolio, THE GRAND ATELIER. A majestic secular midnight gallery and private observatory: very tall symmetrical stepped stone arches, deep central portrait alcove EMPTY with dark flat navy interior, slender fluted pixel pillars receding in perspective along the sides, subtle teal edge lighting and extremely restrained gold inlay, polished dark navy stone floor and a low central pedestal. Calm monumental composition, no religious iconography. Dominant colors #0B1020 #151B2E #1D263D #26324D, sparse #5DE4C7 #5AA9FF #A78BFA #FFD166. Upper-center must be quiet very dark negative space for a large HTML name, middle central alcove empty for separate real portrait art, calm lower-side regions for HTML introduction and actions. Handcrafted precise pixel clusters with consistent 2D pixel density, crisp limited ramps, no blur, no smooth 3D render, no random noise. Elegant controlled density, gallery architecture is the scene rather than a small decoration. Wide 16:9 frontal architectural perspective. No text, no logos, no people, no trophy displays, no UI cards, no terminal windows. Fully opaque.",
+    "output": "public/pixel/environment/grand-atelier.webp"
+  }
+}

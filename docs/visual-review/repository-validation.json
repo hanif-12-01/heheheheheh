@@ -1,0 +1,62 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "89e299",
+      "wall_time_seconds": 2.9189765,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "65c4d44f856cf4e81bfa3d2f9e4aa47b9b6e4a41\tHEAD\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "e5da82",
+      "wall_time_seconds": 2.8037644999999998,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "d83f189a4567815a9d1547489876d8c37085ca8b\tHEAD\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "46311c",
+      "wall_time_seconds": 2.7395564,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "661902e5da611ebbe69134b8ea969059254d4874\tHEAD\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "e74909",
+      "wall_time_seconds": 2.745832,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "695821069524f460e7767cff4aa5caeacfd03d8c\tHEAD\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "6b3a5b",
+      "wall_time_seconds": 2.6831677000000003,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "5bd475b87e5020fb149bc0a971f09689d85b8cd8\tHEAD\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "64b281",
+      "wall_time_seconds": 2.6954776000000003,
+      "exit_code": 0,
+      "original_token_count": 12,
+      "output": "b789fa3fba8c60c06fbf9c5d3f71d414ee2ce57e\tHEAD\n"
+    }
+  }
+]

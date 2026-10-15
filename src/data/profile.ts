@@ -54,7 +54,7 @@ export const PROFILE_DATA: PlayerProfileData = {
       name: "Software & Systems",
       category: "software",
       rank: "Application & Prototype Developer",
-      highlight: "Purwokerto Intelligence Layer, WattWise AI, SIMOBS, Bernas MBG, Lapor Mangan",
+      highlight: "CIVICTWIN Semarang, WattWise AI, Purwokerto Intelligence Layer, Bernas MBG, Lapor Mangan",
       tags: ["Full-Stack", "GIS", "AI Prototypes", "Decision Support"],
     },
     {

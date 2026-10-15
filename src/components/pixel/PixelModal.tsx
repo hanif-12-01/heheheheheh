@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { PixelButton } from "./PixelButton";
 import { X } from "lucide-react";
+import { useLocalize } from "@/i18n/useTranslations";
 
 export interface PixelModalProps {
   isOpen: boolean;
@@ -20,6 +21,7 @@ export function PixelModal({
   children,
   className,
 }: PixelModalProps) {
+  const localize = useLocalize();
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -36,7 +38,7 @@ export function PixelModal({
 
   if (!isOpen) return null;
 
-  return (
+  return localize(
     <div
       role="dialog"
       aria-modal="true"

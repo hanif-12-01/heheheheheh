@@ -1,0 +1,14 @@
+{
+  "url": "http://localhost:3012/",
+  "action": "Download CV\n↓",
+  "href": "/cv/M-Hanif-Al-Faiz-CV.pdf",
+  "filename": "M-Hanif-Al-Faiz-CV.pdf",
+  "status": 200,
+  "contentType": "application/pdf",
+  "responseBytes": 243413,
+  "sourceHash": "0271328a4cbde6989fd16ed854a0a4931579104e99e78130efba3ee8f392258b",
+  "responseHash": "0271328a4cbde6989fd16ed854a0a4931579104e99e78130efba3ee8f392258b",
+  "downloadHash": "0271328a4cbde6989fd16ed854a0a4931579104e99e78130efba3ee8f392258b",
+  "browser": "151.0.7922.34",
+  "replacementSequences": 48524
+}

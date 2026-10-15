@@ -6,6 +6,7 @@ import { PetContextType, PetState } from "@/types/pet";
 const PixelPetContext = createContext<PetContextType | undefined>(undefined);
 
 const PET_VISIBLE_STORAGE_KEY = "hanif_pet_visible";
+let memoryVisible = true;
 
 const EASTER_EGG_MESSAGES = [
   "Hi! I'm Pixel Hanif.",
@@ -30,7 +31,7 @@ function getPetVisibilitySnapshot(): boolean {
     const saved = localStorage.getItem(PET_VISIBLE_STORAGE_KEY);
     return saved !== null ? saved === "true" : true;
   } catch {
-    return true;
+    return memoryVisible;
   }
 }
 
@@ -51,12 +52,13 @@ export function PixelPetProvider({ children }: { children: React.ReactNode }) {
   const toggleVisibility = useCallback(() => {
     const current = getPetVisibilitySnapshot();
     const next = !current;
+    memoryVisible = next;
     try {
       localStorage.setItem(PET_VISIBLE_STORAGE_KEY, String(next));
-      window.dispatchEvent(new Event("hanif_pet_visibility_change"));
     } catch {
-      // ignore
+      // Visibility remains usable when storage is unavailable.
     }
+    window.dispatchEvent(new Event("hanif_pet_visibility_change"));
   }, []);
 
   const triggerClick = useCallback(() => {

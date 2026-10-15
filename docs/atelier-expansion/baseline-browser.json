@@ -1,0 +1,15 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-15T08:49:43.888Z",
+  "baselineOnly": true,
+  "checks": [],
+  "viewports": [],
+  "routes": [],
+  "errors": [],
+  "failedRequests": [],
+  "httpErrors": [],
+  "performance": [],
+  "browser": "151.0.7922.34",
+  "screenshots": 40,
+  "protectedFiles": 123
+}

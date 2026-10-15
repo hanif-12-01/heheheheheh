@@ -1,0 +1,59 @@
+M. HANIF AL FAIZ
+Mahasiswa Informatika • Pengembangan Prototipe Perangkat Lunak & Sistem Cerdas
+Telkom University Purwokerto • GitHub: github.com/hanif-12-01
+RINGKASAN PROFIL
+Mahasiswa S1 Informatika di Telkom University Purwokerto dengan fokus pada rekayasa perangkat lunak, sistem cerdas, dan teknologi
+untuk masyarakat. Berpengalaman mengembangkan prototipe pendukung keputusan yang dapat diverifikasi, alur inferensi
+pembelajaran mesin di sisi klien, dan aplikasi web full-stack. Meraih posisi finalis dan podium kompetisi nasional serta aktif
+berkontribusi dalam riset fakultas, kegiatan kreativitas mahasiswa, dan organisasi kemahasiswaan universitas.
+PENDIDIKAN
+Telkom University Purwokerto Purwokerto, Indonesia
+Mahasiswa Sarjana Informatika (S1) Perkiraan kelulusan: 2027
+Status Akademik: IPK Saat Ini: 3.66 / 4.00 | Status Saat Ini: Semester 5 (Sedang Berjalan).
+Mata Kuliah Relevan: Struktur Data & Algoritma, Kecerdasan Buatan, Rekayasa Perangkat Lunak, Sistem Basis Data, Jaringan
+Komputer, Matematika Diskrit, Pemrograman Berorientasi Objek.
+KEAHLIAN TEKNIS
+Bahasa Pemrograman: C, C++, Python, Java, Golang
+Pengembangan Perangkat
+Lunak:
+Dasar Rekayasa Perangkat Lunak, Pengembangan Aplikasi, Analisis Kebutuhan, Pengujian & Validasi
+Perangkat Lunak
+Alat & Platform: Visual Studio Code, Git, GitHub, MySQL, Docker, Figma, XAMPP, Android Studio, Visual Studio
+Dasar & Logika: Berpikir Algoritmis, Logika Pemrograman, Pemecahan Masalah, Struktur Data Dasar, Debugging &
+Penelusuran Kode
+Komunikasi & Kepemimpinan: Komunikasi Teknis, Berbicara di Depan Umum, Presentasi Konferensi / Acara, Kepemimpinan Tim,
+Koordinasi Tim, Koordinasi Proyek, Pemecahan Masalah Kolaboratif
+PROYEK REKAYASA PILIHAN
+WattWise AI — Platform Pendukung Keputusan Biaya Listrik 2026
+Next.js 16, React 19, TypeScript, PostgreSQL, Drizzle ORM, ONNX Runtime Web, Tesseract.js | MVP Fungsional
+Mengembangkan MVP platform pendukung keputusan bagi pengelola properti kecil (kos, rumah indekos) dan UMKM intensif energi di
+Indonesia untuk mengoptimalkan biaya utilitas.
+Mengimplementasikan prediksi beban N-BEATS di sisi klien yang berjalan langsung di peramban melalui ONNX Runtime Web tanpa
+ketergantungan pada server GPU jarak jauh.
+Mengembangkan pengenalan karakter optik di dalam peramban menggunakan Tesseract.js untuk memindai foto meter listrik dan
+menghitung jenjang tarif dengan menjaga privasi.
+Terpilih sebagai Finalis 10 Besar dalam PLN Innovation & Clean Energy (ICE) 2026 Startup Competition.
+CIVICTWIN Semarang — Bukti Konsep Civic Intelligence 2026
+React 18, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Bukti Konsep Kompetisi (Data Demo)
+Mengembangkan bukti konsep civic intelligence untuk Semarang yang menghubungkan peta prioritas kecamatan, masukan warga,
+simulasi tindak lanjut OPD, dan eksplorasi skenario kebijakan.
+Mengimplementasikan demo berbasis peramban menggunakan localStorage, laporan simulasi, penanda kecamatan prototipe, dan
+panduan CivicSense berbasis aturan.
+Meraih Juara 3 dalam UNITY UNY 2026 Smart City Competition.
+Purwokerto Intelligence Layer — Prototipe Pendukung Keputusan Smart City 2026
+React 19, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Bahan Eksperimen (Data Simulasi)
+Mengembangkan prototipe interaktif pendukung keputusan Smart City untuk empat kecamatan di Purwokerto guna memodelkan
+indikator publik dan analisis spasial perkotaan menggunakan data indikator simulasi.
+Mengimplementasikan rumus berbobot Multi-Criteria Decision Making (MCDM) untuk menyesuaikan bobot kebijakan secara dinamis
+pada indikator layanan publik, ekonomi, dan infrastruktur.
+Mengembangkan visualisasi GIS dengan Leaflet dan batas kecamatan GeoJSON, pencatatan masukan warga, serta modul
+penyusunan ringkasan kebijakan.
+Fuzzy Rain Risk Index — Prototipe Tugas Kecerdasan Buatan 2026
+Python, Jupyter Notebook, NumPy, Pandas, Matplotlib, Fuzzy Logic | Proyek Tugas Kecerdasan Buatan
+Mengimplementasikan model inferensi Fuzzy Mamdani (defuzzifikasi centroid) dan Fuzzy Sugeno (rata-rata berbobot) dari awal dalam
+Python tanpa pustaka fuzzy eksternal.
+Merumuskan variabel linguistik dan fungsi keanggotaan khusus yang diterapkan pada catatan meteorologi per jam di Indonesia untuk
+memperkirakan risiko hujan selama 6 jam pada kegiatan luar ruang.
+PRESTASI & HASIL KOMPETISI
+Juara 3 — Smart City Competition, UNITY UNY (CIVICTWIN Semarang) 2026
+Finalis 10 Besar — PLN Innovation & Clean Energy (ICE) Startup Competition, PT PLN (Persero) 2026

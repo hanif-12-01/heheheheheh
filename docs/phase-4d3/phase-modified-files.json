@@ -1,0 +1,22 @@
+[
+  "src/app/globals.css",
+  "src/components/layout/Footer.tsx",
+  "src/components/pixel/PixelSectionTitle.tsx",
+  "src/components/sections/About.tsx",
+  "src/components/sections/GithubExperiments.tsx",
+  "src/components/sections/Hero.tsx",
+  "src/components/sections/Interests.tsx",
+  "src/components/sections/Journey.tsx",
+  "src/components/sections/LetsBeFriends.tsx",
+  "src/components/sections/PlayerProfile.tsx",
+  "src/components/sections/ProjectLab.tsx",
+  "src/components/sections/ResearchCompetitions.tsx",
+  "src/components/sections/SkillsInventory.tsx",
+  "src/components/sections/TrophyRoom.tsx",
+  "src/i18n/id.ts",
+  "src/i18n/root-id.ts",
+  "src/i18n/useTranslations.tsx",
+  "src/lib/mediaConfig.ts",
+  "scripts/audit-i18n.cjs",
+  ".gitignore"
+]

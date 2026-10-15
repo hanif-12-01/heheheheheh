@@ -1,0 +1,15 @@
+{
+  "src/data/profile.ts": "e335a0621de145ced7c8c4677ff98e32b32e675ddbe39673abaaabf8ba074d4b",
+  "src/data/projects.ts": "df9cf846571c401662e71285053a235f23f0867f998196e42d1b902d53a55e00",
+  "src/data/journey.ts": "8cb7a8db0741a8938cb058177a84ab5d70c88f003dbd4ccdc4f95bd02650b648",
+  "src/data/achievements.ts": "9ef36bf709388f34450f7db33b2a0ce1e9a336afdbff0c10bb0da14cb7386492",
+  "src/data/researchCompetitions.ts": "baf445aa34f26806fd4b09032002e87de044ff88700c0c57dc0d80c9ba1934df",
+  "src/data/skills.ts": "9a426e3e1a6e97bba1d363f5fb9f82d9cc6a4aaa7aa9d90f53b5a01656abe3a7",
+  "src/data/socials.ts": "301b7edc1ad239b36f57fb2a7bb145b979845efa396eec20395b20b3155ed71e",
+  "docs/CONTENT_INTEGRITY.md": "e8476811f6cc8b85c6929c16c720583dbeca71dfd85b25ab461f7668ead169cb",
+  "scripts/generate-cv.js": "82e6f5b6ceea81339ef495706faa9d4617cf280d7f65b81abca09070eec28214",
+  "scripts/audit-cv.js": "e9cbd4b8dc242cb6f25d74fd0d8ceb2d2f911f36db0fc04412e998d5fd211b0f",
+  "public/cv/M-Hanif-Al-Faiz-CV.pdf": "0271328a4cbde6989fd16ed854a0a4931579104e99e78130efba3ee8f392258b",
+  "public/profile/hanif-portrait.jpeg": "6f1955d0913e7431d27d31e42233c566e5b66e458666085ce4f08b1ae726726e",
+  "public/Foto Profil hanif.jpeg": "6f1955d0913e7431d27d31e42233c566e5b66e458666085ce4f08b1ae726726e"
+}

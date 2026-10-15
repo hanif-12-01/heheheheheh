@@ -1,0 +1,13 @@
+# HANIF.EXE bilingual implementation
+
+English is the server-rendered default; Indonesian and English share every existing route and the same canonical records. Existing `/`, `/projects`, six `/projects/[slug]` URLs and `/journey` remain unchanged. Switching language changes presentation without rewriting slugs, query parameters or hashes. This preserves bookmarks and static generation without a risky route migration.
+
+`src/i18n/config.ts` defines the locale union and storage key. `LocaleProvider` uses `useSyncExternalStore`, an English server snapshot, guarded localStorage and session memory fallback. Language (`hanif_portfolio_locale`), mode (`hanif_portfolio_mode`) and companion visibility are independent. Locale changes preserve scroll through the layout effect. Denied storage permits session choices but cannot persist them across refresh.
+
+`content-id.ts`, `ui-id.ts` and `root-id.ts` form one source-key catalogue through `id.ts`. `en.ts` provides the corresponding identity catalogue. `TranslationKey` and `t()` type explicit shared keys; `translate()` also supports canonical strings and centralized dynamic templates. `useLocalize()` translates React presentation text and accessibility props while preserving data, event handlers, refs and keys. `LocaleText` explicitly translates copy inside streamed server markup. All filtering continues using canonical English enum values. Adding copy requires a catalogue entry, including dynamic fragments and accessible names, then running the audit and browser checks; unknown strings intentionally fall back to English and must be reviewed.
+
+No project database is duplicated. Official project/competition names, technologies, URLs, people, account handles and numeric facts remain canonical. CV controls use `resolveCv(locale)` and open the matching shared Harvard template; see `CV_BILINGUAL_GUIDE.md`.
+
+Client document semantics update `html.lang`, title, descriptions and Open Graph locale. Static crawler/no-JavaScript output is English. There are no separate crawlable Indonesian URLs or fabricated `hreflang` alternatives. The owner has not confirmed a production domain: `VERIFIED_SITE_URL` is unset, robots omits the sitemap reference and sitemap returns no invented URLs. Domain-specific metadata and any future server locale routing belong to owner-approved Phase 4E.
+
+Validation: `rtk proxy node scripts/audit-i18n.cjs` and `rtk proxy node scripts/qa-bilingual-world.cjs http://localhost:3012`. Evidence is saved under `docs/phase-4d2`. A focused rollback removes provider/chrome integrations and the new locale files while retaining canonical records and prior Phase 4D.1 work; preserve a workspace snapshot before doing so. Never reset the entire dirty working tree.

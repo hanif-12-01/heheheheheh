@@ -1,5 +1,9 @@
 "use client";
 
+import { AtelierExperiments } from "@/components/atelier/AtelierSections";
+
+import { useLocalize } from "@/i18n/useTranslations";
+
 import React from "react";
 import { GITHUB_EXPERIMENTS } from "@/data/projects";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -11,74 +15,34 @@ import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 import { GitBranch, ExternalLink, Terminal } from "lucide-react";
 
 export function GithubExperiments() {
+  const localize = useLocalize();
   const { mode } = usePortfolioMode();
   const isRecruiter = mode === "recruiter";
 
-  return (
-    <section
-      id="experiments"
-      aria-label={isRecruiter ? "Additional Repositories & Experiments" : "GitHub Experiments"}
-      className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
-    >
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-        <PixelSectionTitle
-          number="10"
-          title="MORE GITHUB EXPERIMENTS"
-          subtitle="Coursework explorations, algorithmic testbeds, and academic laboratory prototypes."
-          badge="LAB BENCH"
-          recruiterTitle="ADDITIONAL REPOSITORIES & EXPERIMENTS"
-          recruiterSubtitle="Supplementary coursework explorations, algorithmic testbeds, and academic laboratory prototypes."
-          recruiterBadge="SUPPLEMENTARY CODE"
-          className="mb-0"
-        />
+  if (mode === "recruiter") return <AtelierExperiments />;
 
-        <PixelButton asChild variant="secondary" size="sm" className="self-start md:self-end">
-          <a
-            href={SITE_CONFIG.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open M. Hanif Al Faiz GitHub profile (opens in new tab)"
-          >
-            <GitBranch className="w-4 h-4" aria-hidden="true" />
-            <span>Open GitHub Profile</span>
-            <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
-          </a>
-        </PixelButton>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {GITHUB_EXPERIMENTS.map((exp) => (
-          <PixelCard key={exp.slug} className="flex flex-col justify-between space-y-3">
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <Terminal className="w-4 h-4 text-[var(--color-primary)]" />
-                <PixelBadge variant="outline" size="sm">
-                  {exp.status}
-                </PixelBadge>
-              </div>
-
-              <h3 className="font-mono text-sm font-bold text-[var(--color-text)]">
-                {exp.title}
-              </h3>
-
-              <p className="text-xs text-[var(--color-muted)] font-sans leading-relaxed">
-                {exp.shortDescription}
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-[var(--color-border)]/60">
-              {exp.technologies.map((t) => (
-                <span
-                  key={t}
-                  className="text-[10px] font-mono px-1.5 py-0.5 bg-[var(--color-background)] text-[var(--color-muted)] border border-[var(--color-border)]"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </PixelCard>
-        ))}
-      </div>
-    </section>
-  );
+  if (!isRecruiter) {
+    return localize((
+      <section id="experiments" aria-labelledby="experiments-title" className="world-chapter experiments-chapter">
+        <div className="world-container chapter-content">
+          <header className="chapter-heading">
+            <p className="chapter-eyebrow">10 / SMALL EXPERIMENTS</p>
+            <h2 id="experiments-title">A few things from the lab bench.</h2>
+            <p>Coursework explorations, algorithmic testbeds, and academic laboratory prototypes.</p>
+          </header>
+          <div className="experiment-list">
+            {GITHUB_EXPERIMENTS.map((experiment, index) => (
+              <article key={experiment.slug} aria-labelledby={`experiment-${experiment.slug}`} className="experiment-row">
+                <span className="experiment-row__number" aria-hidden="true">0{index + 1}</span>
+                <div><p className="chapter-eyebrow">{experiment.status} / {experiment.year}</p><h3 id={`experiment-${experiment.slug}`}>{experiment.title}</h3><p>{experiment.shortDescription}</p><ul className="experiment-row__tech" aria-label={`${experiment.title} technologies`}>{experiment.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul></div>
+                {experiment.githubUrl ? <a href={experiment.githubUrl} target="_blank" rel="noopener noreferrer" className="chapter-link" aria-label={`Open ${experiment.title} repository (opens in new tab)`}>View repository <span aria-hidden="true">↗</span></a> : <span className="experiment-row__unavailable">Coursework record</span>}
+              </article>
+            ))}
+          </div>
+          <a href={SITE_CONFIG.github} target="_blank" rel="noopener noreferrer" className="chapter-link experiment-profile" aria-label="Open M. Hanif Al Faiz GitHub profile (opens in new tab)">Explore my GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    ));
+  }
+  return null;
 }

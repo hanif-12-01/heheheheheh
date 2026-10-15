@@ -1,0 +1,530 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-15T09:31:47.359Z",
+  "scope": {
+    "reason": "Owner confirmed SIMOBS was developed by a friend and must not be attributed to this portfolio.",
+    "intentionalChanges": "Removal from canonical projects/profile highlight and presentation/localization; both localized Harvard CVs and the legacy copy regenerated without changing their format.",
+    "historicalBaselinesRewritten": false
+  },
+  "checks": [
+    {
+      "name": "Canonical catalog has five retained projects in the approved order; academic and achievement facts remain",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/1440: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/1440: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/390: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/390: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: localized native PDF download matches disk and print page has no removed project",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/1440: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/1440: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/390: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/390: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: localized native PDF download matches disk and print page has no removed project",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/1440: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/1440: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/390: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/390: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: localized native PDF download matches disk and print page has no removed project",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/1440: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/1440: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/390: home and profile contain five chapters and no removed ownership claim",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/390: project directory has five featured and three experiments with total eight",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: localized native PDF download matches disk and print page has no removed project",
+      "passed": true
+    },
+    {
+      "name": "Retained case study wattwise-ai/en is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study purwokerto-intelligence-layer/en is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study lapor-mangan/en is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study bernas-mbg/en is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study ai-course-project/en is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study wattwise-ai/id is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study purwokerto-intelligence-layer/id is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study lapor-mangan/id is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study bernas-mbg/id is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Retained case study ai-course-project/id is 200 with correct title and repository",
+      "passed": true
+    },
+    {
+      "name": "Removed route returns HTTP404 and server-rendered HTML contains no project claim/repository",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: removed project renders localized 404 without attribution",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: removed project renders localized 404 without attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: removed project renders localized 404 without attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: removed project renders localized 404 without attribution",
+      "passed": true
+    },
+    {
+      "name": "Sitemap omits the removed project route",
+      "passed": true
+    },
+    {
+      "name": "Legacy PDF HTTP download matches regenerated disk artifact",
+      "passed": true
+    },
+    {
+      "name": "EN, ID and legacy PDF text excludes removed project and retains selected verified projects",
+      "passed": true
+    },
+    {
+      "name": "No unexpected console, runtime, request or HTTP errors",
+      "passed": true
+    }
+  ],
+  "viewports": [
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/projects/wattwise-ai",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/wattwise-ai",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "locale": "id",
+      "status": 200
+    }
+  ],
+  "downloads": [
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "filename": "M-Hanif-Al-Faiz-CV-EN.pdf",
+      "bytes": 121211,
+      "sha256": "954c18a06e3a46e10a76c37d82e2d05c7581058689f3275b7a494b10687813f9",
+      "nativeDownload": true
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "filename": "M-Hanif-Al-Faiz-CV-ID.pdf",
+      "bytes": 119234,
+      "sha256": "795f8f4defdd8d090281a1ac966d2ace4d559f659f036d89dd637f3777653949",
+      "nativeDownload": true
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "filename": "M-Hanif-Al-Faiz-CV-EN.pdf",
+      "bytes": 121211,
+      "sha256": "954c18a06e3a46e10a76c37d82e2d05c7581058689f3275b7a494b10687813f9",
+      "nativeDownload": true
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "filename": "M-Hanif-Al-Faiz-CV-ID.pdf",
+      "bytes": 119234,
+      "sha256": "795f8f4defdd8d090281a1ac966d2ace4d559f659f036d89dd637f3777653949",
+      "nativeDownload": true
+    },
+    {
+      "filename": "M-Hanif-Al-Faiz-CV.pdf",
+      "bytes": 121211,
+      "sha256": "954c18a06e3a46e10a76c37d82e2d05c7581058689f3275b7a494b10687813f9",
+      "httpDownload": true
+    }
+  ],
+  "printPages": [
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "url": "http://localhost:3012/cv/print-EN.html",
+      "visibleCharacters": 5580,
+      "removedProjectFound": false
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "url": "http://localhost:3012/cv/print-ID.html",
+      "visibleCharacters": 5593,
+      "removedProjectFound": false
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "url": "http://localhost:3012/cv/print-EN.html",
+      "visibleCharacters": 5580,
+      "removedProjectFound": false
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "url": "http://localhost:3012/cv/print-ID.html",
+      "visibleCharacters": 5593,
+      "removedProjectFound": false
+    }
+  ],
+  "errors": [],
+  "expectedDiagnostics": [
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    }
+  ],
+  "failedRequests": [],
+  "httpErrors": [],
+  "catalog": [
+    {
+      "slug": "wattwise-ai",
+      "title": "WattWise AI",
+      "year": 2026,
+      "status": "active",
+      "githubUrl": "https://github.com/hanif-12-01/start-up-repo"
+    },
+    {
+      "slug": "purwokerto-intelligence-layer",
+      "title": "Purwokerto Intelligence Layer",
+      "year": 2026,
+      "status": "active",
+      "githubUrl": "https://github.com/hanif-12-01/Purwokerto-intelligence-layer"
+    },
+    {
+      "slug": "lapor-mangan",
+      "title": "Lapor Mangan",
+      "year": 2024,
+      "status": "completed",
+      "githubUrl": "https://github.com/hanif-12-01/LAPORMANGAN"
+    },
+    {
+      "slug": "bernas-mbg",
+      "title": "Bernas MBG",
+      "year": 2025,
+      "status": "prototype",
+      "githubUrl": "https://github.com/hanif-12-01/Bernas-MBG"
+    },
+    {
+      "slug": "ai-course-project",
+      "title": "Fuzzy Rain Risk Index — AI Coursework",
+      "year": 2026,
+      "status": "completed",
+      "githubUrl": "https://github.com/hanif-12-01/Tubes-Dasar-Kecerdasan-Artificial"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "removedRoute": {
+    "status": 404,
+    "serverVisibleText": "",
+    "removedClaimFound": false
+  },
+  "sitemap": {
+    "status": 200,
+    "removedRouteFound": false,
+    "urlCount": 0
+  },
+  "pdfTextAudit": [
+    {
+      "path": "public/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+      "pages": [
+        {
+          "characters": 4248
+        },
+        {
+          "characters": 1200
+        }
+      ],
+      "removedProjectFound": false
+    },
+    {
+      "path": "public/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+      "pages": [
+        {
+          "characters": 4315
+        },
+        {
+          "characters": 1134
+        }
+      ],
+      "removedProjectFound": false
+    },
+    {
+      "path": "public/cv/M-Hanif-Al-Faiz-CV.pdf",
+      "pages": [
+        {
+          "characters": 4248
+        },
+        {
+          "characters": 1200
+        }
+      ],
+      "removedProjectFound": false
+    }
+  ]
+}

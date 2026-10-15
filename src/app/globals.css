@@ -1,5 +1,13 @@
 @import "tailwindcss";
 @import "../styles/pixel.css";
+@import "../styles/world.css";
+@import "../styles/world-identity.css";
+@import "../styles/world-chapters.css";
+@import "../styles/world-projects.css";
+@import "../styles/world-refinement.css";
+@import "../styles/bilingual.css";
+@import "../styles/atelier.css";
+@import "../styles/atelier-expansion.css";
 
 @theme {
   --color-background: #0B1020;
@@ -31,13 +39,13 @@
 }
 
 [data-mode="recruiter"] {
-  --color-background: #0F141C;
-  --color-surface: #1A202C;
-  --color-surface-secondary: #232B3B;
-  --color-border: #2D3748;
-  --color-primary: #38BDF8;
-  --color-achievement: #FBBF24;
-  --color-text: #F8FAFC;
+  --color-background: #0B1020;
+  --color-surface: #151B2E;
+  --color-surface-secondary: #1D263D;
+  --color-border: #26324D;
+  --color-primary: #5DE4C7;
+  --color-achievement: #FFD166;
+  --color-text: #F1F5F9;
   --color-muted: #94A3B8;
 }
 

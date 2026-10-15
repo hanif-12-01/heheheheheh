@@ -1,0 +1,27 @@
+ .gitignore                                         |  18 +
+ next-env.d.ts                                      |   4 +-
+ scripts/generate-cv.js                             | 618 ++++-----------------
+ src/app/globals.css                                |  18 +-
+ src/app/projects/page.tsx                          |   4 +-
+ src/components/layout/Footer.tsx                   |  13 +-
+ src/components/layout/Navbar.tsx                   |  14 +-
+ src/components/pet/PetControls.tsx                 |   5 +-
+ src/components/pet/PixelHanifPet.tsx               | 110 ++--
+ src/components/projects/FeaturedProjectCard.tsx    | 210 +------
+ src/components/projects/ProjectCard.tsx            | 268 +++------
+ src/components/projects/ProjectCaseStudy.tsx       | 222 +++-----
+ src/components/projects/ProjectPreviewViewport.tsx |  20 +-
+ src/components/sections/About.tsx                  |  53 +-
+ src/components/sections/GithubExperiments.tsx      |  24 +
+ src/components/sections/Hero.tsx                   | 471 ++--------------
+ src/components/sections/Interests.tsx              |  66 +++
+ src/components/sections/Journey.tsx                |  94 +++-
+ src/components/sections/LetsBeFriends.tsx          |  34 ++
+ src/components/sections/PlayerProfile.tsx          |  83 +++
+ src/components/sections/ProjectLab.tsx             | 134 +----
+ src/components/sections/ResearchCompetitions.tsx   |  58 ++
+ src/components/sections/SkillsInventory.tsx        |  33 ++
+ src/components/sections/TrophyRoom.tsx             |  48 ++
+ src/data/worldAssets.ts                            |  64 +--
+ src/lib/mediaConfig.ts                             |   7 +-
+ 26 files changed, 946 insertions(+), 1747 deletions(-)

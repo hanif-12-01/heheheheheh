@@ -1,0 +1,156 @@
+[
+  {
+    "browser": "Chromium",
+    "version": "151.0.7922.34",
+    "locale": "en",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+    "printUrl": "http://localhost:3012/cv/print-EN.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "72d188ad5811c0d2acedce6c00f9392d2f2b8b7746a281e448630ea0de0a57e3",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5919
+      },
+      {
+        "event": "afterprint"
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "result": "HEADLESS_VIEWER_UNAVAILABLE",
+      "detail": "page.goto: Download is starting"
+    },
+    "physicalPrinter": "NOT TESTED"
+  },
+  {
+    "browser": "Chromium",
+    "version": "151.0.7922.34",
+    "locale": "id",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+    "printUrl": "http://localhost:3012/cv/print-ID.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "e9ddb2ded81c9c8cc766a9ce9333f1e95d93af53b925ca0d139b79edfb541044",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5952
+      },
+      {
+        "event": "afterprint"
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "result": "HEADLESS_VIEWER_UNAVAILABLE",
+      "detail": "page.goto: Download is starting"
+    },
+    "physicalPrinter": "NOT TESTED"
+  },
+  {
+    "browser": "Chrome",
+    "version": "155.0.8059.79",
+    "locale": "en",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+    "printUrl": "http://localhost:3012/cv/print-EN.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "72d188ad5811c0d2acedce6c00f9392d2f2b8b7746a281e448630ea0de0a57e3",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5919
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "status": 200,
+      "url": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+      "pdfEmbed": 0
+    },
+    "physicalPrinter": "NOT TESTED"
+  },
+  {
+    "browser": "Chrome",
+    "version": "155.0.8059.79",
+    "locale": "id",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+    "printUrl": "http://localhost:3012/cv/print-ID.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "e9ddb2ded81c9c8cc766a9ce9333f1e95d93af53b925ca0d139b79edfb541044",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5952
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "status": 200,
+      "url": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+      "pdfEmbed": 0
+    },
+    "physicalPrinter": "NOT TESTED"
+  },
+  {
+    "browser": "Edge",
+    "version": "155.0.4283.45",
+    "locale": "en",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+    "printUrl": "http://localhost:3012/cv/print-EN.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "72d188ad5811c0d2acedce6c00f9392d2f2b8b7746a281e448630ea0de0a57e3",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5919
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "status": 200,
+      "url": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-EN.pdf",
+      "pdfEmbed": 1
+    },
+    "physicalPrinter": "NOT TESTED"
+  },
+  {
+    "browser": "Edge",
+    "version": "155.0.4283.45",
+    "locale": "id",
+    "pdfUrl": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+    "printUrl": "http://localhost:3012/cv/print-ID.html",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "sha256": "e9ddb2ded81c9c8cc766a9ce9333f1e95d93af53b925ca0d139b79edfb541044",
+    "download": "PASS (bytes + filename)",
+    "nativePrintEvents": [
+      {
+        "event": "beforeprint",
+        "fonts": "loaded",
+        "characters": 5952
+      }
+    ],
+    "printEngine": "PASS (CDP PDF parsed + extracted + independently rendered)",
+    "pdfViewer": {
+      "status": 200,
+      "url": "http://localhost:3012/cv/M-Hanif-Al-Faiz-CV-ID.pdf",
+      "pdfEmbed": 1
+    },
+    "physicalPrinter": "NOT TESTED"
+  }
+]

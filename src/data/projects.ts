@@ -39,12 +39,40 @@ export const FEATURED_PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "civictwin-semarang",
+    title: "CIVICTWIN Semarang",
+    shortDescription:
+      "Civic intelligence proof of concept for Semarang district priorities, citizen feedback, and policy simulation (simulated data).",
+    longDescription:
+      "CIVICTWIN Semarang is a Smart City proof of concept for exploring district priorities and public-service accountability in Semarang. Built with React, TypeScript, and Leaflet, it connects prototype mapping, simulated citizen feedback, rule-based triage, OPD follow-up, and policy-brief drafting. This competition prototype received 3rd Place at the national UNITY UNY 2026 Smart City Competition. It uses demonstration data and local browser storage.",
+    categories: ["smart-city", "software", "web"],
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Leaflet", "React Router"],
+    githubUrl: "https://github.com/hanif-12-01/Unity-semarang",
+    featured: true,
+    year: 2026,
+    achievement: "3rd Place — Smart City Competition UNITY UNY 2026",
+    status: "prototype",
+    keyHighlights: [
+      "District-priority exploration and prototype centroid mapping for Semarang",
+      "Simulated citizen feedback, rule-based CivicSense triage, and policy-brief drafting",
+      "OPD follow-up and public-transparency demonstration workflows",
+      "Competition proof of concept using demonstration data and local browser storage",
+    ],
+    architectureNotes: [
+      "Client-side single-page application built with React 18, TypeScript, Vite, and React Router",
+      "Leaflet and React Leaflet display prototype centroid markers rather than official GIS boundaries",
+      "Role-based demo access and local state use browser storage without production authentication or a backend database",
+      "CivicSense uses deterministic rules for triage and policy simulation without an external AI API",
+      "Citizen reports and OPD workflows are simulated proof-of-concept data, not live government feeds",
+    ],
+  },
+  {
     slug: "purwokerto-intelligence-layer",
     title: "Purwokerto Intelligence Layer",
     shortDescription:
-      "Geospatial civic intelligence and policy simulation prototype for Purwokerto urban indicators (simulated data).",
+      "Experimental material for geospatial civic intelligence and policy simulation in Purwokerto (simulated data).",
     longDescription:
-      "The Purwokerto Intelligence Layer is an interactive Smart City decision-support prototype developed for Purwokerto's four subdistricts. Built with React and Leaflet, the system integrates thematic GIS overlays with a multi-criteria decision-making (MCDM) policy weighting simulator, citizen feedback tracking, and policy brief drafting. Developed as an academic prototype utilizing simulated municipal datasets to demonstrate civic analytics concepts, this project won 3rd Place at the national UNITY UNY 2026 Smart City Competition.",
+      "The Purwokerto Intelligence Layer is experimental material for exploring civic intelligence across Purwokerto's four subdistricts. Built with React and Leaflet, the prototype combines thematic GIS overlays, multi-criteria decision-making (MCDM) policy weighting, citizen feedback tracking, and policy-brief drafting. Simulated municipal datasets support experiments in spatial visualization and policy modeling.",
     categories: ["smart-city", "research", "software", "web"],
     technologies: [
       "React",
@@ -57,10 +85,9 @@ export const FEATURED_PROJECTS: Project[] = [
     githubUrl: "https://github.com/hanif-12-01/Purwokerto-intelligence-layer",
     featured: true,
     year: 2026,
-    achievement: "3rd Place — Smart City Competition UNITY UNY 2026",
-    status: "active",
+    status: "experiment",
     keyHighlights: [
-      "3rd Place winner at national UNITY UNY Smart City Competition 2026",
+      "Experimental material for GIS visualization and MCDM policy modeling",
       "Interactive GIS subdistrict mapping and spatial data visualization for Purwokerto",
       "Multi-Criteria Decision Making (MCDM) simulation allowing dynamic policy priority weighting",
       "Citizen feedback logging, policy brief draft generation, and resolution accountability tracking",
@@ -71,40 +98,6 @@ export const FEATURED_PROJECTS: Project[] = [
       "Geospatial visualization powered by Leaflet and React Leaflet with custom GeoJSON boundaries and markers",
       "Deterministic in-memory MCDM scoring algorithm calculating weighted composite scores across urban indicator categories",
       "Modular state-driven architecture storing simulated indicator datasets, feedback signals, and policy drafts",
-    ],
-  },
-  {
-    slug: "simobs-bengkel",
-    title: "SIMOBS — Bengkel Service Management",
-    shortDescription:
-      "Automotive workshop service booking and dispatch management application with customer and admin portals backed by a Laravel API.",
-    longDescription:
-      "SIMOBS is a full-stack automotive workshop service management application built to streamline vehicle maintenance intake and mechanic dispatch workflows. It separates operational responsibilities into two distinct React frontends: a customer-facing portal for online service appointments and real-time status tracking, and an administrative dashboard for queue triage, booking lifecycle management, and mechanic assignment, coordinated through a secure Laravel Sanctum REST API.",
-    categories: ["software", "web"],
-    technologies: [
-      "React",
-      "JavaScript",
-      "Vite",
-      "Tailwind CSS",
-      "Laravel",
-      "PHP",
-      "MySQL",
-      "Laravel Sanctum",
-    ],
-    githubUrl: "https://github.com/hanif-12-01/bengkel",
-    featured: true,
-    year: 2024,
-    status: "completed",
-    keyHighlights: [
-      "Dual-frontend architecture with dedicated customer booking and administrative management portals",
-      "Complete service booking lifecycle management (pending, confirmed, in-progress, completed, rejected, cancelled)",
-      "Mechanic task dispatching and assignment interface for workshop managers",
-      "Vehicle profile and historical maintenance record tracking for registered customers",
-    ],
-    architectureNotes: [
-      "Decoupled multi-app architecture: two React Vite frontends communicating with a central Laravel REST API",
-      "Stateful API token authentication and role authorization secured via Laravel Sanctum and admin middleware",
-      "Relational MySQL database schema handling users, service catalogs, vehicle profiles, and service bookings",
     ],
   },
   {

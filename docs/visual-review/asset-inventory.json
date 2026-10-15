@@ -1,0 +1,354 @@
+[
+  {
+    "file": "public/pixel/environment/clouds.svg",
+    "width": 768,
+    "height": 160,
+    "bytes": 419,
+    "format": "svg",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/environment/foreground.svg",
+    "width": 768,
+    "height": 96,
+    "bytes": 593,
+    "format": "svg",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/environment/woodland-workshop.webp",
+    "width": 768,
+    "height": 432,
+    "bytes": 182736,
+    "format": "webp",
+    "alpha": false
+  },
+  {
+    "file": "public/pixel/environment/workshop-interior.webp",
+    "width": 384,
+    "height": 288,
+    "bytes": 72902,
+    "format": "webp",
+    "alpha": false
+  },
+  {
+    "file": "public/pet/optimized/coding.webp",
+    "width": 68,
+    "height": 144,
+    "bytes": 4978,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/idle.webp",
+    "width": 55,
+    "height": 144,
+    "bytes": 5038,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/microphone.webp",
+    "width": 72,
+    "height": 144,
+    "bytes": 5086,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/reading.webp",
+    "width": 64,
+    "height": 144,
+    "bytes": 5046,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/rocket.webp",
+    "width": 79,
+    "height": 144,
+    "bytes": 5546,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/sleep.webp",
+    "width": 101,
+    "height": 144,
+    "bytes": 8820,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/trophy.webp",
+    "width": 66,
+    "height": 144,
+    "bytes": 5050,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/walk.webp",
+    "width": 69,
+    "height": 144,
+    "bytes": 5052,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pet/optimized/wave.webp",
+    "width": 66,
+    "height": 144,
+    "bytes": 5352,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-1-backpack.webp",
+    "width": 160,
+    "height": 192,
+    "bytes": 16152,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-2-organization-building.webp",
+    "width": 192,
+    "height": 124,
+    "bytes": 11148,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-3-book.webp",
+    "width": 192,
+    "height": 133,
+    "bytes": 12668,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-3-microphone.webp",
+    "width": 174,
+    "height": 192,
+    "bytes": 10046,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-4-research-document.webp",
+    "width": 192,
+    "height": 169,
+    "bytes": 16522,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-4-research-flask.webp",
+    "width": 146,
+    "height": 192,
+    "bytes": 11462,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-4-trophy.webp",
+    "width": 164,
+    "height": 192,
+    "bytes": 12142,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/journey/semester-5-rocket.webp",
+    "width": 171,
+    "height": 192,
+    "bytes": 10858,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-confetti.webp",
+    "width": 192,
+    "height": 147,
+    "bytes": 9332,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-laurel.webp",
+    "width": 192,
+    "height": 175,
+    "bytes": 14276,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-medal.webp",
+    "width": 126,
+    "height": 192,
+    "bytes": 12312,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-sheet.webp",
+    "width": 384,
+    "height": 283,
+    "bytes": 38378,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-sparkle.webp",
+    "width": 192,
+    "height": 173,
+    "bytes": 8684,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/achievements/achievement-trophy.webp",
+    "width": 173,
+    "height": 192,
+    "bytes": 13916,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-ai-chip.webp",
+    "width": 192,
+    "height": 177,
+    "bytes": 16612,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-code-editor.webp",
+    "width": 192,
+    "height": 137,
+    "bytes": 15232,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-database.webp",
+    "width": 160,
+    "height": 192,
+    "bytes": 12894,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-gis-map.webp",
+    "width": 192,
+    "height": 150,
+    "bytes": 15480,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-server.webp",
+    "width": 192,
+    "height": 159,
+    "bytes": 18060,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/tech/tech-smart-city.webp",
+    "width": 384,
+    "height": 280,
+    "bytes": 42436,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-arrow-down.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 962,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-arrow-left.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 1020,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-arrow-right.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 1022,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-check.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 924,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-checkpoint.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 922,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-code.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 806,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-external-link.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 1142,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-folder.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 1084,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-map-pin.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 982,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-sparkle.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 988,
+    "format": "webp",
+    "alpha": true
+  },
+  {
+    "file": "public/pixel/ui/ui-star.webp",
+    "width": 32,
+    "height": 32,
+    "bytes": 1028,
+    "format": "webp",
+    "alpha": true
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "source": "assets-source/Living Pixel World/connected-trail-original.png",
+    "output": "public/pixel/environment/connected-trail.webp",
+    "width": 768,
+    "height": 432,
+    "sourceBytes": 2549385,
+    "bytes": 199710,
+    "colors": 64,
+    "dither": 0,
+    "original": true,
+    "tool": "built-in image_gen"
+  },
+  {
+    "source": "assets-source/Living Pixel World/achievement-hall-original.png",
+    "output": "public/pixel/environment/achievement-hall.webp",
+    "width": 768,
+    "height": 432,
+    "sourceBytes": 2449814,
+    "bytes": 215180,
+    "colors": 64,
+    "dither": 0,
+    "original": true,
+    "tool": "built-in image_gen"
+  },
+  {
+    "source": "assets-source/Living Pixel World/engineering-courtyard-original.png",
+    "output": "public/pixel/environment/engineering-courtyard.webp",
+    "width": 768,
+    "height": 432,
+    "sourceBytes": 2561467,
+    "bytes": 200976,
+    "colors": 64,
+    "dither": 0,
+    "original": true,
+    "tool": "built-in image_gen"
+  }
+]

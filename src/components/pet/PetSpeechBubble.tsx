@@ -3,6 +3,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { useLocalize } from "@/i18n/useTranslations";
 
 export interface PetSpeechBubbleProps {
   message: string;
@@ -11,9 +12,10 @@ export interface PetSpeechBubbleProps {
 }
 
 export function PetSpeechBubble({ message, onDismiss, className }: PetSpeechBubbleProps) {
+  const localize = useLocalize();
   const prefersReducedMotion = useReducedMotion();
 
-  return (
+  return localize(
     <button
       type="button"
       onClick={onDismiss}

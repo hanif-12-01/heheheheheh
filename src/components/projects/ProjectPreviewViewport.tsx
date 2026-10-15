@@ -1,5 +1,7 @@
 "use client";
 
+import { useLocalize } from "@/i18n/useTranslations";
+
 import React from "react";
 import Image from "next/image";
 import {
@@ -7,7 +9,6 @@ import {
   Layers,
   Zap,
   MapPin,
-  Wrench,
   Utensils,
   ShieldCheck,
   CloudRain,
@@ -27,55 +28,55 @@ interface ProjectIconicMetadata {
 const PROJECT_ICONIC_MAP: Record<string, ProjectIconicMetadata> = {
   "wattwise-ai": {
     Icon: Zap,
-    pixelArtSrc: "/pixel/tech/tech-ai-chip.png",
+    pixelArtSrc: "/pixel/tech/tech-ai-chip.webp",
     domainName: "ENERGY FORECASTING & AUDIT",
     stackBadge: "N-BEATS ONNX · OCR METER SCANNER",
   },
+  "civictwin-semarang": {
+    Icon: MapPin,
+    pixelArtSrc: "/pixel/tech/tech-smart-city.webp",
+    domainName: "SEMARANG CIVIC INTELLIGENCE",
+    stackBadge: "REACT · LEAFLET · RULE-BASED POLICY SIMULATION",
+  },
   "purwokerto-intelligence-layer": {
     Icon: MapPin,
-    pixelArtSrc: "/pixel/tech/tech-gis-map.png",
+    pixelArtSrc: "/pixel/tech/tech-gis-map.webp",
     domainName: "GEOSPATIAL CIVIC INTELLIGENCE",
     stackBadge: "LEAFLET GIS · MCDM POLICY ENGINE",
   },
-  "simobs-bengkel": {
-    Icon: Wrench,
-    pixelArtSrc: "/pixel/tech/tech-code-editor.png",
-    domainName: "WORKSHOP DISPATCH & SERVICE BOOKING",
-    stackBadge: "DUAL REACT PORTAL · LARAVEL SANCTUM",
-  },
   "lapor-mangan": {
     Icon: Utensils,
-    pixelArtSrc: "/pixel/tech/tech-smart-city.png",
+    pixelArtSrc: "/pixel/tech/tech-smart-city.webp",
     domainName: "LOCAL CULINARY PROXIMITY & ASSISTANT",
     stackBadge: "HAVERSINE GPS · OPEN-METEO API · MAKANBOT",
   },
   "bernas-mbg": {
     Icon: ShieldCheck,
-    pixelArtSrc: "/pixel/tech/tech-database.png",
+    pixelArtSrc: "/pixel/tech/tech-database.webp",
     domainName: "NUTRITIONAL LOGISTICS OVERSIGHT",
     stackBadge: "6-ROLE DASHBOARD · LOCAL STATE SYNC",
   },
   "ai-course-project": {
     Icon: CloudRain,
-    pixelArtSrc: "/pixel/tech/tech-server.png",
+    pixelArtSrc: "/pixel/tech/tech-server.webp",
     domainName: "FUZZY RAIN RISK INFERENCE MODEL",
     stackBadge: "MAMDANI & SUGENO ENGINES FROM SCRATCH",
   },
   "sorting-algorithm-visualizer": {
     Icon: Binary,
-    pixelArtSrc: "/pixel/tech/tech-code-editor.png",
+    pixelArtSrc: "/pixel/tech/tech-code-editor.webp",
     domainName: "ALGORITHMIC SORTING TRAVERSAL",
     stackBadge: "C++ · RECURSION · TIME COMPLEXITY",
   },
   "computational-logic-sim": {
     Icon: Layers,
-    pixelArtSrc: "/pixel/tech/tech-server.png",
+    pixelArtSrc: "/pixel/tech/tech-server.webp",
     domainName: "PROPOSITIONAL LOGIC SOLVER",
     stackBadge: "PYTHON · TRUTH TABLE VALIDATOR",
   },
   "micro-network-probe": {
     Icon: Layers,
-    pixelArtSrc: "/pixel/tech/tech-server.png",
+    pixelArtSrc: "/pixel/tech/tech-server.webp",
     domainName: "SOCKET CLIENT-PROXY NETWORK",
     stackBadge: "C · TCP SOCKETS · PACKET FORWARDING",
   },
@@ -102,6 +103,7 @@ export function ProjectPreviewViewport({
   aspectRatio = "video",
   className,
 }: ProjectPreviewViewportProps) {
+  const localize = useLocalize();
   const { mode } = usePortfolioMode();
   const configuredMedia = MEDIA_CONFIG.projectScreenshots?.[slug];
   const actualSource = screenshot || image || configuredMedia?.src;
@@ -109,7 +111,7 @@ export function ProjectPreviewViewport({
 
   // If a screenshot asset is explicitly supplied, render it directly
   if (actualSource) {
-    return (
+    return localize((
       <div
         className={cn(
           "relative w-full overflow-hidden border-2 border-[var(--color-border)] bg-[var(--color-background)]",
@@ -130,19 +132,19 @@ export function ProjectPreviewViewport({
           </div>
         )}
       </div>
-    );
+    ));
   }
 
   // Iconic System Architecture Visualizer (Owner-Specified Preview Presentation)
   const iconicInfo = PROJECT_ICONIC_MAP[slug] || {
     Icon: Layers,
-    pixelArtSrc: "/pixel/tech/tech-server.png",
+    pixelArtSrc: "/pixel/tech/tech-server.webp",
     domainName: "SOFTWARE SYSTEM ARCHITECTURE",
     stackBadge: "VERIFIED SOURCE CODE IMPLEMENTATION",
   };
   const IconComponent = iconicInfo.Icon;
 
-  return (
+  return localize((
     <div
       className={cn(
         "relative w-full border-2 border-[var(--color-border)] bg-[var(--color-background)] flex flex-col overflow-hidden select-none",
@@ -223,5 +225,5 @@ export function ProjectPreviewViewport({
         </div>
       </div>
     </div>
-  );
+  ));
 }

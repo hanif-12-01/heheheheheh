@@ -4,7 +4,7 @@
  * Normalized production asset registry for Journey props, Achievement medals/trophies,
  * Technology domain illustrations, and UI pixel icons.
  *
- * Raw archive source (immutable): public/World Assets/
+ * Raw archive source (immutable): assets-source/World Assets/
  * Normalized production directory: public/pixel/
  */
 
@@ -40,7 +40,7 @@ export const journeyAssets = {
   backpack: {
     id: "semester-1-backpack",
     name: "Semester 1 Orientation Backpack",
-    src: "/pixel/journey/semester-1-backpack.png",
+    src: "/pixel/journey/semester-1-backpack.webp",
     category: "journey",
     tier: "B",
     role: "medium-prop",
@@ -51,7 +51,7 @@ export const journeyAssets = {
   organizationBuilding: {
     id: "semester-2-organization-building",
     name: "Semester 2 Campus Organization Building",
-    src: "/pixel/journey/semester-2-organization-building.png",
+    src: "/pixel/journey/semester-2-organization-building.webp",
     category: "journey",
     tier: "B",
     role: "large-landmark",
@@ -62,7 +62,7 @@ export const journeyAssets = {
   book: {
     id: "semester-3-book",
     name: "Semester 3 Open Study Book",
-    src: "/pixel/journey/semester-3-book.png",
+    src: "/pixel/journey/semester-3-book.webp",
     category: "journey",
     tier: "B",
     role: "small-item",
@@ -73,7 +73,7 @@ export const journeyAssets = {
   microphone: {
     id: "semester-3-microphone",
     name: "Semester 3 Speaker Microphone",
-    src: "/pixel/journey/semester-3-microphone.png",
+    src: "/pixel/journey/semester-3-microphone.webp",
     category: "journey",
     tier: "B",
     role: "small-item",
@@ -84,7 +84,7 @@ export const journeyAssets = {
   researchDocument: {
     id: "semester-4-research-document",
     name: "Semester 4 Research Document",
-    src: "/pixel/journey/semester-4-research-document.png",
+    src: "/pixel/journey/semester-4-research-document.webp",
     category: "journey",
     tier: "B",
     role: "medium-prop",
@@ -95,7 +95,7 @@ export const journeyAssets = {
   researchFlask: {
     id: "semester-4-research-flask",
     name: "Semester 4 Laboratory Research Flask",
-    src: "/pixel/journey/semester-4-research-flask.png",
+    src: "/pixel/journey/semester-4-research-flask.webp",
     category: "journey",
     tier: "B",
     role: "medium-prop",
@@ -106,7 +106,7 @@ export const journeyAssets = {
   trophy: {
     id: "semester-4-trophy",
     name: "Semester 4 Competition Trophy",
-    src: "/pixel/journey/semester-4-trophy.png",
+    src: "/pixel/journey/semester-4-trophy.webp",
     category: "journey",
     tier: "B",
     role: "medium-prop",
@@ -117,7 +117,7 @@ export const journeyAssets = {
   rocket: {
     id: "semester-5-rocket",
     name: "Semester 5 Innovation Rocket",
-    src: "/pixel/journey/semester-5-rocket.png",
+    src: "/pixel/journey/semester-5-rocket.webp",
     category: "journey",
     tier: "B",
     role: "large-landmark",
@@ -131,7 +131,7 @@ export const achievementAssets = {
   trophy: {
     id: "achievement-trophy",
     name: "Championship Gold Trophy",
-    src: "/pixel/achievements/achievement-trophy.png",
+    src: "/pixel/achievements/achievement-trophy.webp",
     category: "achievements",
     tier: "A",
     role: "badge",
@@ -141,7 +141,7 @@ export const achievementAssets = {
   medal: {
     id: "achievement-medal",
     name: "Honors Ribbon Medal",
-    src: "/pixel/achievements/achievement-medal.png",
+    src: "/pixel/achievements/achievement-medal.webp",
     category: "achievements",
     tier: "A",
     role: "badge",
@@ -151,7 +151,7 @@ export const achievementAssets = {
   laurel: {
     id: "achievement-laurel",
     name: "Victory Laurel Wreath",
-    src: "/pixel/achievements/achievement-laurel.png",
+    src: "/pixel/achievements/achievement-laurel.webp",
     category: "achievements",
     tier: "A",
     role: "badge",
@@ -161,7 +161,7 @@ export const achievementAssets = {
   confetti: {
     id: "achievement-confetti",
     name: "Celebration Confetti Burst",
-    src: "/pixel/achievements/achievement-confetti.png",
+    src: "/pixel/achievements/achievement-confetti.webp",
     category: "achievements",
     tier: "B",
     role: "effect",
@@ -171,7 +171,7 @@ export const achievementAssets = {
   sparkle: {
     id: "achievement-sparkle",
     name: "Radiant Achievement Sparkle",
-    src: "/pixel/achievements/achievement-sparkle.png",
+    src: "/pixel/achievements/achievement-sparkle.webp",
     category: "achievements",
     tier: "B",
     role: "effect",
@@ -181,7 +181,7 @@ export const achievementAssets = {
   sheet: {
     id: "achievement-sheet",
     name: "Achievement Master Asset Sheet",
-    src: "/pixel/achievements/achievement-sheet.png",
+    src: "/pixel/achievements/achievement-sheet.webp",
     category: "achievements",
     tier: "B",
     role: "illustration",
@@ -194,7 +194,7 @@ export const techAssets = {
   smartCity: {
     id: "tech-smart-city",
     name: "Smart City Isometric Diorama",
-    src: "/pixel/tech/tech-smart-city.png",
+    src: "/pixel/tech/tech-smart-city.webp",
     category: "tech",
     tier: "A",
     role: "featured-illustration",
@@ -204,7 +204,7 @@ export const techAssets = {
   database: {
     id: "tech-database",
     name: "Futuristic Database Stack",
-    src: "/pixel/tech/tech-database.png",
+    src: "/pixel/tech/tech-database.webp",
     category: "tech",
     tier: "B",
     role: "illustration",
@@ -214,7 +214,7 @@ export const techAssets = {
   codeEditor: {
     id: "tech-code-editor",
     name: "Retro Code Editor Window",
-    src: "/pixel/tech/tech-code-editor.png",
+    src: "/pixel/tech/tech-code-editor.webp",
     category: "tech",
     tier: "B",
     role: "illustration",
@@ -224,7 +224,7 @@ export const techAssets = {
   gisMap: {
     id: "tech-gis-map",
     name: "Folded GIS Map with Location Pin",
-    src: "/pixel/tech/tech-gis-map.png",
+    src: "/pixel/tech/tech-gis-map.webp",
     category: "tech",
     tier: "B",
     role: "illustration",
@@ -234,7 +234,7 @@ export const techAssets = {
   aiChip: {
     id: "tech-ai-chip",
     name: "Luminous AI Processor Chip",
-    src: "/pixel/tech/tech-ai-chip.png",
+    src: "/pixel/tech/tech-ai-chip.webp",
     category: "tech",
     tier: "B",
     role: "illustration",
@@ -244,7 +244,7 @@ export const techAssets = {
   server: {
     id: "tech-server",
     name: "Neon Server Rack Stack",
-    src: "/pixel/tech/tech-server.png",
+    src: "/pixel/tech/tech-server.webp",
     category: "tech",
     tier: "B",
     role: "illustration",
@@ -257,7 +257,7 @@ export const uiAssets = {
   arrowRight: {
     id: "ui-arrow-right",
     name: "Arrow Right",
-    src: "/pixel/ui/ui-arrow-right.png",
+    src: "/pixel/ui/ui-arrow-right.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -268,7 +268,7 @@ export const uiAssets = {
   arrowLeft: {
     id: "ui-arrow-left",
     name: "Arrow Left",
-    src: "/pixel/ui/ui-arrow-left.png",
+    src: "/pixel/ui/ui-arrow-left.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -279,7 +279,7 @@ export const uiAssets = {
   arrowDown: {
     id: "ui-arrow-down",
     name: "Arrow Down",
-    src: "/pixel/ui/ui-arrow-down.png",
+    src: "/pixel/ui/ui-arrow-down.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -290,7 +290,7 @@ export const uiAssets = {
   star: {
     id: "ui-star",
     name: "Gold Star",
-    src: "/pixel/ui/ui-star.png",
+    src: "/pixel/ui/ui-star.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -301,7 +301,7 @@ export const uiAssets = {
   sparkle: {
     id: "ui-sparkle",
     name: "UI Sparkle",
-    src: "/pixel/ui/ui-sparkle.png",
+    src: "/pixel/ui/ui-sparkle.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -312,7 +312,7 @@ export const uiAssets = {
   mapPin: {
     id: "ui-map-pin",
     name: "Map Pin",
-    src: "/pixel/ui/ui-map-pin.png",
+    src: "/pixel/ui/ui-map-pin.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -323,7 +323,7 @@ export const uiAssets = {
   folder: {
     id: "ui-folder",
     name: "Folder",
-    src: "/pixel/ui/ui-folder.png",
+    src: "/pixel/ui/ui-folder.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -334,7 +334,7 @@ export const uiAssets = {
   code: {
     id: "ui-code",
     name: "Code Brackets",
-    src: "/pixel/ui/ui-code.png",
+    src: "/pixel/ui/ui-code.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -345,7 +345,7 @@ export const uiAssets = {
   checkpoint: {
     id: "ui-checkpoint",
     name: "Level Checkpoint Flag",
-    src: "/pixel/ui/ui-checkpoint.png",
+    src: "/pixel/ui/ui-checkpoint.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -356,7 +356,7 @@ export const uiAssets = {
   check: {
     id: "ui-check",
     name: "Checkmark Tick",
-    src: "/pixel/ui/ui-check.png",
+    src: "/pixel/ui/ui-check.webp",
     category: "ui",
     tier: "C",
     role: "icon",
@@ -367,7 +367,7 @@ export const uiAssets = {
   externalLink: {
     id: "ui-external-link",
     name: "External Link",
-    src: "/pixel/ui/ui-external-link.png",
+    src: "/pixel/ui/ui-external-link.webp",
     category: "ui",
     tier: "C",
     role: "icon",

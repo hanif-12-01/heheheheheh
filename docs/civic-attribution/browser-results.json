@@ -1,0 +1,597 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-15T12:29:59.932Z",
+  "scope": "Correct the UNITY UNY third-place project attribution to CIVICTWIN Semarang; retain PIL as experimental simulated-data material.",
+  "checks": [
+    {
+      "name": "Canonical six-project order, correct winning repository, experimental PIL, and linked achievement/research/journey",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/1440: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/1440: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/390: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "pixel/en/390: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: native trophy selection, research rc-1, semester4 and Interests identify the right winner",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: civictwin-semarang detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: purwokerto-intelligence-layer detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: previously removed friend-developed project remains404",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/1440: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/1440: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/390: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "pixel/id/390: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: native trophy selection, research rc-1, semester4 and Interests identify the right winner",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: civictwin-semarang detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: purwokerto-intelligence-layer detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: previously removed friend-developed project remains404",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/1440: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/1440: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/390: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en/390: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: native trophy selection, research rc-1, semester4 and Interests identify the right winner",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: civictwin-semarang detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: purwokerto-intelligence-layer detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: previously removed friend-developed project remains404",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/1440: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/1440: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/390: home has six chapters, winning CIVICTWIN feature, and experimental PIL",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id/390: directory has six projects plus three experiments and correct attribution",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: native trophy selection, research rc-1, semester4 and Interests identify the right winner",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: civictwin-semarang detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: purwokerto-intelligence-layer detail is200 with accurate badge, repo and disclosures at1440/390",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: previously removed friend-developed project remains404",
+      "passed": true
+    },
+    {
+      "name": "en: localized CV print content distinguishes CIVICTWIN's award from experimental PIL and actual PDF download matches",
+      "passed": true
+    },
+    {
+      "name": "id: localized CV print content distinguishes CIVICTWIN's award from experimental PIL and actual PDF download matches",
+      "passed": true
+    },
+    {
+      "name": "Sitemap does not restore the removed ownership route",
+      "passed": true
+    },
+    {
+      "name": "No unexpected console, runtime, request, or HTTP errors",
+      "passed": true
+    }
+  ],
+  "viewports": [
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clippedControls": []
+    },
+    {
+      "route": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clippedControls": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/civictwin-semarang",
+      "mode": "pixel",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "en",
+      "status": 200
+    },
+    {
+      "path": "/projects/civictwin-semarang",
+      "mode": "recruiter",
+      "locale": "id",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "locale": "id",
+      "status": 200
+    }
+  ],
+  "downloads": [
+    {
+      "locale": "en",
+      "filename": "M-Hanif-Al-Faiz-CV-EN.pdf",
+      "bytes": 122975,
+      "sha256": "72d188ad5811c0d2acedce6c00f9392d2f2b8b7746a281e448630ea0de0a57e3",
+      "nativeDownload": true
+    },
+    {
+      "locale": "id",
+      "filename": "M-Hanif-Al-Faiz-CV-ID.pdf",
+      "bytes": 120828,
+      "sha256": "e9ddb2ded81c9c8cc766a9ce9333f1e95d93af53b925ca0d139b79edfb541044",
+      "nativeDownload": true
+    }
+  ],
+  "printPages": [
+    {
+      "locale": "en",
+      "url": "http://localhost:3012/cv/print-EN.html",
+      "civicBlock": "CIVICTWIN Semarang — Civic Intelligence Proof of Concept\n2026\nReact 18, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Competition Proof of Concept (Demo Data)\nDeveloped a civic intelligence proof of concept for Semarang linking district-priority mapping, citizen feedback, simulated OPD follow-up, and policy-scenario exploration.\nImplemented a browser-based demo using localStorage, mock reports, prototype district markers, and rule-based CivicSense guidance.\nAwarded 3rd Place at the UNITY UNY 2026 Smart City Competition.",
+      "pilBlock": "Purwokerto Intelligence Layer — Smart City Decision-Support Prototype\n2026\nReact 19, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Experimental Material (Simulated Data)\nDeveloped an interactive Smart City decision-support prototype covering Purwokerto's four subdistricts to model civic indicators and spatial urban analytics using simulated urban indicator datasets.\nImplemented a Multi-Criteria Decision Making (MCDM) weighted formula enabling dynamic policy weighting across public service, economic, and infrastructure indicators.\nEngineered geospatial GIS visualization with Leaflet and GeoJSON subdistrict boundaries, citizen feedback logging, and policy brief drafting modules."
+    },
+    {
+      "locale": "id",
+      "url": "http://localhost:3012/cv/print-ID.html",
+      "civicBlock": "CIVICTWIN Semarang — Bukti Konsep Civic Intelligence\n2026\nReact 18, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Bukti Konsep Kompetisi (Data Demo)\nMengembangkan bukti konsep civic intelligence untuk Semarang yang menghubungkan peta prioritas kecamatan, masukan warga, simulasi tindak lanjut OPD, dan eksplorasi skenario kebijakan.\nMengimplementasikan demo berbasis peramban menggunakan localStorage, laporan simulasi, penanda kecamatan prototipe, dan panduan CivicSense berbasis aturan.\nMeraih Juara 3 dalam UNITY UNY 2026 Smart City Competition.",
+      "pilBlock": "Purwokerto Intelligence Layer — Prototipe Pendukung Keputusan Smart City\n2026\nReact 19, TypeScript, Vite, Tailwind CSS, Leaflet, React Router | Bahan Eksperimen (Data Simulasi)\nMengembangkan prototipe interaktif pendukung keputusan Smart City untuk empat kecamatan di Purwokerto guna memodelkan indikator publik dan analisis spasial perkotaan menggunakan data indikator simulasi.\nMengimplementasikan rumus berbobot Multi-Criteria Decision Making (MCDM) untuk menyesuaikan bobot kebijakan secara dinamis pada indikator layanan publik, ekonomi, dan infrastruktur.\nMengembangkan visualisasi GIS dengan Leaflet dan batas kecamatan GeoJSON, pencatatan masukan warga, serta modul penyusunan ringkasan kebijakan."
+    }
+  ],
+  "errors": [],
+  "expectedDiagnostics": [
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:3012/projects/simobs-bengkel"
+    }
+  ],
+  "failedRequests": [],
+  "httpErrors": [],
+  "historicalBaselinesRewritten": false,
+  "catalog": [
+    {
+      "slug": "wattwise-ai",
+      "title": "WattWise AI",
+      "status": "active",
+      "achievement": "Top 10 Finalist — PLN ICE 2026 Startup Competition",
+      "githubUrl": "https://github.com/hanif-12-01/start-up-repo"
+    },
+    {
+      "slug": "civictwin-semarang",
+      "title": "CIVICTWIN Semarang",
+      "status": "prototype",
+      "achievement": "3rd Place — Smart City Competition UNITY UNY 2026",
+      "githubUrl": "https://github.com/hanif-12-01/Unity-semarang"
+    },
+    {
+      "slug": "purwokerto-intelligence-layer",
+      "title": "Purwokerto Intelligence Layer",
+      "status": "experiment",
+      "achievement": null,
+      "githubUrl": "https://github.com/hanif-12-01/Purwokerto-intelligence-layer"
+    },
+    {
+      "slug": "lapor-mangan",
+      "title": "Lapor Mangan",
+      "status": "completed",
+      "achievement": null,
+      "githubUrl": "https://github.com/hanif-12-01/LAPORMANGAN"
+    },
+    {
+      "slug": "bernas-mbg",
+      "title": "Bernas MBG",
+      "status": "prototype",
+      "achievement": null,
+      "githubUrl": "https://github.com/hanif-12-01/Bernas-MBG"
+    },
+    {
+      "slug": "ai-course-project",
+      "title": "Fuzzy Rain Risk Index — AI Coursework",
+      "status": "completed",
+      "achievement": null,
+      "githubUrl": "https://github.com/hanif-12-01/Tubes-Dasar-Kecerdasan-Artificial"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "sitemap": {
+    "status": 200,
+    "urlCount": 0,
+    "removedRouteFound": false
+  }
+}

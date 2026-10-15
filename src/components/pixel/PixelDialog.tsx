@@ -3,6 +3,7 @@
 import React from "react";
 import { PixelModal } from "./PixelModal";
 import { PixelButton } from "./PixelButton";
+import { useLocalize } from "@/i18n/useTranslations";
 
 export interface PixelDialogProps {
   isOpen: boolean;
@@ -23,7 +24,8 @@ export function PixelDialog({
   confirmLabel = "Confirm",
   cancelLabel = "Cancel",
 }: PixelDialogProps) {
-  return (
+  const localize = useLocalize();
+  return localize(
     <PixelModal isOpen={isOpen} onClose={onClose} title={title}>
       <div className="space-y-4">
         <p className="text-sm text-[var(--color-text)] font-sans">{message}</p>

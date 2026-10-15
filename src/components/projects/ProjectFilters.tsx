@@ -1,5 +1,7 @@
 "use client";
 
+import { useLocalize } from "@/i18n/useTranslations";
+
 import React from "react";
 import { ProjectCategory } from "@/types/project";
 import { cn } from "@/lib/utils";
@@ -23,7 +25,8 @@ export function ProjectFilters({
   currentCategory,
   onSelectCategory,
 }: ProjectFiltersProps) {
-  return (
+  const localize = useLocalize();
+  return localize((
     <div
       role="tablist"
       aria-label="Filter projects by category"
@@ -49,5 +52,5 @@ export function ProjectFilters({
         );
       })}
     </div>
-  );
+  ));
 }

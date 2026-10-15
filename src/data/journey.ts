@@ -138,7 +138,7 @@ export const JOURNEY_LEVELS: JourneyLevel[] = [
       {
         title: "3rd Place — Smart City Competition, UNITY UNY (2026)",
         category: "achievement",
-        description: "Won 3rd place nationally for innovative smart-city civic data solution at Universitas Negeri Yogyakarta.",
+        description: "Won 3rd place nationally with CIVICTWIN Semarang, a Smart City civic intelligence proof of concept, at Universitas Negeri Yogyakarta.",
         highlight: true,
       },
       {

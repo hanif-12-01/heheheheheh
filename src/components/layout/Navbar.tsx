@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLocalize } from "@/i18n/useTranslations";
+import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 import { NAV_ITEMS, SITE_CONFIG } from "@/lib/constants";
 import { usePortfolioMode } from "@/hooks/usePortfolioMode";
 import { PetControls } from "@/components/pet/PetControls";
@@ -10,7 +13,9 @@ import { Menu, X, Briefcase, Gamepad2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 function getNavLabel(label: string, mode: string): string {
-  if (mode !== "recruiter") return label;
+  if (mode !== "recruiter") {
+    return ({ Spawn: "Home", Profile: "The workshop", Journey: "The trail", "Trophy Room": "Achievements", "Project Lab": "Projects" } as Record<string, string>)[label] || label;
+  }
   switch (label) {
     case "Spawn":
       return "Overview";
@@ -26,6 +31,8 @@ function getNavLabel(label: string, mode: string): string {
 }
 
 export function Navbar() {
+  const localize = useLocalize();
+  const pathname = usePathname();
   const { mode, toggleMode } = usePortfolioMode();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -45,8 +52,8 @@ export function Navbar() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [mobileMenuOpen]);
 
-  return (
-    <header className="sticky top-0 z-40 w-full bg-[var(--color-background)]/90 backdrop-blur-md border-b-2 border-[var(--color-border)] select-none">
+  return localize(
+    <header className="site-navigation sticky top-0 z-40 w-full bg-[var(--color-background)]/90 backdrop-blur-md border-b-2 border-[var(--color-border)] select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <Link
@@ -71,10 +78,10 @@ export function Navbar() {
           aria-label="Main Navigation"
           className="hidden lg:flex items-center gap-0.5 xl:gap-2 text-[11px] xl:text-xs font-mono"
         >
-          {NAV_ITEMS.map((item) => (
+          {NAV_ITEMS.filter((item) => mode === "recruiter" || ["#hero", "#profile", "#journey", "#projects", "#contact"].includes(item.href)).map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={`${pathname === "/" ? "" : "/"}${item.href}`}
               className="px-1.5 xl:px-2.5 py-1 text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:bg-[var(--color-surface)] transition-colors border border-transparent hover:border-[var(--color-border)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)] whitespace-nowrap"
             >
               {getNavLabel(item.label, mode)}
@@ -84,6 +91,7 @@ export function Navbar() {
 
         {/* Action Controls: Mode Switcher & Pet Toggle & Mobile Menu */}
         <div className="flex items-center gap-2 sm:gap-3">
+          <LanguageSwitcher />
           {/* Mode Switcher */}
           <button
             id="mode-toggle-btn"
@@ -148,7 +156,7 @@ export function Navbar() {
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={`${pathname === "/" ? "" : "/"}${item.href}`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-colors text-xs focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]"
               >

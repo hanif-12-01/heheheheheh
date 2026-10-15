@@ -1,5 +1,9 @@
 "use client";
 
+import { AtelierProfile } from "@/components/atelier/AtelierSections";
+
+import { useLocalize } from "@/i18n/useTranslations";
+
 import React from "react";
 import Image from "next/image";
 import { PROFILE_DATA } from "@/data/profile";
@@ -14,6 +18,7 @@ import { Shield, Award, Terminal, Mic, GraduationCap, CheckCircle2 } from "lucid
 import { cn } from "@/lib/utils";
 
 export function PlayerProfile() {
+  const localize = useLocalize();
   const { mode } = usePortfolioMode();
   const prefersReducedMotion = useReducedMotion();
 
@@ -22,7 +27,7 @@ export function PlayerProfile() {
     leadership: <Shield className="w-4 h-4 text-[var(--color-blue)]" />,
     research: <GraduationCap className="w-4 h-4 text-[var(--color-purple)]" />,
     software: <Terminal className="w-4 h-4 text-[var(--color-primary)]" />,
-    "public-speaking": <Mic className="w-4 h-4 text-[#F43F5E]" />,
+    "public-speaking": <Mic className="w-4 h-4 text-[var(--color-purple)]" />,
   };
 
   const statColors: Record<string, string> = {
@@ -30,7 +35,7 @@ export function PlayerProfile() {
     leadership: "var(--color-blue)",
     research: "var(--color-purple)",
     software: "var(--color-primary)",
-    "public-speaking": "#F43F5E",
+    "public-speaking": "var(--color-purple)",
   };
 
   // Academic progress calculations derived from PROFILE_DATA.currentLevel (Source of Truth)
@@ -39,269 +44,90 @@ export function PlayerProfile() {
   const completedSemesters = currentSemester - 1; // 4 Semesters Completed (Semesters 1-4)
   const upcomingSemesters = totalSemesters - currentSemester; // 3 Semesters Upcoming (Semesters 6-8)
 
-  return (
-    <section
-      id="profile"
-      aria-label={mode === "recruiter" ? "Candidate Profile" : "Player Profile"}
-      className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)]"
-    >
-      <PixelSectionTitle
-        number="02"
-        title="PLAYER PROFILE & ATTRIBUTES"
-        subtitle="Qualitative status indicators and academic milestones — verified by active contributions."
-        badge="CHARACTER SHEET"
-        recruiterTitle="PROFILE & ACADEMIC STANDING"
-        recruiterSubtitle="Academic status, degree progress, and verified capability areas."
-        recruiterBadge="CANDIDATE PROFILE"
-      />
+  if (mode === "recruiter") return <AtelierProfile />;
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        {/* ========================================================================= */}
-        {/* LEFT COLUMN: Character Sheet / Identity Panel (~38%) */}
-        {/* ========================================================================= */}
-        <div className="lg:col-span-5 w-full">
-          <PixelWindow
-            title={mode === "recruiter" ? "ACADEMIC_RECORD.TXT" : "CHARACTER_SHEET.TXT"}
-            statusBadge={mode === "recruiter" ? "● ENROLLED" : "● ACTIVE"}
-            className="w-full"
-          >
-            <div className="space-y-4 font-mono text-xs">
-              {/* Identity Header Box */}
-              <div className="p-3.5 bg-[var(--color-background)] border-2 border-[var(--color-border)] space-y-1.5 relative overflow-hidden">
-                <div className="flex items-center justify-between text-[10px] text-[var(--color-muted)] uppercase tracking-wider">
-                  <span>{mode === "recruiter" ? "STUDENT IDENTITY // 2024" : "IDENTITY // ID#01"}</span>
-                  <span className="flex items-center gap-1 text-[var(--color-primary)]">
-                    <span className="w-1.5 h-1.5 bg-[var(--color-primary)] inline-block animate-pulse" />
-                    ONLINE
-                  </span>
+  if (mode === "pixel") {
+    return localize((
+      <section id="profile" aria-labelledby="world-profile-title" className="world-chapter world-profile">
+        <div className="world-container">
+          <header className="identity-chapter-heading">
+            <p className="identity-eyebrow">02 / THE WORKSHOP · CHARACTER SHEET</p>
+            <h2 id="world-profile-title">Player Profile &amp; Attributes</h2>
+            <p>Qualitative status indicators and academic milestones — verified by active contributions.</p>
+          </header>
+
+          <div className="workshop-profile-layout">
+            <figure className="workshop-interior">
+              <Image
+                src="/pixel/environment/workshop-interior.webp"
+                alt=""
+                aria-hidden="true"
+                width={384}
+                height={288}
+                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 48vw, 520px"
+                className="workshop-interior-image"
+                unoptimized
+              />
+              <figcaption>The workshop / a place to study, build, and explore</figcaption>
+            </figure>
+
+            <article className="academic-dossier" aria-labelledby="academic-dossier-title">
+              <div className="dossier-label">
+                <span>Identity / ID#01</span>
+                <span className="dossier-active">Online · Active</span>
+              </div>
+              <h3 id="academic-dossier-title">{PROFILE_DATA.name}</h3>
+              <p className="dossier-handle">Handle: {PROFILE_DATA.handle}</p>
+
+              <dl className="dossier-facts">
+                <div><dt>Institution</dt><dd>{PROFILE_DATA.university}</dd></div>
+                <div><dt>Degree</dt><dd>{PROFILE_DATA.degree}</dd></div>
+                <div><dt>Cumulative GPA</dt><dd className="dossier-gpa">{PROFILE_DATA.gpa}</dd></div>
+                <div><dt>Expected graduation</dt><dd>Class of {PROFILE_DATA.expectedGraduation}</dd></div>
+              </dl>
+
+              <div className="dossier-progress">
+                <p><span>Current quest</span><strong>Semester {currentSemester} / In Progress</strong></p>
+                <div
+                  className="dossier-semesters"
+                  role="progressbar"
+                  aria-valuenow={currentSemester}
+                  aria-valuemin={1}
+                  aria-valuemax={totalSemesters}
+                  aria-label={`Academic progress: Semesters 1 through ${completedSemesters} completed, Semester ${currentSemester} currently in progress, Semesters ${currentSemester + 1} through ${totalSemesters} upcoming.`}
+                >
+                  {Array.from({ length: totalSemesters }, (_, index) => {
+                    const semester = index + 1;
+                    const status = semester < currentSemester ? "completed" : semester === currentSemester ? "current" : "upcoming";
+                    return <span key={semester} className={`semester-step semester-step-${status}`} title={`Semester ${semester} — ${status === "current" ? "Current (In Progress)" : status}`} aria-hidden="true">{semester.toString().padStart(2, "0")}</span>;
+                  })}
                 </div>
-                <div className="text-base sm:text-lg font-black font-mono text-[var(--color-text)] tracking-tight">
-                  {PROFILE_DATA.name}
-                </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-[var(--color-primary)]">
-                  <span>{mode === "recruiter" ? "GITHUB ID:" : "HANDLE:"}</span>
-                  <span className="px-1.5 py-0.5 bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/40 text-[var(--color-primary)]">
-                    {PROFILE_DATA.handle}
-                  </span>
-                </div>
+                <p className="dossier-progress-caption">Academic progress: Semester {currentSemester} / {totalSemesters}</p>
+                <p className="dossier-progress-note">{completedSemesters} completed · Semester {currentSemester} current · {upcomingSemesters} upcoming</p>
               </div>
 
-              {/* Academic Parameter Matrix (2x2) */}
-              <div className="grid grid-cols-2 gap-2.5 text-[11px]">
-                {/* Institution */}
-                <div className="p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] flex flex-col justify-between">
-                  <div className="text-[9px] text-[var(--color-muted)] uppercase tracking-wider">INSTITUTION</div>
-                  <div className="font-bold text-[var(--color-text)] mt-1 line-clamp-2" title={PROFILE_DATA.university}>
-                    Telkom Univ Purwokerto
-                  </div>
+              <p className="dossier-verification">Academic standing verified at Level 05 (Semester 5 In Progress). Specializing in intelligent software, spatial analytics, and competition-driven innovation.</p>
+            </article>
+          </div>
+
+          <div className="capability-evidence" aria-label="Verified capability areas">
+            {PROFILE_DATA.stats.map((stat, index) => (
+              <article key={stat.id} className={`capability-row capability-row-${stat.id}`}>
+                <span className="capability-number" aria-hidden="true">{(index + 1).toString().padStart(2, "0")}</span>
+                <div className="capability-name"><h3>{stat.name}</h3><p>{stat.rank}</p></div>
+                <div className="capability-details">
+                  <p>{stat.highlight}</p>
+                  <ul className="identity-tags" aria-label={`${stat.name} evidence areas`}>
+                    {stat.tags.map((tag) => <li key={tag}>#{tag}</li>)}
+                  </ul>
                 </div>
-
-                {/* Degree */}
-                <div className="p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] flex flex-col justify-between">
-                  <div className="text-[9px] text-[var(--color-muted)] uppercase tracking-wider">DEGREE</div>
-                  <div className="font-bold text-[var(--color-text)] mt-1">
-                    {PROFILE_DATA.degree}
-                  </div>
-                </div>
-
-                {/* Cumulative GPA */}
-                <div className="p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] flex flex-col justify-between relative overflow-hidden">
-                  <div className="flex items-center justify-between text-[9px] text-[var(--color-muted)] uppercase tracking-wider">
-                    <span>CUMULATIVE GPA</span>
-                    <Image
-                      src={uiAssets.star.src}
-                      alt=""
-                      width={12}
-                      height={12}
-                      className="w-3 h-3"
-                      style={{ imageRendering: "pixelated" }}
-                      aria-hidden="true"
-                      unoptimized
-                    />
-                  </div>
-                  <div className="font-black text-sm text-[var(--color-achievement)] mt-1">
-                    {PROFILE_DATA.gpa}
-                  </div>
-                </div>
-
-                {/* Expected Graduation */}
-                <div className="p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] flex flex-col justify-between">
-                  <div className="text-[9px] text-[var(--color-muted)] uppercase tracking-wider">EXP. GRADUATION</div>
-                  <div className="font-bold text-[var(--color-text)] mt-1">
-                    Class of {PROFILE_DATA.expectedGraduation}
-                  </div>
-                </div>
-              </div>
-
-              {/* Current Quest & Progression Bar */}
-              <div className="p-3 bg-[var(--color-background)] border border-[var(--color-border)] space-y-2.5">
-                <div className="flex items-center justify-between text-[10px]">
-                  <span className="text-[var(--color-muted)] uppercase tracking-wider flex items-center gap-1.5">
-                    <Image
-                      src={uiAssets.checkpoint.src}
-                      alt=""
-                      width={12}
-                      height={12}
-                      className="w-3 h-3"
-                      style={{ imageRendering: "pixelated" }}
-                      aria-hidden="true"
-                      unoptimized
-                    />
-                    {mode === "recruiter" ? "CURRENT STATUS" : "CURRENT QUEST"}
-                  </span>
-                  <span className="text-[var(--color-primary)] font-bold">
-                    SEMESTER {currentSemester} {"//"} IN PROGRESS
-                  </span>
-                </div>
-
-                {/* Stepped Pixel Progress Blocks: 4 Completed, 1 Current (In Progress), 3 Upcoming */}
-                <div className="space-y-1.5">
-                  <div
-                    className="grid grid-cols-8 gap-1.5 h-3.5 bg-[var(--color-surface-secondary)] p-0.5 border border-[var(--color-border)]"
-                    role="progressbar"
-                    aria-valuenow={currentSemester}
-                    aria-valuemin={1}
-                    aria-valuemax={totalSemesters}
-                    aria-label={`Academic progress: Semesters 1 through ${completedSemesters} completed, Semester ${currentSemester} currently in progress, Semesters ${currentSemester + 1} through ${totalSemesters} upcoming.`}
-                  >
-                    {Array.from({ length: totalSemesters }).map((_, i) => {
-                      const semNum = i + 1;
-                      const isCompleted = semNum < currentSemester;
-                      const isCurrent = semNum === currentSemester;
-
-                      return (
-                        <div
-                          key={semNum}
-                          className={cn(
-                            "h-full flex items-center justify-center transition-colors select-none",
-                            isCompleted && "bg-[var(--color-primary)]",
-                            isCurrent && cn(
-                              "bg-[var(--color-primary)] border border-[var(--color-achievement)] ring-1 ring-[var(--color-primary)] shadow-[0_0_6px_var(--color-primary)]",
-                              !prefersReducedMotion && "animate-pulse"
-                            ),
-                            !isCompleted && !isCurrent && "bg-[var(--color-background)]/80 border border-[var(--color-border)]/60"
-                          )}
-                          title={`Semester ${semNum} — ${
-                            isCompleted
-                              ? "Completed"
-                              : isCurrent
-                              ? "Current (In Progress)"
-                              : "Upcoming"
-                          }`}
-                        >
-                          {isCurrent && (
-                            <span
-                              className="w-1.5 h-1.5 bg-[#0B1020] rotate-45 inline-block"
-                              aria-hidden="true"
-                            />
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  <div className="flex justify-between items-center text-[9px] text-[var(--color-muted)] font-mono">
-                    <span>SEM 01</span>
-                    <span className="text-[var(--color-primary)] font-bold tracking-wider uppercase">
-                      ACADEMIC PROGRESS: SEMESTER {currentSemester} / {totalSemesters}
-                    </span>
-                    <span>SEM 08</span>
-                  </div>
-
-                  <div className="text-[9px] text-[var(--color-muted)] text-center pt-1 border-t border-[var(--color-border)]/50 tracking-wide font-mono">
-                    {completedSemesters} COMPLETED · SEMESTER {currentSemester} CURRENT · {upcomingSemesters} UPCOMING
-                  </div>
-                </div>
-              </div>
-
-              {/* System Note Footnote */}
-              <div className="p-2.5 bg-[var(--color-surface-secondary)]/50 border border-dashed border-[var(--color-border)] text-[10px] text-[var(--color-muted)] flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[var(--color-primary)] shrink-0 mt-0.5" />
-                <span>
-                  {mode === "recruiter"
-                    ? "Academic standing verified: Semester 5 In Progress at Telkom University Purwokerto (GPA 3.66 / 4.00). Specializing in intelligent systems, geospatial applications, and competitive innovation."
-                    : "Academic standing verified at Level 05 (Semester 5 In Progress). Specializing in intelligent software, spatial analytics, and competition-driven innovation."}
-                </span>
-              </div>
-            </div>
-          </PixelWindow>
+              </article>
+            ))}
+          </div>
         </div>
-
-        {/* ========================================================================= */}
-        {/* RIGHT COLUMN: Evidence-based Contribution Attribute Cards (~62%) */}
-        {/* ========================================================================= */}
-        <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-          {PROFILE_DATA.stats.map((stat) => {
-            const isCompetition = stat.id === "competitions";
-            const isSoftware = stat.id === "software";
-
-            return (
-              <PixelCard
-                key={stat.id}
-                className={cn(
-                  "flex flex-col justify-between h-full p-4 space-y-3",
-                  isCompetition && "sm:col-span-2 border-2 border-[var(--color-achievement)] shadow-[4px_4px_0px_0px_rgba(255,209,102,0.25)]",
-                  isSoftware && !isCompetition && "border-2 border-[var(--color-primary)]/80"
-                )}
-                variant={isCompetition ? "achievement" : "default"}
-              >
-                <div className="space-y-2.5">
-                  {/* Card Header: Icon + Category Name + Qualitative Rank */}
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className="p-1.5 border select-none shrink-0"
-                        style={{
-                          backgroundColor: `${statColors[stat.id]}15`,
-                          borderColor: statColors[stat.id],
-                        }}
-                      >
-                        {statIcons[stat.id]}
-                      </span>
-                      <span className="font-mono text-xs sm:text-sm font-bold tracking-wider text-[var(--color-text)] uppercase">
-                        {stat.name}
-                      </span>
-                    </div>
-
-                    <PixelBadge
-                      variant={
-                        isCompetition
-                          ? "achievement"
-                          : stat.id === "software"
-                          ? "primary"
-                          : stat.id === "leadership"
-                          ? "blue"
-                          : "outline"
-                      }
-                      size="sm"
-                    >
-                      {stat.rank}
-                    </PixelBadge>
-                  </div>
-
-                  {/* Concrete Verifiable Evidence Text */}
-                  <p className="text-xs text-[var(--color-muted)] font-sans leading-relaxed">
-                    {stat.highlight}
-                  </p>
-                </div>
-
-                {/* Evidence Area Tags */}
-                <div className="pt-2.5 border-t border-[var(--color-border)]/60 flex flex-wrap gap-1.5">
-                  {stat.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[9px] sm:text-[10px] font-mono px-1.5 py-0.5 bg-[var(--color-background)] text-[var(--color-text)] border border-[var(--color-border)] shadow-[1px_1px_0px_0px_rgba(0,0,0,0.3)]"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              </PixelCard>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
+      </section>
+    ));
+  }
+  return null;
 }
 

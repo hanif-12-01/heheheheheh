@@ -1,0 +1,75 @@
+/* Phase 4D.1: scene hierarchy, exact UI palette, native document scrolling. */
+.world-container { width: min(100% - 3rem, 1200px); margin-inline: auto; }
+.world-chapter { position: relative; padding-block: 6rem; isolation: isolate; }
+.world-raster { image-rendering: pixelated; }
+.world-scene { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: -1; }
+.world-landscape { object-fit: cover; object-position: center; }
+.world-clouds { position: absolute; top: 4%; left: 0; width: 100%; height: auto; opacity: .3; animation: world-cloud-drift 70s ease-in-out infinite alternate; }
+.world-foreground { position: absolute; bottom: -1px; left: 0; width: 100%; height: auto; }
+.world-scene--trail, .world-scene--clearing { opacity: .6; }
+.world-scene--hero .world-foreground { display: none; }
+.world-scene--trail .world-clouds, .world-scene--clearing .world-clouds { top: auto; bottom: 2rem; opacity: .18; }
+.world-workshop-art img { width: 100%; height: auto; }
+.world-hero { position: relative; min-height: min(850px, calc(100svh - 64px)); isolation: isolate; display: flex; align-items: flex-start; overflow: clip; }
+.world-hero-copy { position: relative; padding-block: clamp(5rem, 10vw, 9rem) 12rem; width: min(100%, 650px); }
+.world-hero-copy { text-shadow: 0 2px 2px #0B1020; }
+.world-eyebrow { color: var(--color-primary); font: 12px var(--font-sans); letter-spacing: .22em; text-transform: uppercase; margin-bottom: 1.8rem; display: flex; align-items: center; gap: .8rem; }
+.world-eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--color-primary); box-shadow: 6px 0 var(--color-primary), 0 6px var(--color-primary); }
+.world-name { font: 800 clamp(2.4rem, 5.2vw, 4.8rem)/1.16 var(--font-sans); letter-spacing: -.04em; color: var(--color-text); }
+.world-name span { display: block; color: var(--color-primary); }
+.world-role { font-size: clamp(1rem, 1.5vw, 1.25rem); margin-top: 1.4rem; color: var(--color-blue); font-weight: 600; }
+.world-intro { margin-top: 1.25rem; max-width: 480px; color: var(--color-text); font-size: 15px; line-height: 1.9; }
+.world-hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.world-action { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 46px; padding: .7rem 1.25rem; color: var(--color-text); font-size: 13px; font-weight: 600; border: 1px solid var(--color-border); background: var(--color-background); }
+.world-action--primary { background: var(--color-primary); color: #0B1020; border-color: var(--color-primary); box-shadow: 3px 3px #26324D; }
+.world-action:hover { transform: translateY(-2px); }
+.world-hero-note { display: block; margin-top: 1.5rem; font-size: 12px; color: var(--color-muted); }
+.world-trail-link { position: absolute; bottom: 2.4rem; left: max(1.5rem, calc((100vw - 1200px) / 2)); color: var(--color-muted); font-size: 12px; display: flex; gap: .7rem; align-items: center; }
+.world-trail-link img { image-rendering: pixelated; }
+.world-companion-anchor { position: absolute; right: 19%; bottom: 15%; width: 76px; height: 112px; z-index: 3; }
+.world-companion { position: fixed; bottom: 1rem; right: 1rem; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; gap: .6rem; pointer-events: none; }
+.world-companion--docked { position: absolute; inset: auto 0 0 auto; z-index: 5; }
+.world-companion-button { position: relative; display: flex; align-items: flex-end; justify-content: center; width: 64px; height: 96px; background: transparent; border: 0; cursor: pointer; pointer-events: auto; }
+.world-companion--docked .world-companion-button { width: 76px; height: 112px; }
+.world-companion-button::before { content: ''; position: absolute; bottom: 0; width: 44px; height: 6px; background: #0B1020; box-shadow: 8px 2px #151B2E, -8px 2px #151B2E; }
+.world-companion-button img { position: relative; width: auto; max-width: 100%; height: 100%; object-fit: contain; object-position: bottom; image-rendering: pixelated; }
+.world-companion-hint { position: absolute; left: 50%; bottom: -18px; transform: translateX(-50%); color: var(--color-muted); font-size: 10px; white-space: nowrap; }
+.world-companion-dialogue { width: 230px; }
+.recruiter-hero { padding: 5rem 1.5rem; }
+.recruiter-hero-inner { display: grid; grid-template-columns: 1.6fr 1fr; gap: 4rem; max-width: 1200px; margin: auto; align-items: center; }
+.recruiter-hero h1 { font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.15; font-weight: 800; }
+.recruiter-hero h1 span { color: var(--color-primary); }
+.recruiter-hero p { color: var(--color-muted); line-height: 1.8; margin-top: 1.3rem; }
+.recruiter-portrait { position: relative; aspect-ratio: 4 / 5; max-width: 320px; width: 100%; justify-self: center; overflow: hidden; }
+.recruiter-portrait img { object-fit: cover; object-position: 70% center; }
+:where(a, button, summary):focus-visible { outline: 2px solid var(--color-primary); outline-offset: 5px; }
+[data-mode="pixel"] .pixel-grid-pattern { background-image: none; }
+[data-mode="pixel"] .pixel-scanlines { display: none; }
+[data-mode="pixel"] body > header, [data-mode="pixel"] .site-navigation { border-bottom-width: 1px; background: rgba(11,16,32,.94); }
+[data-mode="pixel"] .site-navigation > div > a > div:last-child > span:last-child { display: none; }
+.project-directory-list { display: flex; flex-direction: column; gap: 1.5rem; }
+[data-mode="recruiter"] .world-scene, [data-mode="recruiter"] .world-workshop-art { display: none; }
+@keyframes world-cloud-drift { from { transform: translateX(-1%); } to { transform: translateX(1%); } }
+@media (min-width: 769px) { .world-hero::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(11,16,32,.75), rgba(11,16,32,.2) 45%, transparent 65%); } }
+@media (max-width: 1023px) { .world-hero { min-height: 790px; } .world-hero-copy { max-width: 520px; } .world-name { font-size: 3.3rem; } .world-companion-anchor { right: 15%; bottom: 14%; } }
+@media (max-width: 768px) {
+  .world-container { width: calc(100% - 2.5rem); }
+  .world-chapter { padding-block: 4rem; }
+  .world-hero { display: block; min-height: 0; padding-bottom: 350px; }
+  .world-hero-copy { width: 100%; padding-block: 3rem 2.5rem; }
+  .world-name { font-size: clamp(2.3rem, 8vw, 3.5rem); }
+  .world-eyebrow { margin-bottom: 1.2rem; font-size: 10px; }
+  .world-role { max-width: 26rem; font-size: 1rem; }
+  .world-intro { line-height: 1.8; font-size: 14px; max-width: 32rem; }
+  .world-hero-actions { margin-top: 1.5rem; gap: .75rem; }
+  .world-hero > .world-scene { top: auto; height: 350px; bottom: 0; }
+  .world-landscape { object-position: 90% center; }
+  .world-trail-link { bottom: 1.5rem; z-index: 3; padding: .4rem .6rem; background: #0B1020; }
+  .world-companion-anchor { right: 25%; bottom: 8%; width: 64px; height: 96px; }
+  .world-companion--docked .world-companion-button { width: 64px; height: 96px; }
+  .recruiter-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .recruiter-hero { padding-block: 3rem; }
+  .recruiter-portrait { max-width: 280px; }
+}
+@media (max-width: 374px) { .world-hero { padding-bottom: 300px; } .world-hero-actions { flex-direction: column; align-items: flex-start; } .world-hero > .world-scene { height: 300px; } }
+@media (prefers-reduced-motion: reduce) { .world-clouds { animation: none; } .world-action:hover { transform: none; } }

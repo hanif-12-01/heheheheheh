@@ -8,8 +8,8 @@ export const ACHIEVEMENTS_DATA: Achievement[] = [
     result: "3rd Place",
     year: 2026,
     description:
-      "Awarded 3rd Place nationally for developing an integrated smart-city civic data solution designed to improve urban public service accessibility.",
-    relatedProject: "purwokerto-intelligence-layer",
+      "Awarded 3rd Place nationally with CIVICTWIN Semarang, a Smart City proof of concept exploring district priorities, citizen feedback, and public-service accountability using simulated data.",
+    relatedProject: "civictwin-semarang",
     featured: true,
     category: "competition",
     badgeIcon: "trophy",

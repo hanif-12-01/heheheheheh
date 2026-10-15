@@ -1,5 +1,9 @@
 "use client";
 
+import { AtelierResearch } from "@/components/atelier/AtelierSections";
+
+import { useLocalize } from "@/i18n/useTranslations";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import { RESEARCH_COMPETITIONS_DATA, ResearchCompetitionItem } from "@/data/researchCompetitions";
@@ -39,7 +43,7 @@ function getCategoryIcon(category: string) {
     case "PKM":
       return <FlaskConical className="w-3.5 h-3.5 text-[var(--color-primary)]" aria-hidden="true" />;
     case "Public Speaking":
-      return <Presentation className="w-3.5 h-3.5 text-[#F43F5E]" aria-hidden="true" />;
+      return <Presentation className="w-3.5 h-3.5 text-[var(--color-purple)]" aria-hidden="true" />;
     case "Smart City":
       return <Globe2 className="w-3.5 h-3.5 text-[var(--color-blue)]" aria-hidden="true" />;
     case "Hackathon":
@@ -132,6 +136,7 @@ function getRecordEvidenceBadge(item: ResearchCompetitionItem): EvidenceBadge {
 }
 
 export function ResearchCompetitions() {
+  const localize = useLocalize();
   const [activeFilter, setActiveFilter] = useState<FilterTrack>("all");
   const { mode } = usePortfolioMode();
 
@@ -171,263 +176,64 @@ export function ResearchCompetitions() {
     (i) => i.category === "Public Speaking"
   ).length;
 
-  return (
-    <section
-      id="research"
-      aria-label="Research and Competitions"
-      className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[var(--color-border)] space-y-10"
-    >
-      {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-2 border-b border-[var(--color-border)]/60">
-        <PixelSectionTitle
-          number="08"
-          title="RESEARCH &amp; COMPETITIONS // FIELD LOG"
-          subtitle="Documented participation across faculty research, PKM scientific proposals, national hackathons, and symposium presentations."
-          badge="EVIDENCE LOG"
-          recruiterTitle="RESEARCH, COMPETITIONS & ACTIVITIES"
-          recruiterSubtitle="Documented participation across faculty research, PKM scientific proposals, national hackathons, and symposium presentations."
-          recruiterBadge="VERIFIED ACTIVITIES"
-          className="mb-0"
-        />
+  if (mode === "recruiter") return <AtelierResearch />;
 
-        <div className="flex items-center gap-2 self-start md:self-end font-mono text-xs text-[var(--color-muted)]">
-          <span className="px-2.5 py-1 bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)]">
-            <span className="text-[var(--color-primary)] font-bold">
-              {RESEARCH_COMPETITIONS_DATA.length.toString().padStart(2, "0")}
-            </span>{" "}
-            ACTIVITIES DOCUMENTED
-          </span>
-        </div>
-      </div>
+  if (mode === "pixel") {
+    const filters: { id: FilterTrack; label: string; count: number }[] = [
+      { id: "all", label: "All notes", count: RESEARCH_COMPETITIONS_DATA.length },
+      { id: "competitions", label: "Competitions", count: competitionCount },
+      { id: "research", label: "Research & PKM", count: researchCount },
+      { id: "presentations", label: "Presentations", count: presentationCount },
+    ];
 
-      {/* Main Grid: Left Field Log (65%) + Right Academic Dossier (35%) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        {/* Left Column: Field Log Terminal */}
-        <div className="lg:col-span-8 space-y-4">
-          {/* Phase 3F.1 Accessible Filter Buttons (role="group" + aria-pressed) */}
-          <div
-            role="group"
-            aria-label="Filter research and competition records by track"
-            className="flex flex-wrap gap-2 select-none"
-          >
-            <button
-              type="button"
-              aria-pressed={activeFilter === "all"}
-              onClick={() => setActiveFilter("all")}
-              className={cn(
-                "px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-all duration-75 border-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.5)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]",
-                activeFilter === "all"
-                  ? "bg-[var(--color-primary)] text-[#0B1020] border-[var(--color-primary)] font-bold shadow-[2px_2px_0px_0px_#0B1020]"
-                  : "bg-[var(--color-surface)] text-[var(--color-muted)] hover:text-[var(--color-text)] border-[var(--color-border)] hover:bg-[var(--color-surface-secondary)]"
-              )}
-            >
-              ALL LOGS ({RESEARCH_COMPETITIONS_DATA.length.toString().padStart(2, "0")})
-            </button>
-
-            <button
-              type="button"
-              aria-pressed={activeFilter === "competitions"}
-              onClick={() => setActiveFilter("competitions")}
-              className={cn(
-                "px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-all duration-75 border-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.5)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]",
-                activeFilter === "competitions"
-                  ? "bg-[var(--color-primary)] text-[#0B1020] border-[var(--color-primary)] font-bold shadow-[2px_2px_0px_0px_#0B1020]"
-                  : "bg-[var(--color-surface)] text-[var(--color-muted)] hover:text-[var(--color-text)] border-[var(--color-border)] hover:bg-[var(--color-surface-secondary)]"
-              )}
-            >
-              COMPETITIONS ({competitionCount.toString().padStart(2, "0")})
-            </button>
-
-            <button
-              type="button"
-              aria-pressed={activeFilter === "research"}
-              onClick={() => setActiveFilter("research")}
-              className={cn(
-                "px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-all duration-75 border-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.5)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]",
-                activeFilter === "research"
-                  ? "bg-[var(--color-primary)] text-[#0B1020] border-[var(--color-primary)] font-bold shadow-[2px_2px_0px_0px_#0B1020]"
-                  : "bg-[var(--color-surface)] text-[var(--color-muted)] hover:text-[var(--color-text)] border-[var(--color-border)] hover:bg-[var(--color-surface-secondary)]"
-              )}
-            >
-              RESEARCH &amp; PKM ({researchCount.toString().padStart(2, "0")})
-            </button>
-
-            <button
-              type="button"
-              aria-pressed={activeFilter === "presentations"}
-              onClick={() => setActiveFilter("presentations")}
-              className={cn(
-                "px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-all duration-75 border-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.5)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]",
-                activeFilter === "presentations"
-                  ? "bg-[var(--color-primary)] text-[#0B1020] border-[var(--color-primary)] font-bold shadow-[2px_2px_0px_0px_#0B1020]"
-                  : "bg-[var(--color-surface)] text-[var(--color-muted)] hover:text-[var(--color-text)] border-[var(--color-border)] hover:bg-[var(--color-surface-secondary)]"
-              )}
-            >
-              PRESENTATIONS ({presentationCount.toString().padStart(2, "0")})
-            </button>
-          </div>
-
-          {/* Terminal Field Log Card Container */}
-          <div className="border-2 border-[var(--color-border)] bg-[var(--color-surface)] shadow-[5px_5px_0px_0px_rgba(0,0,0,0.6)] overflow-hidden">
-            {/* Window Title Bar */}
-            <div className="flex items-center justify-between px-3.5 py-2 bg-[var(--color-surface-secondary)] border-b-2 border-[var(--color-border)] select-none">
-              <div className="flex items-center gap-2">
-                <Terminal className="w-3.5 h-3.5 text-[var(--color-primary)]" aria-hidden="true" />
-                <span className="font-mono text-xs font-bold text-[var(--color-text)] uppercase tracking-wider">
-                  FIELD_LOG // ACTIVITY_ENTRIES
-                </span>
+    return localize((
+      <section id="research" aria-labelledby="research-title" className="world-chapter fieldnotes-chapter">
+        <div className="world-container chapter-content">
+          <header className="chapter-heading">
+            <p className="chapter-eyebrow">08 / FIELD NOTES</p>
+            <h2 id="research-title">Ideas tested beyond the workshop.</h2>
+            <p>Documented work across faculty research, PKM proposals, competitions, and academic presentations.</p>
+          </header>
+          <div className="fieldnotes-layout">
+            <div>
+              <div role="group" aria-label="Filter research and competition records by track" className="fieldnotes-filters">
+                {filters.map((filter) => (
+                  <button key={filter.id} type="button" aria-pressed={activeFilter === filter.id} aria-controls="research-records" onClick={() => setActiveFilter(filter.id)}>{filter.label} <span>({filter.count})</span></button>
+                ))}
               </div>
-              <span className="font-mono text-[10px] text-[var(--color-muted)]">
-                {filteredData.length} RECORD{filteredData.length === 1 ? "" : "S"} DISPLAYED
-              </span>
+              <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{`${filteredData.length} ${filteredData.length === 1 ? "record" : "records"} displayed for ${activeFilter === "all" ? "all categories" : activeFilter} filter.`}</p>
+              <div id="research-records" className="fieldnotes-records">
+                {filteredData.map((item) => {
+                  const evidence = getRecordEvidenceBadge(item);
+                  return (
+                    <article key={item.id} aria-labelledby={`entry-title-${item.id}`} className="fieldnote">
+                      <div className="fieldnote__meta"><span>{item.year} / {item.category}</span><span className={cn("fieldnote__evidence", evidence.type === "RESULT" && "fieldnote__evidence--result")}>{evidence.type}: {evidence.label.replace(/^FORMAT: /, "")}</span></div>
+                      <h3 id={`entry-title-${item.id}`}>{item.title}</h3>
+                      <p className="fieldnote__role">{item.role} <span aria-hidden="true">·</span> <span>{item.event}</span></p>
+                      {item.highlight && <p>{item.highlight}</p>}
+                    </article>
+                  );
+                })}
+              </div>
             </div>
-
-            {/* Concise status announcement for screen readers (WCAG 2.2 AA) */}
-            <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
-              {`${filteredData.length} ${filteredData.length === 1 ? "record" : "records"} displayed for ${activeFilter === "all" ? "all categories" : activeFilter} filter.`}
-            </div>
-
-            {/* Field Log List */}
-            <div className="divide-y divide-[var(--color-border)]">
-              {filteredData.map((item) => {
-                const badge = getRecordEvidenceBadge(item);
-                const BadgeIcon = badge.icon;
-
-                return (
-                  <article
-                    key={item.id}
-                    className="p-4 sm:p-5 hover:bg-[var(--color-surface-secondary)]/50 transition-colors space-y-2.5"
-                    aria-labelledby={`entry-title-${item.id}`}
-                  >
-                    {/* Entry Top Meta Line: Year, Category, and Verified Outcome */}
-                    <div className="flex flex-wrap items-center justify-between gap-2 select-none">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 bg-[var(--color-background)] border border-[var(--color-border)] font-mono text-[11px] font-bold text-[var(--color-primary)]">
-                          {item.year}
-                        </span>
-                        <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[var(--color-surface-secondary)] border border-[var(--color-border)] font-mono text-[10px] text-[var(--color-muted)] uppercase">
-                          {getCategoryIcon(item.category)}
-                          <span>{item.category}</span>
-                        </div>
-                      </div>
-
-                      {/* Precise Verified Outcome / Context Badge */}
-                      <span
-                        className={cn(
-                          "inline-flex items-center gap-1 font-mono text-[10px] font-bold px-2 py-0.5 shadow-[1px_1px_0px_0px_rgba(0,0,0,0.5)]",
-                          badge.variant === "achievement" &&
-                            "bg-[var(--color-achievement)] text-[#0B1020] border border-[var(--color-achievement)]",
-                          badge.variant === "primary" &&
-                            "bg-[var(--color-primary)]/15 text-[var(--color-primary)] border border-[var(--color-primary)]",
-                          badge.variant === "blue" &&
-                            "bg-[var(--color-blue)]/15 text-[var(--color-blue)] border border-[var(--color-blue)]",
-                          badge.variant === "outline" &&
-                            "bg-[var(--color-background)] text-[var(--color-muted)] border border-[var(--color-border)]"
-                        )}
-                      >
-                        <BadgeIcon className="w-3 h-3 shrink-0" aria-hidden="true" />
-                        <span>{badge.label}</span>
-                      </span>
-                    </div>
-
-                    {/* Entry Title & Event */}
-                    <div>
-                      <h3
-                        id={`entry-title-${item.id}`}
-                        className="font-mono text-sm sm:text-base font-bold text-[var(--color-text)]"
-                      >
-                        {item.title}
-                      </h3>
-                      <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs font-mono mt-0.5">
-                        <span className="text-[var(--color-primary)] font-semibold">
-                          Role: {item.role}
-                        </span>
-                        <span className="text-[var(--color-border)]" aria-hidden="true">•</span>
-                        <span className="text-[var(--color-muted)]">{item.event}</span>
-                      </div>
-                    </div>
-
-                    {/* Factual Highlight / Description */}
-                    {item.highlight && (
-                      <p className="text-xs text-[var(--color-muted)] font-sans leading-relaxed">
-                        {item.highlight}
-                      </p>
-                    )}
-                  </article>
-                );
-              })}
-            </div>
+            <aside className="fieldnotes-aside" aria-label="Academic dossier and research participation overview">
+              <div className="fieldnotes-aside__props" aria-hidden="true">
+                <span><Image src={journeyAssets.researchDocument.src} alt="" fill sizes="150px" unoptimized className="object-contain" /></span>
+                <span><Image src={journeyAssets.researchFlask.src} alt="" fill sizes="85px" unoptimized className="object-contain" /></span>
+              </div>
+              <p className="chapter-eyebrow">THE RESEARCH NOTEBOOK</p>
+              <h3>Contribution, in context.</h3>
+              <dl className="fieldnotes-totals">
+                <div><dt>Competitions & hackathons</dt><dd>{competitionCount}</dd></div>
+                <div><dt>Faculty research & PKM</dt><dd>{researchCount}</dd></div>
+                <div><dt>Academic presentations</dt><dd>{presentationCount}</dd></div>
+              </dl>
+              <p>Roles reflect documented student contributor, developer, presenter, and participant status. Competition results are distinguished from participation and presentation.</p>
+            </aside>
           </div>
         </div>
-
-        {/* Right Column: Academic Dossier & Integrity Standard Panel (35%) */}
-        <aside
-          className="lg:col-span-4 space-y-5"
-          aria-label="Academic dossier and research participation overview"
-        >
-          {/* Dossier Card */}
-          <div className="border-2 border-[var(--color-border)] bg-[var(--color-surface)] shadow-[5px_5px_0px_0px_rgba(0,0,0,0.6)] p-5 space-y-5">
-            {/* Dossier Header */}
-            <div className="flex items-center justify-between pb-3 border-b border-[var(--color-border)] select-none">
-              <span className="font-mono text-xs font-bold text-[var(--color-primary)] uppercase tracking-wider flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-[var(--color-primary)]" aria-hidden="true" />
-                <span>ACADEMIC DOSSIER</span>
-              </span>
-              <span className="px-1.5 py-0.5 bg-[var(--color-background)] border border-[var(--color-border)] font-mono text-[9px] text-[var(--color-muted)] uppercase">
-                VERIFIED LOG
-              </span>
-            </div>
-
-            {/* Restrained Domain Artwork — Production World Asset */}
-            <div className="flex items-center justify-center py-2 select-none">
-              <div className="p-3 bg-[var(--color-background)] border-2 border-[var(--color-border)] shadow-[3px_3px_0px_0px_rgba(0,0,0,0.5)]">
-                <Image
-                  src={journeyAssets.researchDocument.src}
-                  alt=""
-                  width={96}
-                  height={84}
-                  className="object-contain"
-                  style={{ imageRendering: "pixelated" }}
-                  aria-hidden="true"
-                  unoptimized
-                />
-              </div>
-            </div>
-
-            {/* Activity Summary Counters */}
-            <div className="space-y-2 pt-1 font-mono">
-              <div className="flex items-center justify-between p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] text-xs">
-                <span className="text-[var(--color-muted)]">Competitions &amp; Hackathons:</span>
-                <span className="font-bold text-[var(--color-primary)]">
-                  {competitionCount.toString().padStart(2, "0")}
-                </span>
-              </div>
-              <div className="flex items-center justify-between p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] text-xs">
-                <span className="text-[var(--color-muted)]">Faculty Research &amp; PKM:</span>
-                <span className="font-bold text-[var(--color-primary)]">
-                  {researchCount.toString().padStart(2, "0")}
-                </span>
-              </div>
-              <div className="flex items-center justify-between p-2.5 bg-[var(--color-background)] border border-[var(--color-border)] text-xs">
-                <span className="text-[var(--color-muted)]">Academic Presentations:</span>
-                <span className="font-bold text-[var(--color-primary)]">
-                  {presentationCount.toString().padStart(2, "0")}
-                </span>
-              </div>
-            </div>
-
-            {/* Academic Credibility Standard Note */}
-            <div className="p-3 bg-[var(--color-background)]/80 border border-[var(--color-border)] space-y-1.5">
-              <span className="font-mono text-[10px] font-bold text-[var(--color-primary)] uppercase tracking-wider block">
-                &gt; CREDIBILITY STANDARD
-              </span>
-              <p className="text-[11px] font-sans text-[var(--color-muted)] leading-relaxed">
-                Roles conservatively reflect documented student contributor, developer, presenter, and participant status. Zero unverified journal publication, DOI, or inflated leadership claims.
-              </p>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-  );
+      </section>
+    ));
+  }
+  return null;
 }

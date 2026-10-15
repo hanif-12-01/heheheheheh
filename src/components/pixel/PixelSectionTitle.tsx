@@ -3,6 +3,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { usePortfolioMode } from "@/hooks/usePortfolioMode";
+import { useLocalize } from "@/i18n/useTranslations";
 
 export interface PixelSectionTitleProps {
   number: string; // e.g. "01", "02"
@@ -29,11 +30,18 @@ export function PixelSectionTitle({
   className,
   as: HeadingTag = "h2",
 }: PixelSectionTitleProps) {
+  const localize = useLocalize();
   const { mode } = usePortfolioMode();
   const displayTitle = mode === "recruiter" && recruiterTitle ? recruiterTitle : title;
   const displaySubtitle = mode === "recruiter" && recruiterSubtitle ? recruiterSubtitle : subtitle;
   const displayBadge = mode === "recruiter" && recruiterBadge ? recruiterBadge : badge;
-  return (
+  if (mode === "recruiter") {
+    return localize(<header className={cn("atelier-directory-heading", className)}>
+      <HeadingTag>{number === "ARCHIVE" ? "The engineering collection." : displayTitle}</HeadingTag>
+      {displaySubtitle && <p>{displaySubtitle}</p>}
+    </header>);
+  }
+  return localize(
     <div
       className={cn(
         "mb-10 sm:mb-12 space-y-2",

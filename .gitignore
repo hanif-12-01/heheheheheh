@@ -9,6 +9,7 @@ out/
 build/
 dist/
 *.tsbuildinfo
+tmp/
 
 # Logs
 npm-debug.log*
@@ -34,3 +35,32 @@ Thumbs.db
 docs/
 AGENTS.md
 CLAUDE.md
+
+# Phase 4D.1 explicitly requires these review documents and browser evidence.
+!docs/
+docs/*
+!docs/LIVING_PIXEL_WORLD_ART_DIRECTION.md
+!docs/LIVING_PIXEL_WORLD_ASSET_AUDIT.md
+!docs/LIVING_PIXEL_WORLD_REDESIGN_REPORT.md
+!docs/PLACEHOLDER_REGISTER.md
+!docs/MEDIA_INTEGRATION_GUIDE.md
+!docs/PRE_DEPLOYMENT_OWNER_CHECKLIST.md
+!docs/visual-review/
+!docs/I18N_IMPLEMENTATION.md
+!docs/CV_BILINGUAL_GUIDE.md
+!docs/CV_PRINT_VALIDATION.md
+!docs/PIXEL_ENVIRONMENT_REFINEMENT.md
+!docs/BILINGUAL_WORLD_CV_REPAIR_REPORT.md
+!docs/phase-4d2/
+!docs/phase-4d3/
+!docs/GRAND_ATELIER_ART_DIRECTION.md
+!docs/GRAND_ATELIER_REPORT.md
+!docs/atelier-expansion/
+!docs/atelier-expansion/QA_RESULTS.md
+!docs/CONTENT_INTEGRITY.md
+!docs/ownership-correction/
+!docs/ownership-correction/QA_RESULTS.md
+!docs/civic-attribution/
+!docs/civic-attribution/QA_RESULTS.md
+!docs/ATELIER_EXPANSION_REPORT.md
+!docs/cv-validation/

@@ -1,0 +1,76 @@
+ M .gitignore
+ M next-env.d.ts
+ M scripts/generate-cv.js
+ M src/app/globals.css
+ M src/app/projects/page.tsx
+ M src/components/layout/Footer.tsx
+ M src/components/layout/Navbar.tsx
+ M src/components/pet/PetControls.tsx
+ M src/components/pet/PixelHanifPet.tsx
+ M src/components/projects/FeaturedProjectCard.tsx
+ M src/components/projects/ProjectCard.tsx
+ M src/components/projects/ProjectCaseStudy.tsx
+ M src/components/projects/ProjectPreviewViewport.tsx
+ M src/components/sections/About.tsx
+ M src/components/sections/GithubExperiments.tsx
+ M src/components/sections/Hero.tsx
+ M src/components/sections/Interests.tsx
+ M src/components/sections/Journey.tsx
+ M src/components/sections/LetsBeFriends.tsx
+ M src/components/sections/PlayerProfile.tsx
+ M src/components/sections/ProjectLab.tsx
+ M src/components/sections/ResearchCompetitions.tsx
+ M src/components/sections/SkillsInventory.tsx
+ M src/components/sections/TrophyRoom.tsx
+ M src/data/worldAssets.ts
+ M src/lib/mediaConfig.ts
+?? "assets-source/Living Pixel World/"
+?? docs/
+?? public/pet/optimized/
+?? public/pixel/achievements/achievement-confetti.webp
+?? public/pixel/achievements/achievement-laurel.webp
+?? public/pixel/achievements/achievement-medal.webp
+?? public/pixel/achievements/achievement-sheet.webp
+?? public/pixel/achievements/achievement-sparkle.webp
+?? public/pixel/achievements/achievement-trophy.webp
+?? public/pixel/environment/clouds.svg
+?? public/pixel/environment/foreground.svg
+?? public/pixel/environment/woodland-workshop.webp
+?? public/pixel/environment/workshop-interior.webp
+?? public/pixel/journey/semester-1-backpack.webp
+?? public/pixel/journey/semester-2-organization-building.webp
+?? public/pixel/journey/semester-3-book.webp
+?? public/pixel/journey/semester-3-microphone.webp
+?? public/pixel/journey/semester-4-research-document.webp
+?? public/pixel/journey/semester-4-research-flask.webp
+?? public/pixel/journey/semester-4-trophy.webp
+?? public/pixel/journey/semester-5-rocket.webp
+?? public/pixel/tech/tech-ai-chip.webp
+?? public/pixel/tech/tech-code-editor.webp
+?? public/pixel/tech/tech-database.webp
+?? public/pixel/tech/tech-gis-map.webp
+?? public/pixel/tech/tech-server.webp
+?? public/pixel/tech/tech-smart-city.webp
+?? public/pixel/ui/ui-arrow-down.webp
+?? public/pixel/ui/ui-arrow-left.webp
+?? public/pixel/ui/ui-arrow-right.webp
+?? public/pixel/ui/ui-check.webp
+?? public/pixel/ui/ui-checkpoint.webp
+?? public/pixel/ui/ui-code.webp
+?? public/pixel/ui/ui-external-link.webp
+?? public/pixel/ui/ui-folder.webp
+?? public/pixel/ui/ui-map-pin.webp
+?? public/pixel/ui/ui-sparkle.webp
+?? public/pixel/ui/ui-star.webp
+?? scripts/cv-localization.js
+?? scripts/cv-runtime.js
+?? scripts/cv-template.js
+?? scripts/prepare-living-world.cjs
+?? scripts/qa-living-world.cjs
+?? src/components/world/
+?? src/i18n/
+?? src/styles/world-chapters.css
+?? src/styles/world-identity.css
+?? src/styles/world-projects.css
+?? src/styles/world.css
+?? tmp/

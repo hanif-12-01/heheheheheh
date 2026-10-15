@@ -1,0 +1,406 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-14T07:04:23.084Z",
+  "checks": [
+    {
+      "name": "Single companion docks in hero",
+      "passed": true
+    },
+    {
+      "name": "Companion follows when less than a quarter of hero remains visible",
+      "passed": true
+    },
+    {
+      "name": "Native companion click and Escape dismissal",
+      "passed": true
+    },
+    {
+      "name": "Companion visibility persists after reload",
+      "passed": true
+    },
+    {
+      "name": "Six prominent canonical repository links and case-study links",
+      "passed": true
+    },
+    {
+      "name": "Five semester selections work with native keyboard controls",
+      "passed": true
+    },
+    {
+      "name": "Four trophy selections preserve aria-pressed and exact evidence",
+      "passed": true
+    },
+    {
+      "name": "Research filters change records and announce selection",
+      "passed": true
+    },
+    {
+      "name": "CV download is the unchanged two-page PDF",
+      "passed": true
+    },
+    {
+      "name": "Mode switching persists and recruiter hides scenery/companion",
+      "passed": true
+    },
+    {
+      "name": "All 16 mode/viewport combinations have no overflow, clipped controls or broken images",
+      "passed": true
+    },
+    {
+      "name": "Mobile navigation closes with Escape and returns focus",
+      "passed": true
+    },
+    {
+      "name": "Skip navigation has a real target and visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion scenery is static",
+      "passed": true
+    },
+    {
+      "name": "Case study wattwise-ai contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "Case study purwokerto-intelligence-layer contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "Case study simobs-bengkel contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "Case study lapor-mangan contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "Case study bernas-mbg contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "Case study ai-course-project contains the canonical repository",
+      "passed": true
+    },
+    {
+      "name": "All canonical records, original photographs and CV locks remain byte-identical",
+      "passed": true
+    }
+  ],
+  "viewports": [
+    {
+      "mode": "pixel",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 768,
+      "scrollWidth": 768,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 430,
+      "scrollWidth": 430,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 390,
+      "scrollWidth": 390,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 375,
+      "scrollWidth": 375,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "pixel",
+      "width": 320,
+      "scrollWidth": 320,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 768,
+      "scrollWidth": 768,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 430,
+      "scrollWidth": 430,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 390,
+      "scrollWidth": 390,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 375,
+      "scrollWidth": 375,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    },
+    {
+      "mode": "recruiter",
+      "width": 320,
+      "scrollWidth": 320,
+      "heroTextArtOverlap": false,
+      "clippedControls": [],
+      "brokenImages": []
+    }
+  ],
+  "consoleErrors": [],
+  "warnings": [],
+  "failedRequests": [],
+  "routes": [
+    {
+      "path": "/projects/wattwise-ai",
+      "status": 200,
+      "h1": "WattWise AI"
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "status": 200,
+      "h1": "Purwokerto Intelligence Layer"
+    },
+    {
+      "path": "/projects/simobs-bengkel",
+      "status": 200,
+      "h1": "SIMOBS — Bengkel Service Management"
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "status": 200,
+      "h1": "Lapor Mangan"
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "status": 200,
+      "h1": "Bernas MBG"
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "status": 200,
+      "h1": "Fuzzy Rain Risk Index — AI Coursework"
+    },
+    {
+      "path": "/projects",
+      "status": 200
+    },
+    {
+      "path": "/journey",
+      "status": 200
+    },
+    {
+      "path": "/dev",
+      "status": 404
+    },
+    {
+      "path": "/pet-test",
+      "status": 404
+    },
+    {
+      "path": "/asset-test",
+      "status": 404
+    }
+  ],
+  "performance": {
+    "navigation": [
+      {
+        "duration": 89.8999999994412,
+        "domContentLoaded": 28.299999999813735,
+        "transferSize": 300
+      }
+    ],
+    "images": [
+      {
+        "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+        "transferSize": 300,
+        "duration": 2.900000000372529
+      },
+      {
+        "url": "http://localhost:3012/pet/optimized/idle.webp",
+        "transferSize": 300,
+        "duration": 3.2000000001862645
+      },
+      {
+        "url": "http://localhost:3012/pixel/environment/clouds.svg",
+        "transferSize": 300,
+        "duration": 3.3999999994412065
+      },
+      {
+        "url": "http://localhost:3012/pixel/environment/foreground.svg",
+        "transferSize": 300,
+        "duration": 4.7999999998137355
+      },
+      {
+        "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+        "transferSize": 300,
+        "duration": 5.2000000001862645
+      },
+      {
+        "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+        "transferSize": 300,
+        "duration": 5.5
+      },
+      {
+        "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+        "transferSize": 300,
+        "duration": 6
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+        "transferSize": 300,
+        "duration": 6.5
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+        "transferSize": 300,
+        "duration": 8.5
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+        "transferSize": 300,
+        "duration": 9.599999999627471
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-ai-chip.webp",
+        "transferSize": 300,
+        "duration": 10.5
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-code-editor.webp",
+        "transferSize": 300,
+        "duration": 11.100000000558794
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-5-rocket.webp",
+        "transferSize": 300,
+        "duration": 12.800000000745058
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-4-research-flask.webp",
+        "transferSize": 300,
+        "duration": 14
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-1-backpack.webp",
+        "transferSize": 300,
+        "duration": 15.599999999627471
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-2-organization-building.webp",
+        "transferSize": 300,
+        "duration": 16.09999999962747
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-3-microphone.webp",
+        "transferSize": 300,
+        "duration": 16.700000000186265
+      },
+      {
+        "url": "http://localhost:3012/pixel/journey/semester-4-trophy.webp",
+        "transferSize": 300,
+        "duration": 17.200000000186265
+      },
+      {
+        "url": "http://localhost:3012/pixel/achievements/achievement-laurel.webp",
+        "transferSize": 300,
+        "duration": 18
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-gis-map.webp",
+        "transferSize": 300,
+        "duration": 19.100000000558794
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-server.webp",
+        "transferSize": 300,
+        "duration": 20.399999999441206
+      },
+      {
+        "url": "http://localhost:3012/pixel/tech/tech-database.webp",
+        "transferSize": 300,
+        "duration": 21.299999999813735
+      },
+      {
+        "url": "http://localhost:3012/pixel/ui/ui-code.webp",
+        "transferSize": 300,
+        "duration": 21.600000000558794
+      },
+      {
+        "url": "http://localhost:3012/pet/optimized/wave.webp",
+        "transferSize": 300,
+        "duration": 2.3999999994412065
+      }
+    ]
+  }
+}

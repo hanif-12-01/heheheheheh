@@ -1,5 +1,5 @@
 /**
- * HANIF.EXE — Owner-Verified Media Configuration (Phase 4D)
+ * HANIF.EXE — Owner-Verified Media Configuration (Phase 4D.1)
  *
  * Strict Credibility & Placeholder-First Policy:
  * Only populate these fields when authentic, owner-provided, verifiable media assets exist.
@@ -7,10 +7,12 @@
  *
  * Accepted sources:
  * - Authentic photograph supplied by M. Hanif Al Faiz
- * - Genuine screenshots of real application UI / notebooks
+ * - Genuine screenshots of real application UI / notebooks (optional archive only)
  *
  * Prohibited:
- * - AI-generated portraits pretending to depict the owner
+ * - Invented portraits pretending to depict the owner
+ * Owner-authorized Phase 4D.3 pixel transformation of the authentic photograph
+ * is a separate portrait study, pending the owner's likeness approval.
  * - Stock photos or mock dashboards pretending to show real software
  * - Invented contact links or dead '#' anchors
  */
@@ -32,11 +34,12 @@ export const MEDIA_CONFIG: MediaConfig = {
     alt: "Portrait photograph of M. Hanif Al Faiz",
   },
 
-  // Six Canonical Project Screenshots: Pending authentic captures
+  // Optional legacy archive configuration. No homepage, directory or case study
+  // consumes screenshot previews in Phase 4D.1. Captures are not a launch requirement.
   projectScreenshots: {
     "wattwise-ai": undefined,
+    "civictwin-semarang": undefined,
     "purwokerto-intelligence-layer": undefined,
-    "simobs-bengkel": undefined,
     "lapor-mangan": undefined,
     "bernas-mbg": undefined,
     "ai-course-project": undefined,

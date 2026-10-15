@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
 import { FEATURED_PROJECTS } from "@/data/projects";
+import { VERIFIED_SITE_URL } from "@/lib/siteUrl";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://hanif-portfolio.vercel.app";
+  const baseUrl = VERIFIED_SITE_URL;
+  if (!baseUrl) return [];
 
   const projectRoutes = FEATURED_PROJECTS.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,

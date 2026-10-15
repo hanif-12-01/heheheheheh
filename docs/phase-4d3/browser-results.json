@@ -1,0 +1,1495 @@
+{
+  "base": "http://localhost:3012",
+  "timestamp": "2026-10-15T08:28:08.938Z",
+  "checks": [
+    {
+      "name": "English and Pixel are clean-session defaults",
+      "passed": true
+    },
+    {
+      "name": "Language switch preserves anchor and scroll",
+      "passed": true
+    },
+    {
+      "name": "Mode/locale independently persist through refresh",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: five semesters, four achievement records, research filters",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: all CV entry points and actual download",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: navigation, Hero CTA and contact destinations",
+      "passed": true
+    },
+    {
+      "name": "pixel/en: six verified repos, no screenshot placeholders",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: five semesters, four achievement records, research filters",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: all CV entry points and actual download",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: navigation, Hero CTA and contact destinations",
+      "passed": true
+    },
+    {
+      "name": "pixel/id: six verified repos, no screenshot placeholders",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: five semesters, four achievement records, research filters",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: all CV entry points and actual download",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: navigation, Hero CTA and contact destinations",
+      "passed": true
+    },
+    {
+      "name": "recruiter/en: six verified repos, no screenshot placeholders",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: five semesters, four achievement records, research filters",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: all CV entry points and actual download",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: navigation, Hero CTA and contact destinations",
+      "passed": true
+    },
+    {
+      "name": "recruiter/id: six verified repos, no screenshot placeholders",
+      "passed": true
+    },
+    {
+      "name": "All 32 mode/locale/viewport layouts fit and load images",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu Escape returns focus and anchor closes menu",
+      "passed": true
+    },
+    {
+      "name": "Open pet dialogue translates without replay; Escape and visibility",
+      "passed": true
+    },
+    {
+      "name": "Keyboard skip link targets main and visible focus",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion stops scenery/clouds and smooth scrolling",
+      "passed": true
+    },
+    {
+      "name": "Case wattwise-ai/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case wattwise-ai/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case purwokerto-intelligence-layer/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case purwokerto-intelligence-layer/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case simobs-bengkel/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case simobs-bengkel/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case lapor-mangan/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case lapor-mangan/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case bernas-mbg/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case bernas-mbg/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case ai-course-project/pixel: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "Case ai-course-project/recruiter: URL preserved, title/repo/prose localized",
+      "passed": true
+    },
+    {
+      "name": "History navigation retains locale",
+      "passed": true
+    },
+    {
+      "name": "Denied localStorage still permits locale/mode/companion changes",
+      "passed": true
+    },
+    {
+      "name": "Canonical facts and photographs preserved except approved PKM correction",
+      "passed": true
+    },
+    {
+      "name": "Phase 4D.3 protected data, photographs, Harvard PDFs and generator unchanged",
+      "passed": true
+    },
+    {
+      "name": "No console/runtime/network errors",
+      "passed": true
+    }
+  ],
+  "viewports": [
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "en",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "pixel",
+      "locale": "id",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "en",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 768,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 430,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "clipped": []
+    },
+    {
+      "mode": "recruiter",
+      "locale": "id",
+      "width": 320,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "clipped": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/projects/wattwise-ai",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/wattwise-ai",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/purwokerto-intelligence-layer",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/simobs-bengkel",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/simobs-bengkel",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/lapor-mangan",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/bernas-mbg",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "mode": "pixel",
+      "status": 200
+    },
+    {
+      "path": "/projects/ai-course-project",
+      "mode": "recruiter",
+      "status": 200
+    },
+    {
+      "path": "/projects",
+      "status": 200
+    },
+    {
+      "path": "/journey",
+      "status": 200
+    },
+    {
+      "path": "/dev",
+      "status": 404
+    },
+    {
+      "path": "/pet-test",
+      "status": 404
+    },
+    {
+      "path": "/asset-test",
+      "status": 404
+    },
+    {
+      "path": "/projects/nonexistent",
+      "status": 404
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "performance": [
+    {
+      "mode": "pixel",
+      "width": 1440,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 332,
+      "cls": 0.003604888656469693,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 49.1999999997206
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 44.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 5.699999999720603
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 9.099999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 12.099999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 15.099999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 16.800000000279397
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 17
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 18.600000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 18.800000000279397
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/wave.webp",
+          "transferSize": 5652,
+          "duration": 6.199999999720603
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 1440,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 328,
+      "cls": 0.004923162883659122,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 38.10000000009313
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 33.1999999997206
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 5.2999999998137355
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 11.399999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 12.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 13.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 15.599999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 16
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 17
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 18.5
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/wave.webp",
+          "transferSize": 5652,
+          "duration": 6.399999999906868
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 390,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 232,
+      "cls": 0.019145140867363086,
+      "images": [
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 42.10000000009313
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 43.40000000037253
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 5.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 9.400000000372529
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 10.5
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 11.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/wave.webp",
+          "transferSize": 5652,
+          "duration": 8
+        }
+      ]
+    },
+    {
+      "mode": "pixel",
+      "width": 390,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 248,
+      "cls": 0.03922306149097816,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 38.6999999997206
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 37.3000000002794
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 4.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 9.199999999720603
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 9
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 9.600000000093132
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/wave.webp",
+          "transferSize": 5652,
+          "duration": 4.100000000093132
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 1440,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 472,
+      "cls": 0.003946213710455246,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 40.6999999997206
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 38.700000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 5.600000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 9.199999999720603
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 9.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 12.599999999627471
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 16.09999999962747
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 15.699999999720603
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 16.100000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 17.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 7.599999999627471
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 1440,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 460,
+      "cls": 0.003371050045814043,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 40
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 37.39999999990687
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-sparkle.webp",
+          "transferSize": 1288,
+          "duration": 5.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 8.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 11.200000000186265
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 12.799999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 12.100000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-4-research-document.webp",
+          "transferSize": 16822,
+          "duration": 14.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/journey/semester-3-book.webp",
+          "transferSize": 12968,
+          "duration": 14.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/tech/tech-smart-city.webp",
+          "transferSize": 42736,
+          "duration": 15.299999999813735
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 7.7000000001862645
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 390,
+      "locale": "en",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 448,
+      "cls": 0,
+      "images": [
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 30.600000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 34.10000000009313
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 5.399999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 7.199999999720603
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 8.399999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 9.399999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 7.7000000001862645
+        }
+      ]
+    },
+    {
+      "mode": "recruiter",
+      "width": 390,
+      "locale": "id",
+      "coldCache": true,
+      "throttling": "none",
+      "lcp": 524,
+      "cls": 0,
+      "images": [
+        {
+          "url": "http://localhost:3012/pixel/environment/woodland-workshop.webp",
+          "transferSize": 183036,
+          "duration": 30.799999999813735
+        },
+        {
+          "url": "http://localhost:3012/pet/optimized/idle.webp",
+          "transferSize": 5338,
+          "duration": 34.3000000002794
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/clouds.svg",
+          "transferSize": 719,
+          "duration": 5.300000000279397
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-right.webp",
+          "transferSize": 1322,
+          "duration": 6.600000000093132
+        },
+        {
+          "url": "http://localhost:3012/pixel/ui/ui-arrow-down.webp",
+          "transferSize": 1262,
+          "duration": 6.899999999906868
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/workshop-interior.webp",
+          "transferSize": 73202,
+          "duration": 7.7999999998137355
+        },
+        {
+          "url": "http://localhost:3012/pixel/environment/grand-atelier.webp",
+          "transferSize": 301402,
+          "duration": 6.2999999998137355
+        }
+      ]
+    }
+  ],
+  "unchangedCopy": {
+    "home-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "M. HANIF",
+      "AL FAIZ.",
+      "PDF ↓",
+      "Telkom University Purwokerto",
+      "· Semester",
+      "M. Hanif Al Faiz",
+      "3.66 / 4.00",
+      "2027",
+      "Semester",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "Hackathon",
+      "PKM-K",
+      "Purwokerto Intelligence Layer, WattWise AI, SIMOBS, Bernas MBG, Lapor Mangan",
+      "Full-Stack",
+      "GIS",
+      "PKM (Program Kreativitas Mahasiswa)",
+      "SEMESTER 0",
+      "Smart City Competition",
+      "2026",
+      "PLN ICE Startup Competition",
+      "GenBI Business Plan Competition",
+      "2024",
+      "UNITY UNY (Universitas Negeri Yogyakarta)",
+      "07 ·",
+      "WattWise AI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "ONNX Runtime Web",
+      "Tesseract.js",
+      "Purwokerto Intelligence Layer",
+      "Vite",
+      "Leaflet",
+      "React Router",
+      "SIMOBS — Bengkel Service Management",
+      "JavaScript",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Sanctum",
+      "Lapor Mangan",
+      "HTML5",
+      "CSS3",
+      "Open-Meteo API",
+      "LocalStorage",
+      "2025",
+      "Bernas MBG",
+      "Fuzzy Rain Risk Index — AI Coursework",
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Fuzzy Logic",
+      "UNITY UNY National Competition",
+      "PLN Innovation & Clean Energy (ICE) 2026",
+      "GenBI National Business Plan Competition",
+      "PKM",
+      "STATUS",
+      "GEMASTIK",
+      "GEMASTIK National ICT Competition",
+      "FORMAT",
+      "Hackathon x Digidaya",
+      "33",
+      "C++",
+      "Java",
+      "Golang",
+      "Visual Studio Code",
+      "Git",
+      "GitHub",
+      "Figma",
+      "XAMPP",
+      "Visual Studio",
+      "Android Studio",
+      "Docker",
+      "Algorithm Traversal & Sorting Lab",
+      "Algorithms",
+      "Data Structures",
+      "Propositional Logic Solver",
+      "Logic Systems",
+      "Socket Client-Proxy Network Testbed",
+      "Networking",
+      "Sockets",
+      "@hanif-12-01",
+      "LinkedIn",
+      "@hanif-faiz-05b36b31a",
+      "mhanifalfaiz@student.telkomuniversity.ac.id",
+      "Instagram",
+      "@a.nippp__05",
+      "GitHub ↗"
+    ],
+    "home-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "M. Hanif",
+      "Al Faiz.",
+      "PDF ↓",
+      "3.66 / 4.00",
+      "01",
+      "Telkom University Purwokerto",
+      "Semester",
+      "2027",
+      "3.66",
+      "/ 4.00",
+      "Purwokerto Intelligence Layer, WattWise AI, SIMOBS, Bernas MBG, Lapor Mangan",
+      "02",
+      "— M. Hanif Al Faiz",
+      "03",
+      "PKM (Program Kreativitas Mahasiswa)",
+      "04",
+      "05",
+      "2026",
+      "Smart City Competition",
+      "PLN ICE Startup Competition",
+      "GenBI Business Plan Competition",
+      "2024",
+      "UNITY UNY (Universitas Negeri Yogyakarta)",
+      "07 ·",
+      "WattWise AI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "ONNX Runtime Web",
+      "Tesseract.js",
+      "Purwokerto Intelligence Layer",
+      "Vite",
+      "Leaflet",
+      "React Router",
+      "SIMOBS — Bengkel Service Management",
+      "JavaScript",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Sanctum",
+      "Lapor Mangan",
+      "HTML5",
+      "CSS3",
+      "Open-Meteo API",
+      "LocalStorage",
+      "2025",
+      "Bernas MBG",
+      "Fuzzy Rain Risk Index — AI Coursework",
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Fuzzy Logic",
+      "07",
+      "UNITY UNY National Competition",
+      "Podium",
+      "PLN Innovation & Clean Energy (ICE) 2026",
+      "GenBI National Business Plan Competition",
+      "PKM",
+      "GEMASTIK",
+      "GEMASTIK National ICT Competition",
+      "Hackathon",
+      "Hackathon x Digidaya",
+      "08",
+      "C++",
+      "Java",
+      "Golang",
+      "Visual Studio Code",
+      "Git",
+      "GitHub",
+      "Figma",
+      "XAMPP",
+      "Visual Studio",
+      "Android Studio",
+      "Docker",
+      "09",
+      "Algorithm Traversal & Sorting Lab",
+      "Algorithms",
+      "Data Structures",
+      "Propositional Logic Solver",
+      "Logic Systems",
+      "Socket Client-Proxy Network Testbed",
+      "Networking",
+      "Sockets",
+      "10",
+      "@hanif-12-01",
+      "LinkedIn",
+      "@hanif-faiz-05b36b31a",
+      "mhanifalfaiz@student.telkomuniversity.ac.id",
+      "Instagram",
+      "@a.nippp__05",
+      "M. Hanif Al Faiz",
+      "GitHub ↗"
+    ],
+    "wattwise-ai-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2026",
+      "WattWise AI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "ONNX Runtime Web",
+      "Tesseract.js",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "wattwise-ai-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2026",
+      "WattWise AI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "ONNX Runtime Web",
+      "Tesseract.js",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "purwokerto-intelligence-layer-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2026",
+      "Purwokerto Intelligence Layer",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Leaflet",
+      "React Router",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "purwokerto-intelligence-layer-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2026",
+      "Purwokerto Intelligence Layer",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Leaflet",
+      "React Router",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "simobs-bengkel-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2024",
+      "SIMOBS — Bengkel Service Management",
+      "React",
+      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Sanctum",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "simobs-bengkel-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2024",
+      "SIMOBS — Bengkel Service Management",
+      "React",
+      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Sanctum",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "lapor-mangan-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2024",
+      "Lapor Mangan",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Leaflet",
+      "Open-Meteo API",
+      "LocalStorage",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "lapor-mangan-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2024",
+      "Lapor Mangan",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Leaflet",
+      "Open-Meteo API",
+      "LocalStorage",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "bernas-mbg-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2025",
+      "Bernas MBG",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "LocalStorage",
+      "HTML5",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "bernas-mbg-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2025",
+      "Bernas MBG",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "LocalStorage",
+      "HTML5",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ],
+    "ai-course-project-pixel": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "Pixel",
+      "2026",
+      "Fuzzy Rain Risk Index — AI Coursework",
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Fuzzy Logic",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "ai-course-project-recruiter": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2026",
+      "Fuzzy Rain Risk Index — AI Coursework",
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Fuzzy Logic",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "/projects": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "2026",
+      "WattWise AI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "ONNX Runtime Web",
+      "Tesseract.js",
+      "Purwokerto Intelligence Layer",
+      "Vite",
+      "Leaflet",
+      "React Router",
+      "2024",
+      "SIMOBS — Bengkel Service Management",
+      "JavaScript",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Sanctum",
+      "Lapor Mangan",
+      "HTML5",
+      "CSS3",
+      "Open-Meteo API",
+      "LocalStorage",
+      "2025",
+      "Bernas MBG",
+      "Fuzzy Rain Risk Index — AI Coursework",
+      "Python",
+      "Jupyter Notebook",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Fuzzy Logic",
+      "Algorithm Traversal & Sorting Lab",
+      "C++",
+      "Algorithms",
+      "Data Structures",
+      "Propositional Logic Solver",
+      "Logic Systems",
+      "Socket Client-Proxy Network Testbed",
+      "Networking",
+      "Sockets",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗"
+    ],
+    "/journey": [
+      "H_",
+      "HANIF.EXE",
+      "ID",
+      "EN",
+      "04",
+      "Semester",
+      "M. Hanif Al Faiz",
+      "Telkom University Purwokerto",
+      "PDF ↓",
+      "GitHub ↗",
+      "2026"
+    ]
+  },
+  "browser": "151.0.7922.34",
+  "scrollPreservation": {
+    "before": {
+      "url": "http://localhost:3012/#journey",
+      "y": 700
+    },
+    "after": {
+      "url": "http://localhost:3012/#journey",
+      "y": 700
+    }
+  }
+}

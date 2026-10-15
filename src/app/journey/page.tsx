@@ -1,3 +1,4 @@
+import { Localize } from "@/i18n/Localize";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 
 export default function StandaloneJourneyPage() {
   return (
+    <Localize>
     <main
       id="main-content"
       tabIndex={-1}
@@ -33,5 +35,6 @@ export default function StandaloneJourneyPage() {
 
       <Journey />
     </main>
+    </Localize>
   );
 }

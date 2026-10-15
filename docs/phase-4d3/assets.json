@@ -1,0 +1,24 @@
+[
+  {
+    "source": "assets-source/Grand Atelier/portrait-original.png",
+    "output": "public/profile/hanif-portrait-pixel.webp",
+    "width": 256,
+    "height": 320,
+    "colours": 48,
+    "bytes": 45566,
+    "sourceBytes": 1347457,
+    "generator": "built-in image_gen",
+    "ownerApproval": "PENDING LIKENESS REVIEW"
+  },
+  {
+    "source": "assets-source/Grand Atelier/grand-gallery-original.png",
+    "output": "public/pixel/environment/grand-atelier.webp",
+    "width": 960,
+    "height": 540,
+    "colours": 64,
+    "bytes": 301102,
+    "sourceBytes": 2200984,
+    "generator": "built-in image_gen",
+    "ownerApproval": "PENDING VISUAL REVIEW"
+  }
+]

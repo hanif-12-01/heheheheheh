@@ -1,0 +1,56 @@
+[
+  {
+    "file": "src/components/sections/PlayerProfile.tsx",
+    "pixelBranchSha256": "d7df5496051b196352d3177033aec3925f4a4900dbd44ea6559fb2d97d39e0cc",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 267
+  },
+  {
+    "file": "src/components/sections/About.tsx",
+    "pixelBranchSha256": "2f6ed78193e7ac50249b9e75ef99b50cb0b273fc1fb42411e65d2dab0740da6d",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 167
+  },
+  {
+    "file": "src/components/sections/Interests.tsx",
+    "pixelBranchSha256": "e34cf04d4721e4ede521d648972069d9be25453901815ae8166fdc60a9f4076c",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 272
+  },
+  {
+    "file": "src/components/sections/Journey.tsx",
+    "pixelBranchSha256": "a0e04ae14a2dd4960b4681ce0455b913c6e32b7217f29b5e9c0d87e37f7c1f95",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 425
+  },
+  {
+    "file": "src/components/sections/TrophyRoom.tsx",
+    "pixelBranchSha256": "f47c08b0f03e84d5ec0332be2ca83b84f0984e15fbe892b6b07e52e35314b602",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 357
+  },
+  {
+    "file": "src/components/sections/ResearchCompetitions.tsx",
+    "pixelBranchSha256": "e281e2335a38d00be264ee49332a8030d7049d6fa1d8b5b35ee14651d1b02a65",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 262
+  },
+  {
+    "file": "src/components/sections/SkillsInventory.tsx",
+    "pixelBranchSha256": "16cdf63fe922a47374c324c28b4d71067bfe0ed2d3e8185fb4aa3abd79861e79",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 128
+  },
+  {
+    "file": "src/components/sections/GithubExperiments.tsx",
+    "pixelBranchSha256": "4ea004c6f44a6a1147a18e6fff967cd48253bf651fb73cca992a016af411e784",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 70
+  },
+  {
+    "file": "src/components/sections/LetsBeFriends.tsx",
+    "pixelBranchSha256": "3170930714540c795ce3d4de680bab547496b51a5792239bc0796d00de8d2c78",
+    "pixelBodyUnchanged": true,
+    "retiredLines": 124
+  }
+]

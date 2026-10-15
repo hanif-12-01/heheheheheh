@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { VERIFIED_SITE_URL } from "@/lib/siteUrl";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://hanif-portfolio.vercel.app/sitemap.xml",
+    ...(VERIFIED_SITE_URL ? { sitemap: `${VERIFIED_SITE_URL}/sitemap.xml` } : {}),
   };
 }

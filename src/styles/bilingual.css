@@ -1,0 +1,23 @@
+.language-switcher { display: inline-flex; align-items: center; gap: 3px; flex-shrink: 0; font: 600 11px/1.3 monospace; }
+.language-switcher > span { color: var(--color-muted); }
+.language-switcher button { padding: 7px 5px; color: var(--color-muted); min-height: 32px; cursor: pointer; }
+.language-switcher button[aria-pressed="true"] { color: var(--color-primary); background: var(--color-surface-secondary); box-shadow: inset 0 -2px var(--color-primary); }
+.language-switcher button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+.language-switcher button:hover { color: var(--color-text); }
+.site-navigation > div { gap: .6rem; }
+[data-locale="id"] .world-eyebrow { letter-spacing: .13em; }
+[data-locale="id"] .project-chapter__actions { gap: .75rem 1rem; }
+footer .world-action { min-height: 36px; padding: .4rem .75rem; font-size: 12px; }
+@media (max-width: 1279px) {
+  .site-navigation nav[aria-label="Main Navigation"], .site-navigation nav[aria-label="Navigasi utama"] { display: none; }
+  .site-navigation button[aria-controls="mobile-navigation-menu"] { display: inline-flex; }
+  #mobile-navigation-menu { display: block; }
+}
+@media (max-width: 374px) {
+  .site-navigation > div { padding-inline: 12px; gap: 5px; }
+  .site-navigation > div > a { gap: 6px; }
+  .site-navigation > div > a > div:last-child > span:first-child { font-size: 11px; letter-spacing: 0; }
+  .site-navigation > div > div:last-child { gap: 5px; }
+  .language-switcher { gap: 1px; font-size: 10px; }
+  .language-switcher button { padding-inline: 3px; }
+}

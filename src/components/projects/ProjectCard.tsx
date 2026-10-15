@@ -1,229 +1,113 @@
 "use client";
 
-import React from "react";
+import { useLocalize } from "@/i18n/useTranslations";
+import { Fragment } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Project } from "@/types/project";
-import { PixelBadge } from "@/components/pixel/PixelBadge";
-import { ProjectPreviewViewport } from "@/components/projects/ProjectPreviewViewport";
-import { techAssets, journeyAssets, uiAssets } from "@/data/worldAssets";
+import { techAssets, journeyAssets } from "@/data/worldAssets";
 import { GithubIcon } from "@/components/icons/SocialIcons";
-import { ExternalLink, ArrowRight, Award, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export interface ProjectCardProps {
   project: Project;
   className?: string;
+  chapterNumber?: string;
+  emphasis?: "primary" | "civic";
 }
 
-/**
- * Returns optional domain decoration asset for secondary builds.
- * Strict credibility rule: These are small decorative accents only,
- * NEVER placed inside the screenshot viewport.
- */
-function getProjectDomainAccent(slug: string) {
+/** Illustrative domain props, never presented as software captures or evidence. */
+export function getProjectDomainAsset(slug: string) {
   switch (slug) {
-    case "wattwise-ai":
-      return techAssets.aiChip;
-    case "purwokerto-intelligence-layer":
-      return techAssets.smartCity;
-    case "simobs-bengkel":
-      return techAssets.codeEditor;
-    case "lapor-mangan":
-      return techAssets.gisMap;
-    case "bernas-mbg":
-      return techAssets.server;
-    case "ai-course-project":
-      return journeyAssets.researchFlask;
-    case "sorting-algorithm-visualizer":
-      return techAssets.codeEditor;
-    case "computational-logic-sim":
-      return journeyAssets.researchFlask;
-    case "micro-network-probe":
-      return techAssets.server;
-    default:
-      return null;
+    case "wattwise-ai": return techAssets.aiChip;
+    case "civictwin-semarang": return techAssets.smartCity;
+    case "purwokerto-intelligence-layer": return techAssets.gisMap;
+    case "lapor-mangan": return techAssets.gisMap;
+    case "bernas-mbg": return techAssets.server;
+    case "ai-course-project": return journeyAssets.researchFlask;
+    case "sorting-algorithm-visualizer": return techAssets.codeEditor;
+    case "computational-logic-sim": return journeyAssets.researchFlask;
+    case "micro-network-probe": return techAssets.server;
+    default: return null;
   }
 }
 
-/**
- * Returns formatted status label matching verified data.
- */
-function getFormattedStatus(status?: string, slug?: string): string {
-  if (slug === "bernas-mbg") return "PROOF OF CONCEPT";
-  if (slug === "ai-course-project") return "COURSEWORK / AI";
-  if (slug === "simobs-bengkel") return "PROTOTYPE";
-  if (slug === "lapor-mangan") return "PROTOTYPE";
-  if (status === "experiment") return "LAB EXPERIMENT";
-  if (status === "active") return "ACTIVE";
-  if (status === "completed") return "COMPLETED";
-  return status?.toUpperCase() || "PROTOTYPE";
-}
-
-/**
- * Concise micro-tag explaining technical essence without hype.
- */
-function getTechnicalMicroTag(slug: string): string | null {
-  switch (slug) {
-    case "simobs-bengkel":
-      return "DUAL FRONTEND // LARAVEL SANCTUM API";
-    case "lapor-mangan":
-      return "HAVERSINE DISTANCE // OPEN-METEO WEATHER";
-    case "bernas-mbg":
-      return "MULTI-ROLE DASHBOARD PoC // SIMULATED STATE";
-    case "ai-course-project":
-      return "FROM-SCRATCH PYTHON // MAMDANI & SUGENO";
-    default:
-      return null;
+/** Maturity follows the existing verified project descriptions, alongside status. */
+export function getProjectMaturity(project: Project): string {
+  switch (project.slug) {
+    case "wattwise-ai": return "Working MVP · Active";
+    case "civictwin-semarang": return "Competition proof of concept";
+    case "purwokerto-intelligence-layer": return "Experimental material · Simulated data";
+    case "lapor-mangan": return "Culinary discovery prototype · Completed";
+    case "bernas-mbg": return "Proof of concept";
+    case "ai-course-project": return "AI coursework · Completed";
+    default: return project.status === "experiment" ? "Lab experiment" : project.status || "Prototype";
   }
 }
 
-export function ProjectCard({ project, className }: ProjectCardProps) {
-  const domainAccent = getProjectDomainAccent(project.slug);
-  const statusLabel = getFormattedStatus(project.status, project.slug);
-  const microTag = getTechnicalMicroTag(project.slug);
-  const isSimulation = project.slug === "purwokerto-intelligence-layer" || project.slug === "bernas-mbg";
+export function ProjectCard({ project, className, chapterNumber, emphasis }: ProjectCardProps) {
+  const localize = useLocalize();
+  const domainAsset = getProjectDomainAsset(project.slug);
+  const isSimulation = ["civictwin-semarang", "purwokerto-intelligence-layer", "bernas-mbg"].includes(project.slug);
 
-  // Display top 4 technologies for compact scannability
-  const displayTechnologies = project.technologies.slice(0, 4);
-
-  return (
+  return localize((
     <article
-      className={cn(
-        "relative flex flex-col justify-between border-2 border-[var(--color-border)] bg-[var(--color-surface)] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] transition-all duration-100 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.7)] overflow-hidden",
-        project.achievement ? "border-[var(--color-border)]" : "",
-        className
-      )}
+      className={cn("project-chapter", emphasis && "project-chapter--featured", emphasis && `project-chapter--${emphasis}`, className)}
       aria-labelledby={`project-title-${project.slug}`}
     >
-      {/* Top Header Bar */}
-      <div className="flex items-center justify-between px-3 py-2 bg-[var(--color-surface-secondary)] border-b border-[var(--color-border)] select-none">
-        <div className="flex items-center gap-2 truncate">
-          {domainAccent && (
-            <div className="w-5 h-5 shrink-0 relative flex items-center justify-center">
-              <Image
-                src={domainAccent.src}
-                alt=""
-                width={20}
-                height={20}
-                className="w-4 h-4 object-contain"
-                style={{ imageRendering: "pixelated", width: "auto", height: "auto" }}
-                aria-hidden="true"
-                unoptimized
-              />
-            </div>
-          )}
-          <span className="font-mono text-[10px] uppercase font-bold text-[var(--color-text)] truncate">
-            {project.categories[0] || "BUILD"}
-          </span>
-        </div>
-
-        <div className="flex items-center gap-1.5 shrink-0 ml-2">
-          {isSimulation && (
-            <span className="px-1.5 py-0.5 bg-[var(--color-background)] border border-[var(--color-achievement)] text-[var(--color-achievement)] font-mono text-[8px] font-bold uppercase">
-              MOCK DATA
-            </span>
-          )}
-          <span className="px-1.5 py-0.5 bg-[var(--color-background)] border border-[var(--color-border)] font-mono text-[9px] text-[var(--color-muted)] uppercase">
-            {statusLabel}
-          </span>
-        </div>
+      <div className="project-chapter__landmark" aria-hidden="true">
+        {chapterNumber ? <span className="project-chapter__number">{chapterNumber}</span> : null}
+        {domainAsset ? (
+          <Image
+            src={domainAsset.src}
+            alt=""
+            width={domainAsset.recommendedDisplaySize.width}
+            height={domainAsset.recommendedDisplaySize.height}
+            className="project-chapter__prop"
+            unoptimized
+          />
+        ) : null}
       </div>
 
-      {/* Honest Viewport Placeholder Area */}
-      <div className="p-3">
-        <ProjectPreviewViewport
-          slug={project.slug}
-          title={project.title}
-          image={project.image}
-          screenshot={project.screenshot}
-          simulationDisclosure={isSimulation}
-          statusText={statusLabel}
-          aspectRatio="video"
-        />
-      </div>
+      <div className="project-chapter__content">
+        <p className="project-chapter__eyebrow">
+          {project.categories.slice(0, 2).map((category, index) => <Fragment key={category}>{index ? " / " : ""}{category}</Fragment>)}
+          {project.year ? <span> · {project.year}</span> : null}
+        </p>
+        <h3 id={`project-title-${project.slug}`} className="project-chapter__title">
+          {project.featured ? <Link href={`/projects/${project.slug}`}>{project.title}</Link> : project.title}
+        </h3>
+        <p className="project-chapter__maturity">{getProjectMaturity(project)}</p>
+        {isSimulation ? <p className="project-chapter__disclosure">Uses simulated data</p> : null}
+        {project.achievement ? <p className="project-chapter__achievement">{project.achievement}</p> : null}
+        <p className="project-chapter__description">{project.shortDescription}</p>
 
-      {/* Project Details */}
-      <div className="p-4 pt-1 space-y-3 flex-1 flex flex-col justify-between">
-        <div className="space-y-2">
-          {/* Micro Technical Highlight Tag */}
-          {microTag && (
-            <span className="inline-block text-[9px] font-mono text-[var(--color-primary)] font-semibold tracking-wider">
-              &gt; {microTag}
-            </span>
-          )}
+        <ul className="project-chapter__technologies" aria-label={`${project.title} technologies`}>
+          {project.technologies.map((tech) => <li key={tech}>{tech}</li>)}
+        </ul>
 
-          {/* Title */}
-          <h3
-            id={`project-title-${project.slug}`}
-            className="font-mono text-base sm:text-lg font-bold text-[var(--color-text)] leading-snug"
-          >
-            <Link
-              href={`/projects/${project.slug}`}
-              className="hover:text-[var(--color-primary)] transition-colors inline-block"
+        <div className="project-chapter__actions">
+          {project.githubUrl ? (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-repository-link"
+              aria-label={`Open ${project.title} repository on GitHub (opens in new tab)`}
             >
-              {project.title}
+              <GithubIcon className="h-4 w-4" aria-hidden="true" />
+              <span>GitHub repository</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          ) : null}
+          {project.featured ? (
+            <Link href={`/projects/${project.slug}`} className="project-study-link" aria-label={`View ${project.title} case study`}>
+              Read case study <span aria-hidden="true">→</span>
             </Link>
-          </h3>
-
-          {/* Exact Verified Achievement if present */}
-          {project.achievement && (
-            <div className="p-2 bg-[var(--color-background)] border border-[var(--color-achievement)] text-[var(--color-achievement)] flex items-center gap-1.5 text-[11px] font-mono font-bold">
-              <Trophy className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
-              <span className="truncate">{project.achievement}</span>
-            </div>
-          )}
-
-          {/* Factual Short Description */}
-          <p className="text-xs text-[var(--color-muted)] font-sans leading-relaxed line-clamp-3">
-            {project.shortDescription}
-          </p>
+          ) : !project.githubUrl ? <span className="project-chapter__maturity">Coursework record</span> : null}
         </div>
-
-        {/* Tech Stack Badges */}
-        <div className="pt-2">
-          <div className="flex flex-wrap gap-1">
-            {displayTechnologies.map((tech) => (
-              <span
-                key={tech}
-                className="text-[10px] font-mono px-2 py-0.5 bg-[var(--color-surface-secondary)] border border-[var(--color-border)] text-[var(--color-text)]"
-              >
-                {tech}
-              </span>
-            ))}
-            {project.technologies.length > 4 && (
-              <span className="text-[10px] font-mono px-1.5 py-0.5 text-[var(--color-muted)]">
-                +{project.technologies.length - 4}
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* Direct Interactive Actions — Strict: Explicit links, no whole-card clickable div, no nested buttons */}
-      <div className="px-4 py-3 bg-[var(--color-surface-secondary)] border-t border-[var(--color-border)] flex items-center justify-between text-xs font-mono">
-        <Link
-          href={`/projects/${project.slug}`}
-          className="text-[var(--color-primary)] hover:underline inline-flex items-center gap-1 font-bold focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]"
-          aria-label={`View ${project.title} case study`}
-        >
-          <span>Case Study</span>
-          <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-        </Link>
-
-        {project.githubUrl && (
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--color-muted)] hover:text-[var(--color-text)] inline-flex items-center gap-1 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-primary)]"
-            aria-label={`Open ${project.title} repository on GitHub (opens in new tab)`}
-          >
-            <GithubIcon className="w-3.5 h-3.5" aria-hidden="true" />
-            <span>GitHub ↗</span>
-          </a>
-        )}
       </div>
     </article>
-  );
+  ));
 }

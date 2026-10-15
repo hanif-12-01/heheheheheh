@@ -6,6 +6,7 @@ import { PortfolioMode, PortfolioModeContextType } from "@/types/mode";
 const PortfolioModeContext = createContext<PortfolioModeContextType | undefined>(undefined);
 
 const STORAGE_KEY = "hanif_portfolio_mode";
+let memoryMode: PortfolioMode = "pixel";
 
 function subscribe(callback: () => void) {
   window.addEventListener("storage", callback);
@@ -19,9 +20,9 @@ function subscribe(callback: () => void) {
 function getSnapshot(): PortfolioMode {
   try {
     const saved = localStorage.getItem(STORAGE_KEY) as PortfolioMode | null;
-    return saved === "recruiter" ? "recruiter" : "pixel";
+    return saved === "recruiter" || saved === "pixel" ? saved : memoryMode;
   } catch {
-    return "pixel";
+    return memoryMode;
   }
 }
 
@@ -37,12 +38,13 @@ export function PortfolioModeProvider({ children }: { children: React.ReactNode 
   }, [mode]);
 
   const setMode = useCallback((newMode: PortfolioMode) => {
+    memoryMode = newMode;
     try {
       localStorage.setItem(STORAGE_KEY, newMode);
-      window.dispatchEvent(new Event("hanif_mode_change"));
     } catch {
       // ignore
     }
+    window.dispatchEvent(new Event("hanif_mode_change"));
   }, []);
 
   const toggleMode = useCallback(() => {
